@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -37,6 +37,78 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"activedialcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
+					"activeneedlecolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+					"bordercolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+					"focusbordercolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
+					"fontface" : 0,
+					"fontsize" : 9.0,
+					"id" : "obj-18",
+					"maxclass" : "live.dial",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "float" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 572.5, 267.11438, 44.0, 45.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 166.848755, 89.0, 44.0, 45.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "adsr_attack",
+							"parameter_shortname" : "Attack",
+							"parameter_type" : 0,
+							"parameter_mmax" : 1000.0,
+							"parameter_unitstyle" : 2
+						}
+
+					}
+,
+					"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
+					"tribordercolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+					"varname" : "adsr_attack"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 10.0,
+					"id" : "obj-20",
+					"maxclass" : "textbutton",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 575.0, 200.978149, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 95.848755, 79.5, 48.731995, 20.0 ],
+					"style" : "",
+					"text" : "Steal",
+					"texton" : "Steal"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autopopulate" : 1,
+					"fontsize" : 10.0,
+					"id" : "obj-72",
+					"items" : "<empty>",
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 638.0, 270.592529, 89.0, 20.0 ],
+					"prefix_mode" : 2,
+					"presentation" : 1,
+					"presentation_rect" : [ 4.299377, 79.5, 90.549377, 20.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Arial",
@@ -138,8 +210,6 @@
 					"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgfillcolor_proportion" : 0.39,
 					"bgfillcolor_type" : "gradient",
-					"fontface" : 0,
-					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"hint" : "Looping mode (default = 1 (start to end))  0 = noloop  1 = normallooping (start to end)  2 = palindrome  (start to end to start to ....)  3 = no looping, but use looppoints to define playback limits-defined",
 					"id" : "obj-8",
@@ -152,7 +222,8 @@
 					"patching_rect" : [ 319.227295, 231.5, 100.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 160.0, 43.5, 134.225647, 20.0 ],
-					"style" : ""
+					"style" : "",
+					"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ]
 				}
 
 			}
@@ -459,7 +530,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 0,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -936,9 +1007,6 @@
 								"box" : 								{
 									"annotation" : "",
 									"border" : 1.0,
-									"fontface" : 0,
-									"fontname" : "Arial",
-									"fontsize" : 10.0,
 									"id" : "obj-30",
 									"keymode" : 1,
 									"maxclass" : "textedit",
@@ -946,13 +1014,12 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "", "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 113.5, 272.0, 140.0, 18.0 ],
+									"patching_rect" : [ 113.5, 272.0, 164.0, 18.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 64.0, 48.277779, 162.0, 16.0 ],
+									"presentation_rect" : [ 64.0, 48.277779, 190.0, 16.0 ],
 									"rounded" : 20.0,
 									"style" : "default",
-									"text" : "Jamoma",
-									"textjustification" : 0
+									"text" : "Jamoma"
 								}
 
 							}
@@ -1686,16 +1753,20 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-18" : [ "adsr_attack", "Attack", 0 ]
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo2.png",
-				"bootpath" : "~/Documents/Max/Github_Development_Library/rdpozo_Modules/_Dependencies",
-				"patcherrelativepath" : "../../_Dependencies",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
+				"patcherrelativepath" : "../../../Dependencies",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "loopMode.txt",
-				"bootpath" : "~/Documents/Max/Github_Development_Library/rdpozo_Modules/OpenGL/gl_hap",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/OpenGL/rdp_gl_hap",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -1719,13 +1790,31 @@
  ],
 		"embedsnapshot" : 0,
 		"styles" : [ 			{
+				"name" : "AudioStatus_Menu",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
