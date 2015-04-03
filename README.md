@@ -1,6 +1,7 @@
 Audio and video modules for Max/MSP Jitter using the Jamoma 06 framework.
 
 To install Jamoma for Max please visit www.jamoma.org
+
 Requires third party:
 
 Tap Tools by 74 Objects (Not included in the repository)
