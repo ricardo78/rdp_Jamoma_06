@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 228.0, 135.0, 1099.0, 617.0 ],
+		"rect" : [ 307.0, 147.0, 1099.0, 617.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,52 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 614.75, 114.0, 51.0, 22.0 ],
+					"presentation_rect" : [ 614.75, 113.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "fade $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-50",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 618.5, 247.0, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "Modified from tap.sustain by 74 Objects"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 556.75, 114.0, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "loop $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "bang im done",
 					"id" : "obj-48",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 837.0, 506.0, 20.0, 20.0 ],
-					"presentation_rect" : [ 845.0, 517.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -84,19 +123,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 278.0, 10.0, 20.0, 20.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "(bang) Trigger",
-					"id" : "obj-44",
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 395.0, 10.0, 20.0, 20.0 ],
 					"style" : ""
 				}
 
@@ -307,7 +333,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 493.666656, 103.0, 37.0, 21.0 ],
+					"patching_rect" : [ 480.25, 107.0, 37.0, 21.0 ],
 					"style" : "",
 					"triscale" : 0.9
 				}
@@ -330,16 +356,17 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-4",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 442.0, 78.0, 174.0, 21.0 ],
+					"numinlets" : 6,
+					"numoutlets" : 6,
+					"outlettype" : [ "", "", "", "", "", "" ],
+					"patching_rect" : [ 442.0, 78.0, 197.0, 21.0 ],
 					"style" : "",
-					"text" : "route length capture buffer"
+					"text" : "route length capture buffer loop fade"
 				}
 
 			}
@@ -366,7 +393,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 623.0, 78.0, 84.0, 21.0 ],
+					"patching_rect" : [ 864.0, 71.0, 84.0, 21.0 ],
 					"style" : "",
 					"text" : "sel normalize"
 				}
@@ -381,7 +408,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 623.0, 114.0, 149.0, 21.0 ],
+					"patching_rect" : [ 864.0, 107.0, 149.0, 21.0 ],
 					"style" : "",
 					"text" : "tap.buffer.norm~ #0sound"
 				}
@@ -547,7 +574,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 623.0, 156.0, 204.0, 33.0 ],
+					"patching_rect" : [ 864.0, 149.0, 204.0, 33.0 ],
 					"style" : "",
 					"text" : "buffer~ tap.lookup.512.welch.aif tap.lookup.512.welch.aif -1"
 				}
@@ -804,7 +831,7 @@
 					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 223.071426, 61.0, 632.5, 61.0 ],
+					"midpoints" : [ 223.071426, 61.0, 873.5, 61.0 ],
 					"source" : [ "obj-16", 5 ]
 				}
 
@@ -832,7 +859,7 @@
 					"destination" : [ "obj-28", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 503.166656, 129.0, 149.5, 129.0 ],
+					"midpoints" : [ 489.75, 129.0, 149.5, 129.0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -891,6 +918,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 19.5, 306.5, 373.5, 306.5 ],
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -1067,7 +1103,7 @@
 					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 554.833313, 209.0, 451.5, 209.0 ],
+					"midpoints" : [ 522.700012, 209.0, 451.5, 209.0 ],
 					"source" : [ "obj-4", 2 ]
 				}
 
@@ -1083,10 +1119,28 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-49", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 3 ]
 				}
 
 			}
@@ -1097,16 +1151,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 178.928574, 104.0, 149.5, 104.0 ],
 					"source" : [ "obj-43", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-28", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 404.5, 116.0, 149.5, 116.0 ],
-					"source" : [ "obj-44", 0 ]
 				}
 
 			}
@@ -1125,6 +1169,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-49", 0 ]
 				}
 
 			}
@@ -1190,7 +1243,39 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0
+		"embedsnapshot" : 0,
+		"styles" : [ 			{
+				"name" : "AudioStatus_Menu",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "rdp-jamoma-style",
+				"default" : 				{
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+ ]
 	}
 
 }
