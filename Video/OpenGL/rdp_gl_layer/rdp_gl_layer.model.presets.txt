@@ -1,0 +1,28 @@
+
+- preset "default"
+- description "something about this preset"
+# ###########################################
+# 
+scale.1 0.500000
+scale.2 0.500000
+scale.3 0.500000
+position.1 0.000000
+position.2 0.000000
+position.3 0.000000
+color.1 0.000000
+color.2 1.000000
+color.3 1.000000
+color.4 1.000000
+cornerpin.1 -1.000000
+cornerpin.2 1.000000
+cornerpin.3 1.000000
+cornerpin.4 1.000000
+cornerpin.5 -1.000000
+cornerpin.6 -1.000000
+cornerpin.7 1.000000
+cornerpin.8 -1.000000
+shape plane
+saturation 1.000000
+data/active 1
+# 
+# ###########################################

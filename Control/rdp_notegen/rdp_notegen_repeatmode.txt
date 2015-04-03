@@ -1,0 +1,3 @@
+poly, 0;
+re-trigger, 1;
+stop_last, 2;
