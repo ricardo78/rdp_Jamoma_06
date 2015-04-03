@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 191.0, 79.0, 820.0, 783.0 ],
+		"rect" : [ 592.0, 228.0, 1183.0, 633.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -508,7 +508,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 348.0, 285.0, 802.0, 523.0 ],
+						"rect" : [ 604.0, 79.0, 802.0, 523.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -734,6 +734,38 @@
 									"source" : [ "obj-29", 0 ]
 								}
 
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "rdp-jamoma-style",
+								"default" : 								{
+									"fontface" : [ 0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
 							}
  ]
 					}
@@ -1383,8 +1415,20 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 64.0, 96.0, 22.0 ],
+									"style" : "",
+									"text" : "prepend symbol"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-1",
 									"items" : [ "poly", ",", "re-trigger", ",", "stop-last" ],
@@ -1393,7 +1437,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 50.0, 93.0, 100.0, 22.0 ],
+									"patching_rect" : [ 50.0, 101.0, 100.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -1458,7 +1502,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
+									"patching_rect" : [ 50.0, 13.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -1528,6 +1572,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-24", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1537,7 +1590,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-52", 0 ]
@@ -1647,7 +1700,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-24",
@@ -4301,15 +4353,16 @@
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
 					"id" : "obj-8",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 68.0, 43.0, 237.0, 19.0 ],
+					"patching_rect" : [ 68.0, 43.0, 241.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 57.338348, 183.0, 190.957382, 31.0 ],
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 57.338348, 183.0, 190.957382, 43.0 ],
 					"style" : "",
-					"text" : "A model for generating notes on a given scale",
+					"text" : "A model for generating notes on a given scale, with some probability stuff",
 					"textcolor" : [ 0.4, 0.4, 0.4, 1.0 ],
 					"varname" : "description"
 				}
@@ -4436,12 +4489,12 @@
 				"box" : 				{
 					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-35",
-					"linecount" : 5,
+					"linecount" : 10,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 25.0, 88.0, 785.0, 76.0 ],
+					"patching_rect" : [ 25.0, 88.0, 399.0, 143.0 ],
 					"style" : "",
 					"text" : "j.parameter repeatmode @type generic @clipmode none @priority 5 @description \"repeatmode 0 (default): There is no pre-specified behavior when when you repeat a pitch before the note-off for that pitch has been sent. repeatmode 1: If a note is still playing when you retrigger it the makenote object will send a note-off (velocity 0) message to stop the first note and then send a new note-on message. repeatmode 2: If a note is still playing when you retrigger it the makenote object will cancel the scheduled output of the first note - only the last played note will send note-off (velocity 0) message. Possible values: 0 = 'Poly' 1 = 'Re-trigger' 2 = 'Stop Last'\" @default Poly",
 					"varname" : "repeatmode"
@@ -4489,7 +4542,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 866.454468, 76.0, 281.625, 62.0 ],
+					"patching_rect" : [ 866.454468, 76.0, 285.0, 62.0 ],
 					"style" : "",
 					"text" : "j.parameter note/spread @type integer @range 0 7 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @description \"set the spread of the notes by octav\" @priority 1",
 					"varname" : "note/spread"
@@ -4766,7 +4819,7 @@
 					"destination" : [ "obj-56", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 455.454529, 102.0, 413.0, 102.0, 413.0, 345.0, 820.454468, 345.0 ],
+					"midpoints" : [ 455.454529, 102.0, 427.0, 102.0, 427.0, 345.0, 820.454468, 345.0 ],
 					"source" : [ "obj-59", 1 ]
 				}
 
