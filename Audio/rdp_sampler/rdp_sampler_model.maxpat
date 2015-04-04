@@ -671,11 +671,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1134,11 +1134,11 @@
 , 															{
 																"name" : "rdp-jamoma-style",
 																"default" : 																{
+																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																	"fontface" : [ 0 ],
-																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -1973,11 +1973,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
+													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"fontface" : [ 0 ],
-													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -2203,6 +2203,38 @@
 									"source" : [ "obj-9", 0 ]
 								}
 
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "rdp-jamoma-style",
+								"default" : 								{
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
 							}
  ]
 					}
@@ -2550,11 +2582,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2894,7 +2926,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 19.0, 36.0, 1002.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter adsr/retrigger @type decimal @range 0 1000 @clipmode both @ramp/drive None @dataspace time @unit millisecond @description \"Given as input, the word retrigger , followed by a float, sets the amount of time taken to ramp down to zero in the event of a retrigger while the envelope is active (the default is 5 milliseconds). This ramping prevents clicking.\" @default 1",
+									"text" : "j.parameter adsr/retrigger @type decimal @range 0 1000 @clipmode both @ramp/drive None @dataspace time @unit millisecond @description \"Given as input, the word retrigger , followed by a float, sets the amount of time taken to ramp down to zero in the event of a retrigger while the envelope is active (the default is 5 milliseconds). This ramping prevents clicking.\" @default 5",
 									"varname" : "adsr/retrigger"
 								}
 
@@ -3219,11 +3251,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3868,21 +3900,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdpozo_Modules/_Dependencies",
-				"patcherrelativepath" : "../../_Dependencies",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
+				"patcherrelativepath" : "../../Dependencies",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_sampler_model_poly.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdpozo_Modules/Audio/rdp_sampler",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Audio/rdp_sampler",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_sampler_ducking.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdpozo_Modules/Audio/rdp_sampler",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Audio/rdp_sampler",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -3977,11 +4009,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
