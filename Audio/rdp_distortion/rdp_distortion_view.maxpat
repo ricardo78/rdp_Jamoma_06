@@ -913,9 +913,9 @@
 			"obj-27" : [ "Threshold", "Threshold", 0 ],
 			"obj-4" : [ "Postamp", "Postamp", 0 ],
 			"obj-13" : [ "Release", "Release", 0 ],
-			"obj-11" : [ "distortion_amount", "Distortion", 0 ],
 			"obj-12" : [ "Lookahead", "Lookahead", 0 ],
-			"obj-14" : [ "Preamp", "Preamp", 0 ]
+			"obj-14" : [ "Preamp", "Preamp", 0 ],
+			"obj-11" : [ "distortion_amount", "Distortion", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -961,11 +961,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"fontface" : [ 0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"fontface" : [ 0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
