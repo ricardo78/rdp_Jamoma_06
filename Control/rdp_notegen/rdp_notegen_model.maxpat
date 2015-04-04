@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 592.0, 228.0, 1183.0, 633.0 ],
+		"rect" : [ 188.0, 147.0, 1183.0, 633.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -113,14 +113,14 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-15",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 14.0, 14.0, 601.0, 35.0 ],
+									"patching_rect" : [ 14.0, 14.0, 601.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter probability/spread @type integer @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @description \"set the spread of the notes by octav\" @priority 1",
+									"text" : "j.parameter probability/spread @type integer @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @description \"set the spread of the notes by octav\" @priority 1 @default 50",
 									"varname" : "note/spread[1]"
 								}
 
@@ -134,9 +134,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 89.0, 156.5, 526.0, 49.0 ],
+									"patching_rect" : [ 89.0, 156.5, 527.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter probability/veocity @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 30 @description \"The probability of making a velocity or not in precentage\" @priority 3",
+									"text" : "j.parameter probability/velocity @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 30 @description \"The probability of making a velocity or not in precentage\" @priority 3",
 									"varname" : "mutation/probability[1]"
 								}
 
@@ -243,11 +243,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -338,9 +338,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 75.545532, 128.5, 523.0, 49.0 ],
+									"patching_rect" : [ 75.545532, 128.5, 547.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter velocity/seed @type integer @range 0 127 @clipmode both @ramp/drive Max @ramp/function linear @unit none @dataspace none @default 0 @description \"set seed of random\" @priority 3",
+									"text" : "j.parameter velocity/seed @type integer @range 0 127 @clipmode both @ramp/drive Max @ramp/function linear @unit none @dataspace none @default 0 @description \"set seed of random\" @priority 3 @default 0",
 									"varname" : "velocity/min[2]"
 								}
 
@@ -463,11 +463,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -757,11 +757,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1344,11 +1344,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1628,11 +1628,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2653,11 +2653,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
-													"fontface" : [ 0 ],
+													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+													"fontface" : [ 0 ],
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -4273,11 +4273,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4494,7 +4494,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 25.0, 88.0, 399.0, 143.0 ],
+					"patching_rect" : [ 25.0, 88.0, 402.0, 143.0 ],
 					"style" : "",
 					"text" : "j.parameter repeatmode @type generic @clipmode none @priority 5 @description \"repeatmode 0 (default): There is no pre-specified behavior when when you repeat a pitch before the note-off for that pitch has been sent. repeatmode 1: If a note is still playing when you retrigger it the makenote object will send a note-off (velocity 0) message to stop the first note and then send a new note-on message. repeatmode 2: If a note is still playing when you retrigger it the makenote object will cancel the scheduled output of the first note - only the last played note will send note-off (velocity 0) message. Possible values: 0 = 'Poly' 1 = 'Re-trigger' 2 = 'Stop Last'\" @default Poly",
 					"varname" : "repeatmode"
@@ -4537,14 +4537,14 @@
 				"box" : 				{
 					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-14",
-					"linecount" : 4,
+					"linecount" : 5,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 866.454468, 76.0, 285.0, 62.0 ],
+					"patching_rect" : [ 866.454468, 76.0, 285.0, 76.0 ],
 					"style" : "",
-					"text" : "j.parameter note/spread @type integer @range 0 7 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @description \"set the spread of the notes by octav\" @priority 1",
+					"text" : "j.parameter note/spread @type integer @range 0 7 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @description \"set the spread of the notes by octav\" @priority 1 @default 2",
 					"varname" : "note/spread"
 				}
 
@@ -4945,11 +4945,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"fontface" : [ 0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
