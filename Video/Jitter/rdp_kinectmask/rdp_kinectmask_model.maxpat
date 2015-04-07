@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontsize" : 22.098289,
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 45.0, 328.0, 714.0, 31.0 ],
+					"style" : "",
+					"text" : "Code modified from by Zachary Seldess, KAUST,  KVL_Kinect_Tracker"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -648,7 +661,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "jit_matrix" ],
 									"patching_rect" : [ 88.0, 40.0, 30.0, 30.0 ],
 									"style" : ""
 								}
@@ -937,7 +950,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "jit_matrix" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -3719,34 +3732,34 @@
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
-				"patcherrelativepath" : "../../Dependencies",
+				"patcherrelativepath" : "../../../Dependencies",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.parameterCreate.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
+				"patcherrelativepath" : "../../../../../Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.thisparentpatcher.js",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
+				"patcherrelativepath" : "../../../../../Max 7/Packages/Jamoma/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.parameterCreatePresetDoc.js",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
+				"patcherrelativepath" : "../../../../../Max 7/Packages/Jamoma/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_cullplane.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_kinect",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/Jitter/rdp_kinectmask",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -3754,7 +3767,7 @@
 , 			{
 				"name" : "z.jsonio.js",
 				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/KVL_Kinect_Tracker_v20/maxpatch",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/KVL_Kinect_Tracker_v20/maxpatch",
+				"patcherrelativepath" : "../../../../../../Dropbox/Max MSP Jitter User Libraries/KVL_Kinect_Tracker_v20/maxpatch",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
