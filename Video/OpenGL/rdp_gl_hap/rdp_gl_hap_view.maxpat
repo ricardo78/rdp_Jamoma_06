@@ -643,7 +643,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 73.500023, 434.38562, 193.54541, 26.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 160.0, 106.5, 193.54541, 19.0 ],
+					"presentation_rect" : [ 87.416626, 22.5, 193.54541, 19.0 ],
 					"size" : 50.0,
 					"style" : ""
 				}
