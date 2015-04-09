@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 206.0, 79.0, 905.0, 614.0 ],
+		"rect" : [ 281.0, 106.0, 905.0, 614.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -55,7 +55,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 70.0, 396.0, 912.0, 417.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -88,7 +88,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 202.0, 69.0, 22.0 ],
+									"patching_rect" : [ 40.0, 212.0, 69.0, 22.0 ],
 									"style" : "",
 									"text" : "print Read:"
 								}
@@ -101,7 +101,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 213.978577, 175.0, 29.5, 22.0 ],
+									"patching_rect" : [ 184.549988, 185.0, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "/ 1."
 								}
@@ -116,7 +116,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 176.809479, 328.5, 442.166687, 35.0 ],
+									"patching_rect" : [ 145.428574, 338.5, 442.547607, 35.0 ],
 									"style" : "",
 									"text" : "j.return file/time/relative @type decimal @description \"Current relative position in video file, expressed in the range (0, 1).\""
 								}
@@ -131,7 +131,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 214.359467, 277.0, 404.616699, 49.0 ],
+									"patching_rect" : [ 183.359467, 287.0, 404.616699, 49.0 ],
 									"style" : "",
 									"text" : "j.return file/time/absolute @type decimal @dataspace time @unit s @description \"Current absolute position in video file, expressed in seconds.\""
 								}
@@ -146,7 +146,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 358.142883, 189.0, 260.833313, 35.0 ],
+									"patching_rect" : [ 327.142853, 195.0, 260.833313, 35.0 ],
 									"style" : "",
 									"text" : "j.return dimension @type array @description \"The dimension of the current film.\""
 								}
@@ -159,7 +159,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "float" ],
-									"patching_rect" : [ 176.428589, 175.0, 29.5, 22.0 ],
+									"patching_rect" : [ 145.428574, 185.0, 29.5, 22.0 ],
 									"style" : "",
 									"text" : "/ 1."
 								}
@@ -362,11 +362,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"fontface" : [ 0 ],
 													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -375,7 +375,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 50.0, 150.0, 57.0, 22.0 ],
+									"patching_rect" : [ 19.0, 160.0, 57.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -398,7 +398,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 312.809509, 226.0, 306.166687, 49.0 ],
+									"patching_rect" : [ 281.714294, 232.0, 306.166687, 49.0 ],
 									"style" : "",
 									"text" : "j.return loop/notify @type none @description \"If loop/report is enabled, a notification is returned every time the movie reach the end of the loop.\""
 								}
@@ -414,7 +414,7 @@
 									"numinlets" : 8,
 									"numoutlets" : 8,
 									"outlettype" : [ "", "", "", "", "", "", "", "" ],
-									"patching_rect" : [ 131.0, 100.0, 337.0, 22.0 ],
+									"patching_rect" : [ 100.0, 56.0, 337.0, 22.0 ],
 									"style" : "",
 									"text" : "route read framereport framecount fps dim loopnotify duration"
 								}
@@ -429,7 +429,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 403.571411, 136.5, 215.404755, 49.0 ],
+									"patching_rect" : [ 372.571442, 142.5, 215.404755, 49.0 ],
 									"style" : "",
 									"text" : "j.return duration @type integer @clipmode none @ramp/drive None @dataspace none",
 									"varname" : "duration"
@@ -444,7 +444,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 131.0, 40.0, 30.0, 30.0 ],
+									"patching_rect" : [ 100.0, 12.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -456,7 +456,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 423.5, 30.0, 30.0 ],
+									"patching_rect" : [ 19.0, 343.5, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -512,7 +512,7 @@
 									"destination" : [ "obj-13", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 140.5, 135.5, 59.5, 135.5 ],
+									"midpoints" : [ 109.5, 106.5, 28.5, 106.5 ],
 									"source" : [ "obj-21", 0 ]
 								}
 
@@ -522,7 +522,7 @@
 									"destination" : [ "obj-31", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 140.5, 190.5, 59.5, 190.5 ],
+									"midpoints" : [ 109.5, 198.5, 49.5, 198.5 ],
 									"source" : [ "obj-21", 0 ]
 								}
 
@@ -581,6 +581,38 @@
 								}
 
 							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "rdp-jamoma-style",
+								"default" : 								{
+									"fontface" : [ 0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
  ]
 					}
 ,
@@ -606,7 +638,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 206.55957, 547.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 185.5, 852.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -783,7 +814,6 @@
 													"numinlets" : 1,
 													"numoutlets" : 0,
 													"patching_rect" : [ 274.5, 335.0, 30.0, 30.0 ],
-													"presentation_rect" : [ 232.5, 338.0, 0.0, 0.0 ],
 													"style" : ""
 												}
 
@@ -1436,11 +1466,11 @@
 , 															{
 																"name" : "rdp-jamoma-style",
 																"default" : 																{
-																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																	"fontface" : [ 0 ],
 																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -1646,11 +1676,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"fontface" : [ 0 ],
 													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1805,6 +1835,38 @@
 								}
 
 							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "rdp-jamoma-style",
+								"default" : 								{
+									"fontface" : [ 0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
  ]
 					}
 ,
@@ -1881,7 +1943,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 535.0, 80.0, 517.0, 472.0 ],
+						"rect" : [ 617.0, 80.0, 517.0, 472.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1931,7 +1993,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 211.200409, 125.0, 298.200409, 49.0 ],
+									"patching_rect" : [ 211.200409, 125.0, 300.0, 49.0 ],
 									"style" : "",
 									"text" : "j.message loop/clear @type none @description \"Clear lopp start and end points. Start and end points arer always cleared when loading a new movie.\""
 								}
@@ -2090,7 +2152,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 104.400818, 148.501953, 50.0, 22.0 ],
+									"patching_rect" : [ 104.400818, 198.5, 50.0, 22.0 ],
 									"style" : "",
 									"text" : "loop $1"
 								}
@@ -2221,11 +2283,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2440,7 +2502,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 326.05957, 166.0, 560.676025, 35.0 ],
+					"patching_rect" : [ 326.05957, 166.0, 563.0, 35.0 ],
 					"style" : "",
 					"text" : "j.message frame @type integer @clipmode none @range 0. 1. @ramp/function linear @repetitions/filter 0 @dataspace none @description \"Move to a specific frame in the video.\"",
 					"varname" : "currentFrame[2]"
@@ -2511,7 +2573,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-46",
 					"linecount" : 2,
 					"maxclass" : "newobj",
@@ -2789,7 +2850,39 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0
+		"embedsnapshot" : 0,
+		"styles" : [ 			{
+				"name" : "AudioStatus_Menu",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "rdp-jamoma-style",
+				"default" : 				{
+					"fontface" : [ 0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+ ]
 	}
 
 }
