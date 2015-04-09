@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 272.0, 213.0, 904.0, 433.0 ],
+		"rect" : [ 106.0, 401.0, 904.0, 433.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -114,12 +114,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 63.0, 83.0, 1343.0, 739.0 ],
+						"rect" : [ 77.0, 278.0, 1343.0, 739.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -154,9 +154,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 457.0, 401.0, 815.0, 22.0 ],
+									"patching_rect" : [ 457.0, 401.0, 800.0, 22.0 ],
 									"style" : "",
-									"text" : "j.parameter blur @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 12 @default 0",
+									"text" : "j.parameter blur @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 12 @default 0.09",
 									"varname" : "blur"
 								}
 
@@ -172,7 +172,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 1014.0, 215.0, 258.0, 62.0 ],
 									"style" : "",
-									"text" : "j.parameter alpha @type decimal @range 0 1000 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 11 @default 1",
+									"text" : "j.parameter alpha @type decimal @range 0 1000 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 11 @default 2",
 									"varname" : "contrast[4]"
 								}
 
@@ -276,7 +276,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 533.5, 11.0, 738.5, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter contrast @type decimal @range 0 1000 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 7 @default 1",
+									"text" : "j.parameter contrast @type decimal @range 0 1000 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 7 @default 2.46",
 									"varname" : "contrast"
 								}
 
@@ -591,35 +591,6 @@
 							}
 , 							{
 								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 13.0,
-									"id" : "obj-155",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 284.0, 242.0, 76.0, 23.0 ],
-									"style" : "",
-									"text" : "prepend op"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-156",
-									"items" : [ "pass", ",", "*", ",", "/", ",", "+", ",", "-", ",", "+m", ",", "-m", ",", "%", ",", "min", ",", "max", ",", "abs", ",", "avg", ",", "absdiff", ",", "!pass", ",", "!/", ",", "!-", ",", "!%", ",", "&", ",", "|", ",", "^", ",", "~", ",", ">>", ",", "<<", ",", "&&", ",", "||", ",", "!", ",", ">", ",", "<", ",", ">=", ",", "<=", ",", "==", ",", "!=", ",", ">p", ",", "<p", ",", ">=p", ",", "<=p", ",", "==p", ",", "!=p", ",", "sin", ",", "cos", ",", "tan", ",", "asin", ",", "acos", ",", "atan", ",", "atan2", ",", "sinh", ",", "cosh", ",", "tanh", ",", "asinh", ",", "acosh", ",", "atanh", ",", "exp", ",", "exp2", ",", "ln", ",", "log2", ",", "log10", ",", "hypot", ",", "pow", ",", "sqrt", ",", "ceil", ",", "floor", ",", "round", ",", "trunc", ",", "ignore" ],
-									"maxclass" : "umenu",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "int", "", "" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 263.5, 204.0, 60.0, 22.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -825,25 +796,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-153", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-153", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"midpoints" : [ 293.5, 276.700012, 71.5, 276.700012 ],
-									"source" : [ "obj-155", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-155", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-156", 1 ]
 								}
 
 							}
@@ -1284,12 +1236,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 59.0, 104.0, 772.0, 758.0 ],
+						"rect" : [ 880.0, 96.0, 772.0, 758.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1797,12 +1749,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 84.0, 79.0, 1105.0, 755.0 ],
+						"rect" : [ 620.0, 96.0, 1372.0, 783.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1831,6 +1783,96 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+									"id" : "obj-35",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 671.0, 693.300049, 330.0, 22.0 ],
+									"style" : "",
+									"text" : "j.message cullplane.6/reset @type generic @clipmode none",
+									"varname" : "cullplane.1/reset[5]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+									"id" : "obj-16",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 674.5, 587.700073, 330.0, 22.0 ],
+									"style" : "",
+									"text" : "j.message cullplane.5/reset @type generic @clipmode none",
+									"varname" : "cullplane.1/reset[4]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 674.5, 486.700073, 330.0, 22.0 ],
+									"style" : "",
+									"text" : "j.message cullplane.4/reset @type generic @clipmode none",
+									"varname" : "cullplane.1/reset[3]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 674.5, 385.5, 330.0, 22.0 ],
+									"style" : "",
+									"text" : "j.message cullplane.3/reset @type generic @clipmode none",
+									"varname" : "cullplane.1/reset[2]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 674.5, 278.800049, 330.0, 22.0 ],
+									"style" : "",
+									"text" : "j.message cullplane.2/reset @type generic @clipmode none",
+									"varname" : "cullplane.1/reset[1]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 674.5, 137.0, 328.0, 22.0 ],
+									"style" : "",
+									"text" : "j.message cullplane.1/reset @type generic @clipmode none",
+									"varname" : "cullplane.1/reset"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-1",
@@ -1838,7 +1880,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 6,
 									"outlettype" : [ "", "", "", "", "", "" ],
-									"patching_rect" : [ 111.5, 280.300049, 86.5, 22.0 ],
+									"patching_rect" : [ 72.0, 200.300049, 86.5, 22.0 ],
 									"style" : "",
 									"text" : "t l l l l l l"
 								}
@@ -1852,7 +1894,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 156.5, 1141.300049, 24.0, 24.0 ],
+									"patching_rect" : [ 183.0, 777.300049, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -1864,7 +1906,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 183.0, 1149.300049, 97.0, 22.0 ],
+									"patching_rect" : [ 671.0, 717.300049, 97.0, 22.0 ],
 									"style" : "",
 									"text" : "0 0 0 0 0 0 0 0 0"
 								}
@@ -1874,11 +1916,12 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-33",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 156.5, 1112.300049, 567.0, 22.0 ],
+									"patching_rect" : [ 183.0, 745.300049, 484.0, 35.0 ],
 									"style" : "",
 									"text" : "j.parameter cullplane.6/enable @type boolean @priority 12 @default 0 @description \"enable cullplane 6\"",
 									"varname" : "cullplane.1/enable[5]"
@@ -1889,12 +1932,12 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-34",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 183.0, 1180.900024, 900.0, 35.0 ],
+									"patching_rect" : [ 671.0, 745.300049, 422.5, 49.0 ],
 									"style" : "",
 									"text" : "j.parameter cullplane.6/coordinate @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 13 @description \"coordinate for cullplane.6\" @default 0 0 0 0 0 0 0 0 0",
 									"varname" : "cullplane.1/coordinate[6]"
@@ -1909,7 +1952,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 156.5, 973.300049, 24.0, 24.0 ],
+									"patching_rect" : [ 183.0, 681.300049, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -1921,7 +1964,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 183.0, 981.300049, 97.0, 22.0 ],
+									"patching_rect" : [ 674.5, 614.700073, 97.0, 22.0 ],
 									"style" : "",
 									"text" : "0 0 0 0 0 0 0 0 0"
 								}
@@ -1931,11 +1974,12 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-28",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 156.5, 944.300049, 567.0, 22.0 ],
+									"patching_rect" : [ 183.0, 642.300049, 484.0, 35.0 ],
 									"style" : "",
 									"text" : "j.parameter cullplane.5/enable @type boolean @priority 10 @default 0 @description \"enable cullplane 5\"",
 									"varname" : "cullplane.1/enable[4]"
@@ -1946,12 +1990,12 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-29",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 183.0, 1012.900024, 899.0, 35.0 ],
+									"patching_rect" : [ 674.5, 642.300049, 419.0, 49.0 ],
 									"style" : "",
 									"text" : "j.parameter cullplane.5/coordinate @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 11 @description \"coordinate for cullplane.5\" @default 0 0 0 0 0 0 0 0 0",
 									"varname" : "cullplane.1/coordinate[5]"
@@ -1966,7 +2010,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 142.5, 815.300049, 24.0, 24.0 ],
+									"patching_rect" : [ 183.0, 577.900024, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -1978,7 +2022,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 169.0, 823.300049, 138.0, 22.0 ],
+									"patching_rect" : [ 674.5, 510.700073, 138.0, 22.0 ],
 									"style" : "",
 									"text" : "0 1.5 1 1 1.5 3 -1 0.99 3"
 								}
@@ -1988,11 +2032,12 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-24",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 142.5, 786.300049, 561.0, 22.0 ],
+									"patching_rect" : [ 183.0, 533.900024, 484.0, 35.0 ],
 									"style" : "",
 									"text" : "j.parameter cullplane.4/enable @type boolean @priority 8 @default 1 @description \"enable cullplane 4\"",
 									"varname" : "cullplane.1/enable[3]"
@@ -2003,12 +2048,12 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-25",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 169.0, 854.900024, 893.0, 35.0 ],
+									"patching_rect" : [ 674.5, 533.900024, 419.0, 49.0 ],
 									"style" : "",
 									"text" : "j.parameter cullplane.4/coordinate @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 9 @description \"coordinate for cullplane.4\" @default 0 1.5 1 1 1.5 3 -1 0.99 3",
 									"varname" : "cullplane.1/coordinate[4]"
@@ -2023,7 +2068,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 156.5, 673.300049, 24.0, 24.0 ],
+									"patching_rect" : [ 183.0, 474.700073, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -2035,7 +2080,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 183.0, 681.300049, 130.0, 22.0 ],
+									"patching_rect" : [ 674.5, 411.700073, 137.0, 22.0 ],
 									"style" : "",
 									"text" : "-0.88 0 1 -1 1 3 -1 -1 3"
 								}
@@ -2045,11 +2090,12 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-20",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 156.5, 644.300049, 561.0, 22.0 ],
+									"patching_rect" : [ 183.0, 435.700073, 484.0, 35.0 ],
 									"style" : "",
 									"text" : "j.parameter cullplane.3/enable @type boolean @priority 6 @default 1 @description \"enable cullplane 3\"",
 									"varname" : "cullplane.1/enable[2]"
@@ -2060,29 +2106,15 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-21",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 183.0, 712.900024, 958.0, 35.0 ],
+									"patching_rect" : [ 674.5, 435.700073, 419.0, 49.0 ],
 									"style" : "",
 									"text" : "j.parameter cullplane.3/coordinate @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 7 @description \"coordinate for cullplane.3\" @default -0.88 0 1 -1 1 3 -1 -1 3",
 									"varname" : "cullplane.1/coordinate[3]"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-16",
-									"linecount" : 4,
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 288.0, 11.300049, 404.0, 62.0 ],
-									"style" : "",
-									"text" : "print: plane1 1 0 -1.1 1 -1 -1.27 6 1 -1.27 6 print: plane2 1 0.6 0 1 0.5 -1 3 0.5 1 3 print: plane3 1 -0.88 0 1 -1 1 3 -1 -1 3 print: plane4 1 0 1.5 1 1 1.5 3 -1 0.99 3 print: plane5 0 0 0 0 0 0 0 0 0 0 print: plane6 0 0 0 0 0 0 0 0 0 0"
 								}
 
 							}
@@ -2094,7 +2126,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 138.0, 506.300049, 24.0, 24.0 ],
+									"patching_rect" : [ 183.0, 385.5, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -2106,7 +2138,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 164.5, 514.300049, 131.0, 22.0 ],
+									"patching_rect" : [ 674.5, 305.599976, 131.0, 22.0 ],
 									"style" : "",
 									"text" : "0.6 0 1 0.5 -1 3 0.5 1 3"
 								}
@@ -2116,11 +2148,12 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-13",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 138.0, 477.300049, 561.0, 22.0 ],
+									"patching_rect" : [ 183.0, 345.5, 484.0, 35.0 ],
 									"style" : "",
 									"text" : "j.parameter cullplane.2/enable @type boolean @priority 4 @default 1 @description \"enable cullplane 2\"",
 									"varname" : "cullplane.1/enable[6]"
@@ -2131,12 +2164,12 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-14",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 164.5, 545.900024, 958.0, 35.0 ],
+									"patching_rect" : [ 674.5, 332.0, 419.0, 49.0 ],
 									"style" : "",
 									"text" : "j.parameter cullplane.2/coordinate @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 5 @description \"coordinate for cullplane.2\" @default 0.6 0 1 0.5 -1 3 0.5 1 3",
 									"varname" : "cullplane.1/coordinate[2]"
@@ -2151,7 +2184,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1117.5, 68.0, 30.0, 30.0 ],
+									"patching_rect" : [ 531.5, 10.0, 30.0, 30.0 ],
 									"style" : "",
 									"varname" : "u649001807[1]"
 								}
@@ -2165,7 +2198,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 253.0, 314.800049, 24.0, 24.0 ],
+									"patching_rect" : [ 183.0, 278.800049, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -2177,7 +2210,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_gl_texture" ],
-									"patching_rect" : [ 85.0, 1269.300049, 125.0, 22.0 ],
+									"patching_rect" : [ 45.5, 733.300049, 125.0, 22.0 ],
 									"style" : "",
 									"text" : "rdp_cullplane 6"
 								}
@@ -2190,7 +2223,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_gl_texture" ],
-									"patching_rect" : [ 92.0, 1067.100098, 125.0, 22.0 ],
+									"patching_rect" : [ 45.5, 636.800049, 125.0, 22.0 ],
 									"style" : "",
 									"text" : "rdp_cullplane 5"
 								}
@@ -2203,7 +2236,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_gl_texture" ],
-									"patching_rect" : [ 85.0, 914.900024, 125.0, 22.0 ],
+									"patching_rect" : [ 45.5, 533.900024, 125.0, 22.0 ],
 									"style" : "",
 									"text" : "rdp_cullplane 4"
 								}
@@ -2216,7 +2249,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_gl_texture" ],
-									"patching_rect" : [ 85.0, 756.700073, 125.0, 22.0 ],
+									"patching_rect" : [ 45.5, 435.700073, 125.0, 22.0 ],
 									"style" : "",
 									"text" : "rdp_cullplane 3"
 								}
@@ -2229,7 +2262,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_gl_texture" ],
-									"patching_rect" : [ 85.0, 613.5, 125.0, 22.0 ],
+									"patching_rect" : [ 45.5, 345.5, 125.0, 22.0 ],
 									"style" : "",
 									"text" : "rdp_cullplane 2"
 								}
@@ -2242,7 +2275,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 279.5, 314.800049, 157.0, 22.0 ],
+									"patching_rect" : [ 674.5, 178.300049, 157.0, 22.0 ],
 									"style" : "",
 									"text" : "0 -1.1 1 -1 -1.27 6 1 -1.27 6"
 								}
@@ -2255,7 +2288,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "int" ],
-									"patching_rect" : [ 50.0, 165.300049, 80.5, 22.0 ],
+									"patching_rect" : [ 10.5, 86.300049, 80.5, 22.0 ],
 									"style" : "",
 									"text" : "t i i"
 								}
@@ -2273,7 +2306,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -2545,7 +2578,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 111.5, 249.300049, 93.0, 22.0 ],
+									"patching_rect" : [ 72.0, 169.300049, 93.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -2568,7 +2601,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 253.0, 273.800049, 484.0, 35.0 ],
+									"patching_rect" : [ 183.0, 237.800049, 484.0, 35.0 ],
 									"style" : "",
 									"text" : "j.parameter cullplane.1/enable @type boolean @priority 2 @default 1 @description \"enable cullplane 1\"",
 									"varname" : "cullplane.1/enable[1]"
@@ -2582,7 +2615,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_gl_texture" ],
-									"patching_rect" : [ 85.0, 433.300049, 125.0, 22.0 ],
+									"patching_rect" : [ 45.5, 238.300049, 125.0, 22.0 ],
 									"style" : "",
 									"text" : "rdp_cullplane 1"
 								}
@@ -2596,7 +2629,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 185.5, 195.300049, 94.0, 22.0 ],
+									"patching_rect" : [ 146.0, 140.300049, 94.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend drawto"
 								}
@@ -2610,7 +2643,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 50.0, 135.300049, 24.0, 24.0 ],
+									"patching_rect" : [ 10.5, 56.300049, 24.0, 24.0 ],
 									"style" : ""
 								}
 
@@ -2619,11 +2652,12 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-228",
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 100.0, 750.0, 22.0 ],
+									"patching_rect" : [ 10.5, 10.0, 426.0, 35.0 ],
 									"style" : "",
 									"text" : "j.parameter cullplane/active @type boolean @clipmode none @priority 1 @default 0 @description \"tuns on off all planes used for planecull\"",
 									"varname" : "planecull/active"
@@ -2639,7 +2673,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "jit_matrix", "jit_matrix", "jit_matrix", "jit_matrix", "" ],
-									"patching_rect" : [ 85.0, 1336.300049, 73.0, 22.0 ],
+									"patching_rect" : [ 45.5, 801.300049, 73.0, 22.0 ],
 									"style" : "",
 									"text" : "jit.unpack 4"
 								}
@@ -2654,7 +2688,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "jit_matrix", "" ],
-									"patching_rect" : [ 85.0, 1306.300049, 55.0, 22.0 ],
+									"patching_rect" : [ 45.5, 771.300049, 55.0, 22.0 ],
 									"style" : "",
 									"text" : "jit.matrix"
 								}
@@ -2669,7 +2703,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 50.0, 191.300049, 32.5, 22.0 ],
+									"patching_rect" : [ 10.5, 112.300049, 32.5, 22.0 ],
 									"style" : "",
 									"text" : "+ 1"
 								}
@@ -2684,7 +2718,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 219.300049, 54.0, 22.0 ],
+									"patching_rect" : [ 10.5, 140.300049, 54.0, 22.0 ],
 									"style" : "",
 									"text" : "gate 2 1"
 								}
@@ -2699,7 +2733,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 111.5, 219.300049, 54.0, 22.0 ],
+									"patching_rect" : [ 72.0, 140.300049, 54.0, 22.0 ],
 									"style" : "",
 									"text" : "gate 1 0"
 								}
@@ -2714,7 +2748,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 279.5, 347.300049, 405.0, 62.0 ],
+									"patching_rect" : [ 674.5, 210.800049, 405.0, 62.0 ],
 									"style" : "",
 									"text" : "j.parameter cullplane.1/coordinate @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 3 @description \"coordinate for cullplane.1\" @default 0 -1.1 1 -1 -1.27 6 1 -1.27 6",
 									"varname" : "cullplane.1/coordinate[1]"
@@ -2729,7 +2763,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 85.0, 40.0, 30.0, 30.0 ],
+									"patching_rect" : [ 447.0, 10.0, 30.0, 30.0 ],
 									"style" : "",
 									"varname" : "u840001808"
 								}
@@ -2743,7 +2777,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 146.5, 40.0, 30.0, 30.0 ],
+									"patching_rect" : [ 490.5, 10.0, 30.0, 30.0 ],
 									"style" : "",
 									"varname" : "u649001807"
 								}
@@ -2756,7 +2790,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 43.0, 1412.300049, 30.0, 30.0 ],
+									"patching_rect" : [ 10.5, 837.300049, 30.0, 30.0 ],
 									"style" : "",
 									"varname" : "u213001809"
 								}
@@ -2828,6 +2862,7 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.291347, 0.552367, 0.30042, 1.0 ],
 									"destination" : [ "obj-134", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -2931,6 +2966,7 @@
 									"destination" : [ "obj-100", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"midpoints" : [ 456.5, 117.650024, 55.0, 117.650024 ],
 									"source" : [ "obj-132", 0 ]
 								}
 
@@ -2940,6 +2976,7 @@
 									"destination" : [ "obj-99", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"midpoints" : [ 500.0, 122.650024, 116.5, 122.650024 ],
 									"source" : [ "obj-133", 0 ]
 								}
 
@@ -2950,6 +2987,24 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-27", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-16", 0 ]
 								}
 
 							}
@@ -3144,6 +3199,42 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-32", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-35", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-76", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-6", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -3307,12 +3398,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 59.0, 104.0, 582.0, 568.0 ],
+						"rect" : [ 794.0, 149.0, 582.0, 568.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3348,9 +3439,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 104.0, 77.599976, 304.0, 62.0 ],
+									"patching_rect" : [ 104.0, 77.599976, 310.5, 62.0 ],
 									"style" : "",
-									"text" : "j.parameter depth/max @type decimal @range 0 10 @clipmode none @ramp/drive Max @ramp/function linear @dataspace distance @unit meters @priority 2 @default 3.5 @description \"Set min depth distance\"",
+									"text" : "j.parameter depth/max @type decimal @range 0 10 @clipmode both @ramp/drive Max @ramp/function linear @dataspace distance @unit meters @priority 2 @default 3.5 @description \"Set min depth distance\"",
 									"varname" : "depth/min[1]"
 								}
 
@@ -3418,7 +3509,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 49.5, 12.0, 365.0, 62.0 ],
 									"style" : "",
-									"text" : "j.parameter depth/min @type decimal @range 0 10 @clipmode none @ramp/drive Max @ramp/function linear @dataspace distance @unit meters @priority 1 @default 1 @description \"Set min depth distance\"",
+									"text" : "j.parameter depth/min @type decimal @range 0 10 @clipmode both @ramp/drive Max @ramp/function linear @dataspace distance @unit meters @priority 1 @default 1 @description \"Set min depth distance\"",
 									"varname" : "depth/min"
 								}
 
@@ -3905,12 +3996,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 339.0, 291.0, 775.0, 503.0 ],
+						"rect" : [ 631.0, 318.0, 775.0, 503.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3975,7 +4066,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -4626,41 +4717,41 @@
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
-				"patcherrelativepath" : "../../../Dependencies",
+				"patcherrelativepath" : "../../Dependencies",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.parameterCreate.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"patcherrelativepath" : "../../../../../Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
+				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.thisparentpatcher.js",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../../Max 7/Packages/Jamoma/javascript",
+				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.parameterCreatePresetDoc.js",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../../Max 7/Packages/Jamoma/javascript",
+				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_cullplane.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/OpenGL/rdp_kinectmask",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_kinectmask",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jit.gl.slab.rdp_kinectmask_blur.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/OpenGL/rdp_kinectmask",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_kinectmask",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -4712,7 +4803,39 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0
+		"embedsnapshot" : 0,
+		"styles" : [ 			{
+				"name" : "AudioStatus_Menu",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "rdp-jamoma-style",
+				"default" : 				{
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+ ]
 	}
 
 }
