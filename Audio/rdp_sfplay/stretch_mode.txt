@@ -1,0 +1,6 @@
+basic, 0;
+monophonic, 1;
+rythmic, 2;
+general, 3;
+extremestretch, 4;
+efficient, 5;
