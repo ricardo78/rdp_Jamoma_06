@@ -33,7 +33,7 @@ http://jmpelletier.com/freenect/
 
 
 Thanks to:
-Code modified from by Zachary Seldess, KAUST,  KVL_Kinect_Tracker
+Zachary Seldess, KAUST,  KVL_Kinect_Tracker
 http://www.zacharyseldess.com
 
 HC Gilje
