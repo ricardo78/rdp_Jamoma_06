@@ -119,7 +119,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 77.0, 278.0, 1343.0, 739.0 ],
+						"rect" : [ 145.0, 79.0, 1343.0, 739.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -361,9 +361,9 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_gl_texture" ],
-									"patching_rect" : [ 62.0, 509.0, 219.0, 22.0 ],
+									"patching_rect" : [ 62.0, 509.0, 182.0, 22.0 ],
 									"style" : "",
-									"text" : "jit.gl.slab.rdp_kinectmask_blur Jamoma"
+									"text" : "jit.gl.slab.Jamoma_blur Jamoma"
 								}
 
 							}
@@ -377,9 +377,9 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_gl_texture" ],
-									"patching_rect" : [ 62.0, 561.0, 219.0, 22.0 ],
+									"patching_rect" : [ 62.0, 561.0, 182.0, 22.0 ],
 									"style" : "",
-									"text" : "jit.gl.slab.rdp_kinectmask_blur Jamoma"
+									"text" : "jit.gl.slab.Jamoma_blur Jamoma"
 								}
 
 							}
@@ -1101,7 +1101,7 @@
 									"destination" : [ "obj-24", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 466.5, 540.0, 171.5, 540.0 ],
+									"midpoints" : [ 466.5, 540.0, 153.0, 540.0 ],
 									"source" : [ "obj-5", 0 ]
 								}
 
@@ -1120,7 +1120,7 @@
 									"destination" : [ "obj-24", 2 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 377.5, 554.0, 271.5, 554.0 ],
+									"midpoints" : [ 377.5, 554.0, 234.5, 554.0 ],
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -1130,7 +1130,7 @@
 									"destination" : [ "obj-28", 2 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 377.5, 502.0, 271.5, 502.0 ],
+									"midpoints" : [ 377.5, 502.0, 234.5, 502.0 ],
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -1169,7 +1169,7 @@
 									"destination" : [ "obj-28", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 466.5, 490.0, 171.5, 490.0 ],
+									"midpoints" : [ 466.5, 490.0, 153.0, 490.0 ],
 									"source" : [ "obj-8", 0 ]
 								}
 
@@ -4750,9 +4750,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jit.gl.slab.rdp_kinectmask_blur.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_kinectmask",
-				"patcherrelativepath" : ".",
+				"name" : "jit.gl.slab.Jamoma_blur.maxpat",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_gl_blur",
+				"patcherrelativepath" : "../rdp_gl_blur",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4825,10 +4825,10 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
