@@ -9,10 +9,11 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 195.0, 279.0, 626.0, 490.0 ],
+		"rect" : [ 421.0, 79.0, 626.0, 490.0 ],
+		"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
-		"default_fontsize" : 11.934731,
+		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
 		"gridonopen" : 1,
@@ -38,14 +39,12 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 11.934731,
 					"id" : "obj-20",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 453.0, 46.0, 93.0, 22.0 ],
+					"patching_rect" : [ 477.0, 95.0, 94.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend drawto"
 				}
@@ -59,7 +58,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 432.0, 15.0, 25.0, 25.0 ],
+					"patching_rect" : [ 477.0, 4.0, 25.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -86,9 +85,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 12.0, 423.0, 125.0, 22.0 ],
+					"patching_rect" : [ 12.0, 423.0, 132.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.slab #1 @adapt1"
+					"text" : "jit.gl.slab #1 @adapt 1 "
 				}
 
 			}
@@ -102,9 +101,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 12.0, 389.0, 125.0, 22.0 ],
+					"patching_rect" : [ 12.0, 389.0, 129.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.slab #1 @adapt1"
+					"text" : "jit.gl.slab #1 @adapt 1"
 				}
 
 			}
@@ -118,9 +117,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 12.0, 355.0, 125.0, 22.0 ],
+					"patching_rect" : [ 12.0, 355.0, 129.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.slab #1 @adapt1"
+					"text" : "jit.gl.slab #1 @adapt 1"
 				}
 
 			}
@@ -134,9 +133,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 12.0, 321.0, 125.0, 22.0 ],
+					"patching_rect" : [ 12.0, 321.0, 129.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.slab #1 @adapt1"
+					"text" : "jit.gl.slab #1 @adapt 1"
 				}
 
 			}
@@ -150,9 +149,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 12.0, 287.0, 125.0, 22.0 ],
+					"patching_rect" : [ 12.0, 287.0, 129.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.slab #1 @adapt1"
+					"text" : "jit.gl.slab #1 @adapt 1"
 				}
 
 			}
@@ -179,7 +178,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 41.0, 112.0, 131.0, 35.0 ],
+					"patching_rect" : [ 504.0, 26.0, 131.0, 35.0 ],
 					"style" : "",
 					"text" : "loadmess sendshader read cf.gaussian.2p.jxs"
 				}
@@ -195,9 +194,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 12.0, 253.0, 125.0, 22.0 ],
+					"patching_rect" : [ 12.0, 253.0, 129.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.slab #1 @adapt1"
+					"text" : "jit.gl.slab #1 @adapt 1"
 				}
 
 			}
@@ -299,7 +298,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 91.0, 9.0, 25.0, 25.0 ],
+					"patching_rect" : [ 165.0, 4.0, 25.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -313,7 +312,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 107.0, 62.0, 167.0, 22.0 ],
+					"patching_rect" : [ 177.0, 60.0, 167.0, 22.0 ],
 					"style" : "",
 					"text" : "sendshader param width 0 $1"
 				}
@@ -328,7 +327,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 91.0, 41.0, 167.0, 22.0 ],
+					"patching_rect" : [ 161.0, 39.0, 167.0, 22.0 ],
 					"style" : "",
 					"text" : "sendshader param width $1 0"
 				}
@@ -340,7 +339,7 @@
 					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 100.5, 100.0, 175.0, 100.0, 175.0, 250.0, 21.5, 250.0 ],
+					"midpoints" : [ 170.5, 100.0, 175.0, 100.0, 175.0, 250.0, 21.5, 250.0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -476,7 +475,7 @@
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 116.5, 96.0, 179.0, 96.0, 179.0, 284.0, 21.5, 284.0 ],
+					"midpoints" : [ 186.5, 96.0, 179.0, 96.0, 179.0, 284.0, 21.5, 284.0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -558,7 +557,7 @@
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 100.5, 35.0, 269.5, 35.0 ],
+					"midpoints" : [ 174.5, 35.0, 269.5, 35.0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
