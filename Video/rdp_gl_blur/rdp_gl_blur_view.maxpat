@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 347.0, 184.0, 670.0, 574.0 ],
+		"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,64 +38,15 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"activedialcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
-					"activeneedlecolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-					"bordercolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-					"focusbordercolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
-					"fontface" : 0,
-					"fontsize" : 9.0,
-					"id" : "obj-14",
-					"maxclass" : "live.dial",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 345.5, 148.61438, 44.0, 45.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 88.889931, 22.0, 44.0, 45.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "Fade",
-							"parameter_shortname" : "Fade",
-							"parameter_type" : 0,
-							"parameter_mmin" : -3.0,
-							"parameter_mmax" : 3.0,
-							"parameter_unitstyle" : 1
-						}
-
-					}
-,
-					"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
-					"tribordercolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-					"varname" : "Fade"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
-					"id" : "obj-9",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 426.0, 156.61438, 81.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote fade"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 426.0, 92.61438, 107.0, 22.0 ],
+					"patching_rect" : [ 426.0, 92.61438, 121.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote threshold"
+					"text" : "j.remote blur/amount"
 				}
 
 			}
@@ -115,14 +66,13 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 345.5, 88.61438, 44.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.848755, 22.0, 44.0, 45.0 ],
+					"presentation_rect" : [ 5.848755, 21.0, 44.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "threshold",
-							"parameter_shortname" : "Threshold",
+							"parameter_longname" : "amount",
+							"parameter_shortname" : "amount",
 							"parameter_type" : 0,
-							"parameter_mmin" : -3.0,
-							"parameter_mmax" : 3.0,
+							"parameter_mmax" : 1.0,
 							"parameter_unitstyle" : 1
 						}
 
@@ -130,7 +80,7 @@
 ,
 					"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
 					"tribordercolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-					"varname" : "threshold"
+					"varname" : "amount"
 				}
 
 			}
@@ -152,7 +102,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 297.0, 199.0, 247.0, 173.0 ],
+						"rect" : [ 268.0, 512.0, 247.0, 173.0 ],
 						"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -181,19 +131,8 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"title" : "no_model_address",
+						"visible" : 1,
 						"boxes" : [ 							{
-								"box" : 								{
-									"id" : "obj-22",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 692.0, 254.0, 67.0, 22.0 ],
-									"style" : "",
-									"text" : "print blend"
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"fontsize" : 10.0,
 									"id" : "obj-17",
@@ -235,7 +174,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 632.394043, 213.5, 100.0, 20.0 ],
+									"patching_rect" : [ 873.5, 215.5, 100.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 127.0, 127.763885, 116.0, 20.0 ],
 									"style" : "",
@@ -256,7 +195,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 741.394043, 213.5, 126.0, 22.0 ],
+									"patching_rect" : [ 730.394043, 215.5, 126.0, 22.0 ],
 									"style" : "",
 									"text" : "j.remote blend/enable"
 								}
@@ -963,15 +902,6 @@
 								}
 
 							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-22", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-90", 0 ]
-								}
-
-							}
  ],
 						"styles" : [ 							{
 								"name" : "AudioStatus_Menu",
@@ -1036,7 +966,7 @@
 					"patching_rect" : [ 2.0, 4.0, 300.0, 70.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, -0.5, 150.0, 70.0 ],
-					"text" : "/no_..ess",
+					"text" : "/no_model_address",
 					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 				}
 
@@ -1077,9 +1007,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 2.0, 167.61438, 215.0, 22.0 ],
+					"patching_rect" : [ 2.0, 167.61438, 213.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view @description \"interface for glue\""
+					"text" : "j.view @description \"interface for blur\""
 				}
 
 			}
@@ -1090,15 +1020,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-14", 0 ]
 				}
 
 			}
@@ -1138,19 +1059,9 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
  ],
 		"parameters" : 		{
-			"obj-14" : [ "Fade", "Fade", 0 ],
-			"obj-32" : [ "threshold", "Threshold", 0 ]
+			"obj-32" : [ "amount", "amount", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

@@ -38,6 +38,48 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 700.5, 449.0, 94.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend enable"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+					"id" : "obj-30",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 700.5, 398.0, 243.0, 49.0 ],
+					"style" : "",
+					"text" : "j.parameter enable @type boolean @description \"Enable drawing.\" @default 1 @priority 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 121.5, 485.0, 153.0, 22.0 ],
+					"style" : "",
+					"text" : "j.out 1 @type jit_gl_texture"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -113,7 +155,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 507.642822, 228.0, 202.357178, 49.0 ],
+					"patching_rect" : [ 507.642822, 228.0, 203.0, 49.0 ],
 					"style" : "",
 					"text" : "j.parameter colormode @type string @clipmode none @priority 6 @default uyvy",
 					"varname" : "colormode"
@@ -220,9 +262,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 134.5, 164.0, 351.0, 62.0 ],
+					"patching_rect" : [ 134.5, 164.0, 349.0, 62.0 ],
 					"style" : "",
-					"text" : "j.parameter fade @type decimal @range -1000 1000 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 2 @default 1 @description \"Setting the threshold of the image\"",
+					"text" : "j.parameter fade @type decimal @range -3. 3. @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 2 @default 1 @description \"Setting the threshold of the image\"",
 					"varname" : "threshold[1]"
 				}
 
@@ -309,7 +351,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 121.5, 492.0, 25.0, 25.0 ],
+					"patching_rect" : [ 121.5, 513.0, 25.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -462,14 +504,14 @@
 				"box" : 				{
 					"color" : [ 0.803922, 0.529412, 0.823529, 1.0 ],
 					"id" : "obj-21",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 121.5, 84.68457, 487.0, 49.0 ],
+					"patching_rect" : [ 121.5, 66.18457, 375.0, 62.0 ],
 					"style" : "",
-					"text" : "j.parameter threshold @type decimal @range -1000 1000 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 3 @default 1 @description \"Setting the threshold of the image\"",
+					"text" : "j.parameter threshold @type decimal @range -3. 3. @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 3 @default 1 @description \"Setting the threshold of the image\"",
 					"varname" : "threshold"
 				}
 
@@ -580,6 +622,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -594,6 +645,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 22.0, 449.842285, 131.0, 449.842285 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
@@ -656,7 +716,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-24", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
@@ -678,6 +738,16 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 710.0, 490.0, 689.0, 490.0, 689.0, 404.0, 131.0, 404.0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
@@ -739,6 +809,10 @@
 			}
 , 			{
 				"name" : "j.node.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.out.mxo",
 				"type" : "iLaX"
 			}
  ],
