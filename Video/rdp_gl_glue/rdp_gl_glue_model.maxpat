@@ -596,7 +596,7 @@
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 564.642822, 331.0, 131.0, 331.0 ],
+					"midpoints" : [ 564.642822, 336.0, 131.0, 336.0 ],
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -615,7 +615,7 @@
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 745.0, 330.0, 131.0, 330.0 ],
+					"midpoints" : [ 745.0, 336.0, 131.0, 336.0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -718,7 +718,7 @@
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 509.5, 330.0, 131.0, 330.0 ],
+					"midpoints" : [ 509.5, 336.0, 131.0, 336.0 ],
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -746,7 +746,7 @@
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 727.5, 329.0, 131.0, 329.0 ],
+					"midpoints" : [ 727.5, 336.0, 131.0, 336.0 ],
 					"source" : [ "obj-40", 0 ]
 				}
 
@@ -793,7 +793,7 @@
 					"destination" : [ "obj-6", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 858.0, 330.5, 131.0, 330.5 ],
+					"midpoints" : [ 858.0, 336.5, 131.0, 336.5 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -885,11 +885,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ]
+					"fontface" : [ 0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",

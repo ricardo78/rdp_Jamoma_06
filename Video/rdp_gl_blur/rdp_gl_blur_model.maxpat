@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 204.0, 79.0, 1082.0, 584.0 ],
+		"rect" : [ 204.0, 79.0, 1177.0, 654.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1154,10 +1154,10 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,

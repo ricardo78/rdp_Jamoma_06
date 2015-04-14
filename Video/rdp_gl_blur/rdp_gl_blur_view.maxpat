@@ -83,6 +83,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"title" : "no_model_address",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgcolor" : [ 0.54902, 0.545098, 0.552941, 0.0 ],
@@ -132,18 +133,6 @@
 									"patching_rect" : [ 727.666687, 40.574158, 127.0, 22.0 ],
 									"style" : "",
 									"text" : "j.remote depth/enable"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-22",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 692.0, 254.0, 67.0, 22.0 ],
-									"style" : "",
-									"text" : "print blend"
 								}
 
 							}
@@ -935,15 +924,6 @@
 								}
 
 							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-22", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-90", 0 ]
-								}
-
-							}
  ],
 						"styles" : [ 							{
 								"name" : "AudioStatus_Menu",
@@ -966,11 +946,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1023,7 +1003,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 345.5, 88.61438, 44.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.848755, 21.0, 44.0, 45.0 ],
+					"presentation_rect" : [ 53.0, 21.0, 44.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "amount",
@@ -1200,11 +1180,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
