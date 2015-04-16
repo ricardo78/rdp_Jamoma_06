@@ -1010,9 +1010,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 303.0, 113.0, 388.0, 22.0 ],
+									"patching_rect" : [ 303.0, 113.0, 473.0, 22.0 ],
 									"style" : "",
-									"text" : "j.parameter position @type array @description \"position of the window\""
+									"text" : "j.parameter position @type array @description \"position of the window\" @default 10 10"
 								}
 
 							}
@@ -1037,9 +1037,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 220.0, 83.5, 348.0, 22.0 ],
+									"patching_rect" : [ 220.0, 83.5, 446.0, 22.0 ],
 									"style" : "",
-									"text" : "j.parameter size @type array @description \"size of the window\""
+									"text" : "j.parameter size @type array @description \"size of the window\" @default 320 240"
 								}
 
 							}
@@ -1613,7 +1613,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 621.0, 507.25, 107.0, 76.0 ],
+					"patching_rect" : [ 621.0, 507.25, 111.0, 76.0 ],
 					"style" : "",
 					"text" : "j.model @tags what @description \"a model for rWindow - rendering\""
 				}
@@ -2295,9 +2295,9 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"fontface" : [ 0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
