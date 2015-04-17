@@ -217,7 +217,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 104.0, 860.0, 473.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -983,9 +983,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 387.0, 137.0, 524.0, 22.0 ],
+									"patching_rect" : [ 387.0, 137.0, 585.0, 22.0 ],
 									"style" : "",
-									"text" : "j.parameter grow @type boolean @description \"allow to resize the window from the bottom right\""
+									"text" : "j.parameter grow @type boolean @description \"allow to resize the window from the bottom right\" @default 1"
 								}
 
 							}
@@ -1092,9 +1092,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 9.5, 10.0, 446.0, 22.0 ],
+									"patching_rect" : [ 9.5, 10.0, 507.0, 22.0 ],
 									"style" : "",
-									"text" : "j.parameter interpolate @type boolean @description \"Interpolate the video output\""
+									"text" : "j.parameter interpolate @type boolean @description \"Interpolate the video output\" @default 1"
 								}
 
 							}
@@ -1628,9 +1628,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 449.825439, 91.0, 296.174561, 35.0 ],
+					"patching_rect" : [ 449.825439, 91.0, 399.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter cullface @type string @clipmode none @description \"render what is visable\"",
+					"text" : "j.parameter cullface @type string @clipmode none @description \"render what is visable\" @default off",
 					"varname" : "cullface"
 				}
 
@@ -1711,14 +1711,14 @@
 				"box" : 				{
 					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-34",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 498.0, 132.0, 248.0, 49.0 ],
+					"patching_rect" : [ 498.0, 132.0, 354.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter fsaa @type boolean @description \"Enable Full-Scene Anti-Aliased drawing.\" @default 0"
+					"text" : "j.parameter fsaa @type boolean @description \"Enable Full-Scene Anti-Aliased drawing.\" @default 1"
 				}
 
 			}
@@ -2297,9 +2297,9 @@
 				"default" : 				{
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ]
 				}
 ,
 				"parentstyle" : "",
