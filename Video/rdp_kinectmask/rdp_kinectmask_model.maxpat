@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 97.0, 495.0, 911.0, 369.0 ],
+		"rect" : [ 135.0, 331.0, 911.0, 369.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -4014,9 +4014,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 235.0, 136.0, 506.0, 49.0 ],
+									"patching_rect" : [ 235.0, 136.0, 535.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter camera/index @type integer @clipmode low @range 0 100 @ramp/drive None @dataspace none @priority 3 @default 1 @description \"If you have more then one kinect you can index each camera here\"",
+									"text" : "j.parameter camera/index @type integer @clipmode low @range 0 100 @ramp/drive None @dataspace none @priority 1 @default 1 @description \"If you have more then one kinect you can index each camera here\"",
 									"varname" : "camera/index"
 								}
 
@@ -4096,7 +4096,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -4318,14 +4318,13 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-444",
-									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 27.157471, 46.400024, 565.0, 35.0 ],
+									"patching_rect" : [ 27.157471, 46.400024, 666.0, 22.0 ],
 									"style" : "",
-									"text" : "j.parameter camera/active @type boolean @clipmode none @priority 1 @default 0 @description \"Turns camera on and off\"",
+									"text" : "j.parameter camera/active @type boolean @clipmode none @priority 3 @default 0 @description \"Turns camera on and off\"",
 									"varname" : "camera/active"
 								}
 
@@ -4540,9 +4539,9 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ]
 								}
@@ -4910,9 +4909,9 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ]
 				}
