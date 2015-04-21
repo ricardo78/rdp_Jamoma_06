@@ -4014,42 +4014,10 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 235.0, 136.0, 535.0, 49.0 ],
+									"patching_rect" : [ 173.157471, 128.0, 535.0, 49.0 ],
 									"style" : "",
 									"text" : "j.parameter camera/index @type integer @clipmode low @range 0 100 @ramp/drive None @dataspace none @priority 1 @default 1 @description \"If you have more then one kinect you can index each camera here\"",
 									"varname" : "camera/index"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 13.0,
-									"id" : "obj-33",
-									"maxclass" : "number",
-									"minimum" : 1,
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 162.712097, 142.977097, 53.0, 23.0 ],
-									"style" : "",
-									"triscale" : 0.9
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 13.0,
-									"id" : "obj-32",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 162.984863, 169.0, 57.0, 23.0 ],
-									"style" : "",
-									"text" : "open $1"
 								}
 
 							}
@@ -4074,7 +4042,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 90.157471, 131.900024, 50.0, 22.0 ],
+									"patching_rect" : [ 104.157471, 120.900024, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -4083,7 +4051,7 @@
 								"box" : 								{
 									"id" : "obj-447",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
+									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patcher" : 									{
@@ -4125,12 +4093,39 @@
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
 												"box" : 												{
+													"comment" : "",
+													"id" : "obj-3",
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 284.0, 92.0, 30.0, 30.0 ],
+													"presentation_rect" : [ 133.419678, 40.0, 0.0, 0.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-2",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 112.350952, 214.0, 190.649048, 22.0 ],
+													"style" : "",
+													"text" : "join 2 @triggers 0"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-441",
 													"maxclass" : "newobj",
 													"numinlets" : 3,
 													"numoutlets" : 3,
 													"outlettype" : [ "bang", "bang", "" ],
-													"patching_rect" : [ 84.419678, 100.0, 46.0, 22.0 ],
+													"patching_rect" : [ 50.0, 115.0, 143.701904, 22.0 ],
 													"style" : "",
 													"text" : "sel 0 1"
 												}
@@ -4145,7 +4140,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 50.0, 145.0, 42.0, 23.0 ],
+													"patching_rect" : [ 50.0, 170.0, 42.0, 23.0 ],
 													"style" : "",
 													"text" : "close"
 												}
@@ -4160,7 +4155,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 97.350952, 145.0, 40.0, 23.0 ],
+													"patching_rect" : [ 112.350952, 170.0, 40.0, 23.0 ],
 													"style" : "",
 													"text" : "open"
 												}
@@ -4174,7 +4169,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "int" ],
-													"patching_rect" : [ 84.419678, 40.0, 30.0, 30.0 ],
+													"patching_rect" : [ 50.0, 41.0, 30.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -4186,13 +4181,31 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 67.675476, 228.0, 30.0, 30.0 ],
+													"patching_rect" : [ 50.0, 297.0, 30.0, 30.0 ],
 													"style" : ""
 												}
 
 											}
  ],
 										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-446", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-2", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-2", 1 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-3", 0 ]
+												}
+
+											}
+, 											{
 												"patchline" : 												{
 													"destination" : [ "obj-45", 0 ],
 													"disabled" : 0,
@@ -4221,7 +4234,7 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-446", 0 ],
+													"destination" : [ "obj-2", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
 													"source" : [ "obj-45", 0 ]
@@ -4276,7 +4289,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 90.157471, 158.5, 39.0, 22.0 ],
+									"patching_rect" : [ 104.157471, 147.5, 39.0, 22.0 ],
 									"style" : "",
 									"text" : "tilt $1"
 								}
@@ -4307,7 +4320,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 90.157471, 89.900024, 604.0, 35.0 ],
+									"patching_rect" : [ 104.157471, 78.900024, 604.0, 35.0 ],
 									"style" : "",
 									"text" : "j.parameter camera/tilt @type integer @range -30 30 @clipmode both @ramp/drive Max @ramp/function linear @dataspace angle @unit degree @default 0 @description \"Angle of camera\" @priority 2",
 									"varname" : "camera/tilt"
@@ -4430,27 +4443,8 @@
 									"destination" : [ "obj-178", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 99.657471, 196.25, 16.5, 196.25 ],
+									"midpoints" : [ 113.657471, 196.25, 16.5, 196.25 ],
 									"source" : [ "obj-25", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-178", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"midpoints" : [ 172.484863, 201.5, 16.5, 201.5 ],
-									"source" : [ "obj-32", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-32", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-33", 0 ]
 								}
 
 							}
@@ -4510,7 +4504,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-33", 0 ],
+									"destination" : [ "obj-447", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-6", 0 ]
@@ -4539,11 +4533,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"fontface" : [ 0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ]
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4909,11 +4903,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"fontface" : [ 0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ]
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
