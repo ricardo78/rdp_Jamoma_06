@@ -152,7 +152,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"title" : "no_model_address",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgcolor" : [ 0.54902, 0.545098, 0.552941, 0.0 ],
@@ -745,7 +744,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 400.0, 27.574158, 73.0, 48.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 0.0, 248.774353, 42.5 ],
+									"presentation_rect" : [ 0.0, 0.0, 251.774353, 42.5 ],
 									"proportion" : 0.39,
 									"pt1" : [ 0.49505, 0.86087 ],
 									"pt2" : [ 0.5, 0.95 ],
@@ -766,7 +765,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 168.833328, 14.574158, 73.0, 48.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 0.0, 42.875, 248.774353, 153.0 ],
+									"presentation_rect" : [ 0.0, 42.875, 249.774353, 153.0 ],
 									"proportion" : 0.39,
 									"pt1" : [ 0.49505, 0.86087 ],
 									"pt2" : [ 0.5, 0.95 ],
@@ -1015,11 +1014,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"fontface" : [ 0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1134,7 +1133,7 @@
 					"patching_rect" : [ 206.0, 19.0, 300.0, 70.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, -0.5, 150.0, 70.0 ],
-					"text" : "/no_model_address",
+					"text" : "/no_..ess",
 					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 				}
 
@@ -1265,9 +1264,9 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-2" : [ "height", "Height", 0 ],
 			"obj-4" : [ "sum", "Sum", 0 ],
-			"obj-32" : [ "width", "Width", 0 ],
-			"obj-2" : [ "height", "Height", 0 ]
+			"obj-32" : [ "width", "Width", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
