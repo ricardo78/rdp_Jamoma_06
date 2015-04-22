@@ -178,7 +178,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 32.0, 471.0, 59.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 105.0, 45.0, 31.0, 18.0 ],
+					"presentation_rect" : [ 105.0, 46.0, 31.0, 18.0 ],
 					"style" : "",
 					"text" : "Size",
 					"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
@@ -198,7 +198,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 79.0, 501.499969, 48.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 185.0, 43.0, 43.0, 20.0 ],
+					"presentation_rect" : [ 185.0, 44.0, 43.0, 20.0 ],
 					"style" : "",
 					"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
 					"tricolor" : [ 0.882353, 0.988235, 1.0, 1.0 ]
@@ -217,7 +217,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 25.0, 501.499969, 48.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 140.0, 43.0, 43.0, 20.0 ],
+					"presentation_rect" : [ 140.0, 44.0, 43.0, 20.0 ],
 					"style" : "",
 					"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
 					"tricolor" : [ 0.882353, 0.988235, 1.0, 1.0 ]
@@ -1910,11 +1910,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"fontface" : [ 0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ]
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1991,7 +1991,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 425.0, 101.0, 63.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 104.0, 23.0, 35.032974, 41.0 ],
+					"presentation_rect" : [ 104.0, 23.0, 35.032974, 20.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0,
 					"style" : ""
@@ -2010,7 +2010,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 440.0, 116.0, 63.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 140.0, 23.0, 95.032974, 41.0 ],
+					"presentation_rect" : [ 140.0, 23.0, 95.032974, 20.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0,
 					"style" : ""
@@ -2030,6 +2030,44 @@
 					"patching_rect" : [ 455.0, 131.0, 63.0, 53.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 52.0, 23.0, 51.032974, 41.0 ],
+					"proportion" : 0.39,
+					"rounded" : 0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"grad1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+					"grad2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"id" : "obj-7",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 455.0, 131.0, 63.0, 53.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 140.0, 44.0, 95.032974, 20.0 ],
+					"proportion" : 0.39,
+					"rounded" : 0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"grad1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
+					"grad2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"id" : "obj-8",
+					"maxclass" : "panel",
+					"mode" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 440.0, 116.0, 63.0, 53.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 104.0, 44.0, 35.032974, 20.0 ],
 					"proportion" : 0.39,
 					"rounded" : 0,
 					"style" : ""
@@ -2310,11 +2348,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"fontface" : [ 0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ]
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
