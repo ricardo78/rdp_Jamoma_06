@@ -128,7 +128,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 289.0, 166.0, 191.0, 29.0 ],
 					"style" : "",
-					"text" : "rdp_gl_convolve",
+					"text" : "rdp_gl_bleach",
 					"textcolor" : [ 0.4, 0.4, 0.4, 1.0 ],
 					"varname" : "name"
 				}
@@ -148,7 +148,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 299.338348, 187.0, 190.957382, 19.0 ],
 					"style" : "",
-					"text" : "A model for convoltion",
+					"text" : "A model for bleaching image",
 					"textcolor" : [ 0.4, 0.4, 0.4, 1.0 ],
 					"varname" : "description"
 				}
@@ -774,13 +774,14 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-6",
 					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 133.0, 121.0, 502.0, 35.0 ],
+					"patching_rect" : [ 91.0, 158.5, 502.0, 35.0 ],
 					"style" : "",
 					"text" : "j.parameter bleach/amount @type decimal @range 0. 10. @clipmode low @ramp/drive Max @ramp/function linear @dataspace none @default 0",
 					"varname" : "bleach/amount"
@@ -945,11 +946,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ]
+					"fontface" : [ 0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
