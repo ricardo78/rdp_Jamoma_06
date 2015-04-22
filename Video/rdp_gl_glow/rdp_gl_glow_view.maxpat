@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 216.0, 352.0, 640.0, 480.0 ],
+		"rect" : [ 99.0, 124.0, 653.0, 678.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,62 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 371.0, 483.61438, 121.0, 22.0 ],
+					"style" : "",
+					"text" : "j.remote blur/amount"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 371.0, 413.11438, 141.0, 22.0 ],
+					"style" : "",
+					"text" : "j.remote glow/smoothing"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 371.0, 338.11438, 135.0, 22.0 ],
+					"style" : "",
+					"text" : "j.remote glow/tolerance"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 371.0, 249.11438, 116.0, 22.0 ],
+					"style" : "",
+					"text" : "j.remote glow/target"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -986,7 +1042,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 301.5, 270.61438, 44.0, 45.0 ],
+					"patching_rect" : [ 301.5, 237.61438, 44.0, 45.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 548.97229, 141.0, 44.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
@@ -1050,7 +1106,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 365.0, 138.61438, 125.0, 22.0 ],
+					"patching_rect" : [ 371.0, 167.61438, 125.0, 22.0 ],
 					"style" : "",
 					"text" : "j.remote glow/amount"
 				}
