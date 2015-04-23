@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 284.0, 143.0, 895.0, 625.0 ],
+		"rect" : [ 284.0, 143.0, 584.0, 511.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,12 +38,14 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-38",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 170.0, 189.5, 664.0, 22.0 ],
+					"patching_rect" : [ 191.0, 185.5, 389.0, 35.0 ],
 					"style" : "",
 					"text" : "j.parameter offset @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @default 1. 1.",
 					"varname" : "origin[1]"
@@ -57,7 +59,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 170.0, 231.0, 87.0, 22.0 ],
+					"patching_rect" : [ 191.0, 227.0, 87.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend offset"
 				}
@@ -70,7 +72,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 76.0, 231.0, 87.0, 22.0 ],
+					"patching_rect" : [ 97.0, 227.0, 87.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend origin"
 				}
@@ -84,7 +86,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 28.5, 142.5, 36.0, 22.0 ],
+					"patching_rect" : [ 49.5, 138.5, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "j.in 1"
 				}
@@ -97,7 +99,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 28.5, 389.0, 30.0, 30.0 ],
+					"patching_rect" : [ 49.5, 385.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -110,7 +112,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 28.5, 357.0, 153.0, 22.0 ],
+					"patching_rect" : [ 49.5, 353.0, 153.0, 22.0 ],
 					"style" : "",
 					"text" : "j.out 1 @type jit_gl_texture"
 				}
@@ -124,7 +126,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.5, 99.0, 30.0, 30.0 ],
+					"patching_rect" : [ 49.5, 95.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -136,7 +138,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 259.0, 389.0, 30.0, 30.0 ],
+					"patching_rect" : [ 280.0, 385.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -150,7 +152,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 259.0, 318.0, 107.0, 22.0 ],
+					"patching_rect" : [ 280.0, 314.0, 107.0, 22.0 ],
 					"style" : "",
 					"text" : "j.parameterCreate"
 				}
@@ -164,11 +166,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 53.0, 29.0, 209.0, 29.0 ],
+					"patching_rect" : [ 74.0, 25.0, 209.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 584.0, 381.0, 191.0, 29.0 ],
 					"style" : "",
-					"text" : "rdp_gl_convolve",
+					"text" : "rdp_gl_mirror",
 					"textcolor" : [ 0.4, 0.4, 0.4, 1.0 ],
 					"varname" : "name"
 				}
@@ -184,11 +186,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 53.0, 58.0, 206.0, 19.0 ],
+					"patching_rect" : [ 74.0, 54.0, 206.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 594.338379, 402.0, 190.957382, 19.0 ],
 					"style" : "",
-					"text" : "A model for convoltion",
+					"text" : "A model for mirroring",
 					"textcolor" : [ 0.4, 0.4, 0.4, 1.0 ],
 					"varname" : "description"
 				}
@@ -204,7 +206,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 10.0, 29.0, 43.0, 42.5 ],
+					"patching_rect" : [ 31.0, 25.0, 43.0, 42.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 547.0, 381.0, 40.0, 40.875 ],
 					"varname" : "logo"
@@ -222,9 +224,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 259.0, 357.0, 290.0, 22.0 ],
+					"patching_rect" : [ 280.0, 353.0, 296.0, 22.0 ],
 					"style" : "",
-					"text" : "j.model @tags what @description \"a model for what\""
+					"text" : "j.model @tags what @description \"a model for mirror\""
 				}
 
 			}
@@ -770,7 +772,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 263.5, 238.0, 83.0, 22.0 ],
+					"patching_rect" : [ 284.5, 234.0, 83.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -793,7 +795,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 28.5, 318.0, 202.0, 22.0 ],
+					"patching_rect" : [ 49.5, 314.0, 202.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.gl.slab Jamoma @file td.mirror.jxs"
 				}
@@ -808,7 +810,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 76.0, 273.0, 89.0, 22.0 ],
+					"patching_rect" : [ 97.0, 269.0, 89.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend param"
 				}
@@ -816,12 +818,14 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-37",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 76.0, 96.5, 665.0, 22.0 ],
+					"patching_rect" : [ 97.0, 138.5, 390.0, 35.0 ],
 					"style" : "",
 					"text" : "j.parameter origin @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @default 0. 0.",
 					"varname" : "origin"
@@ -861,7 +865,7 @@
 					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 273.0, 311.0, 38.0, 311.0 ],
+					"midpoints" : [ 294.0, 307.0, 59.0, 307.0 ],
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -871,7 +875,7 @@
 					"destination" : [ "obj-26", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 85.5, 310.5, 38.0, 310.5 ],
+					"midpoints" : [ 106.5, 306.5, 59.0, 306.5 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
