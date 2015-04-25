@@ -246,11 +246,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -775,6 +775,34 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 514.0, 227.0, 220.0, 22.0 ],
+									"style" : "",
+									"text" : "j.message corner/pin/reset @type array",
+									"varname" : "corner/pin/reset"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 514.0, 262.0, 114.0, 22.0 ],
+									"style" : "",
+									"text" : "0. 0. 1. 0. 0. 1. 1. 1."
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-15",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -1146,7 +1174,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 33.5, 353.0, 71.0, 22.0 ],
+									"patching_rect" : [ 33.5, 355.0, 71.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -1177,7 +1205,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1494,7 +1522,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 33.5, 265.0, 30.0, 30.0 ],
+									"patching_rect" : [ 33.5, 260.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -1508,7 +1536,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 33.5, 300.0, 416.0, 49.0 ],
+									"patching_rect" : [ 33.5, 302.0, 416.0, 49.0 ],
 									"style" : "",
 									"text" : "j.parameter corner/pin @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @description \"position of corners\" @default 0. 0. 1. 0. 0. 1. 1. 1.",
 									"varname" : "corner/pin"
@@ -1613,7 +1641,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 5.0, 8.0, 784.5, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter corner/color @type array @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace color @unit rgb @default 0.2 @description \"color for cornerpin handles\"",
+									"text" : "j.parameter corner/color @type array @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace color @unit rgb @default 1. 1. 1. 1. @description \"color for cornerpin handles\"",
 									"varname" : "corner/color"
 								}
 
@@ -1674,6 +1702,25 @@
 									"hidden" : 0,
 									"midpoints" : [ 43.0, 385.0, 14.5, 385.0 ],
 									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-46", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 523.5, 291.5, 43.0, 291.5 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
@@ -1791,11 +1838,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2996,6 +3043,10 @@
 				"name" : "j.in.mxo",
 				"type" : "iLaX"
 			}
+, 			{
+				"name" : "j.message.mxo",
+				"type" : "iLaX"
+			}
  ],
 		"embedsnapshot" : 0,
 		"styles" : [ 			{
@@ -3019,11 +3070,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"fontface" : [ 0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ]
 				}
 ,
 				"parentstyle" : "",
