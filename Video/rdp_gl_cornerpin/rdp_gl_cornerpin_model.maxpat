@@ -246,11 +246,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -593,9 +593,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 107.0, 45.0, 453.0, 35.0 ],
+									"patching_rect" : [ 107.0, 45.0, 456.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter mouse/report @type boolean @clipmode none @default 0 @description \"report mouse values from window\"",
+									"text" : "j.parameter mouse/report @type boolean @clipmode none @default 1 @description \"report mouse values from window\"",
 									"varname" : "mouse/enable[1]"
 								}
 
@@ -622,7 +622,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 234.0, 82.0, 326.0, 35.0 ],
+									"patching_rect" : [ 234.0, 82.0, 329.0, 35.0 ],
 									"style" : "",
 									"text" : "j.parameter mouse/enable @type boolean @clipmode none @default 1 @description \"enable mouse in window\"",
 									"varname" : "mouse/enable"
@@ -697,6 +697,38 @@
 									"source" : [ "obj-4", 0 ]
 								}
 
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "rdp-jamoma-style",
+								"default" : 								{
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
 							}
  ]
 					}
@@ -1170,6 +1202,38 @@
 													"source" : [ "obj-53", 0 ]
 												}
 
+											}
+ ],
+										"styles" : [ 											{
+												"name" : "AudioStatus_Menu",
+												"default" : 												{
+													"bgfillcolor" : 													{
+														"type" : "color",
+														"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+														"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+														"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+														"angle" : 270.0,
+														"proportion" : 0.39,
+														"autogradient" : 0
+													}
+
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "rdp-jamoma-style",
+												"default" : 												{
+													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"fontface" : [ 0 ],
+													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
 											}
  ]
 									}
@@ -1838,11 +1902,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2057,7 +2121,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 485.0, 200.5, 354.0, 49.0 ],
 					"style" : "",
-					"text" : "j.parameter position @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 4 @default 0. 0. 0. @description \"The 3D origin in the form x y z\"",
+					"text" : "j.parameter position @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @default 0. 0. 0. @description \"The 3D origin in the form x y z\"",
 					"varname" : "position"
 				}
 
@@ -3070,11 +3134,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
