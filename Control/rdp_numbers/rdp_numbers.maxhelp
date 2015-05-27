@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -37,26 +37,6 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
-				"box" : 				{
-					"args" : [ "@description", "A utility for generating random numbers" ],
-					"bgmode" : 1,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-21",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "jcom.maxhelpui.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 0.0, 0.0, 543.0, 70.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"bubble" : 1,
 					"fontname" : "Arial",
@@ -381,7 +361,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "rdp_numbers.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdpozo_Modules/Control/rdp_numbers",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Control/rdp_numbers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
