@@ -697,9 +697,9 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
@@ -1173,9 +1173,9 @@
 , 															{
 																"name" : "rdp-jamoma-style",
 																"default" : 																{
+																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																	"fontface" : [ 0 ],
-																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 																}
@@ -2012,9 +2012,9 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
+													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"fontface" : [ 0 ],
-													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 												}
@@ -2275,9 +2275,9 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
@@ -2631,9 +2631,9 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
@@ -3300,9 +3300,9 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
@@ -3693,6 +3693,19 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 192.466797, 329.0, 64.0, 22.0 ],
+					"style" : "",
+					"text" : "allnotesoff"
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -3848,6 +3861,16 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 201.966797, 354.880859, 20.772736, 354.880859 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -4076,9 +4099,9 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
