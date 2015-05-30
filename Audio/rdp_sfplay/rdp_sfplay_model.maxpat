@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 124.0, 131.0, 811.0, 710.0 ],
+		"rect" : [ 124.0, 131.0, 1151.0, 722.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,14 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "message",
+					"id" : "obj-5",
+					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 283.0, 319.682861, 50.0, 22.0 ],
-					"style" : ""
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 632.33667, 264.0, 68.0, 22.0 ],
+					"style" : "",
+					"text" : "route none"
 				}
 
 			}
@@ -89,7 +90,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 632.33667, 255.0, 139.0, 22.0 ],
+					"patching_rect" : [ 632.33667, 196.0, 139.0, 22.0 ],
 					"style" : "",
 					"text" : "j.node buffer @priority 1"
 				}
@@ -107,7 +108,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -164,7 +165,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -457,11 +458,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-													"fontface" : [ 0 ],
 													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+													"fontface" : [ 0 ],
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1296,11 +1297,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"fontface" : [ 0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1378,7 +1379,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 632.33667, 287.0, 586.0, 22.0 ],
+					"patching_rect" : [ 632.33667, 228.0, 586.0, 22.0 ],
 					"style" : "",
 					"text" : "j.parameter buffer/read @type string @clipmode none @description \"the string of the folder path\" @priority 2"
 				}
@@ -1457,7 +1458,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1864,7 +1865,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2547,11 +2548,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"fontface" : [ 0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2926,13 +2927,13 @@
 						"formantcorrection" : 0,
 						"loopend" : [ 0.0, "ms" ],
 						"loopstart" : [ 0.0, "ms" ],
-						"mode" : "general",
+						"mode" : "efficient",
 						"originallength" : [ 0.0, "ticks" ],
 						"originaltempo" : 120.0,
 						"phase" : [ 0.0, "ticks" ],
 						"pitchcorrection" : 0,
 						"quality" : "basic",
-						"timestretch" : [ 1 ]
+						"timestretch" : [ 0 ]
 					}
 ,
 					"style" : "",
@@ -3220,6 +3221,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-80", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 690.83667, 296.0, 641.83667, 296.0 ],
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-80", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3253,15 +3264,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 305.104919, 562.851501, 31.003372, 562.851501 ],
 					"source" : [ "obj-64", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-65", 0 ]
 				}
 
 			}
@@ -3413,7 +3415,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-80", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-89", 0 ]
@@ -3458,21 +3460,21 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-3" : [ "number[9]", "number", 0 ],
-			"obj-15" : [ "number", "number", 0 ]
+			"obj-15" : [ "number", "number", 0 ],
+			"obj-3" : [ "number[9]", "number", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "rdp_sampler_ducking.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdpozo_Modules/Audio/rdp_sampler",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Audio/rdp_sampler",
 				"patcherrelativepath" : "../rdp_sampler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RDPJamomaLogo.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdpozo_Modules/_Dependencies",
-				"patcherrelativepath" : "../../_Dependencies",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
+				"patcherrelativepath" : "../../Dependencies",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
@@ -3499,7 +3501,7 @@
 			}
 , 			{
 				"name" : "stretch_mode.txt",
-				"bootpath" : "~/Documents/Github_Development_Library/rdpozo_Modules/Audio/rdp_sfplay",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Audio/rdp_sfplay",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -3559,11 +3561,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"fontface" : [ 0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
