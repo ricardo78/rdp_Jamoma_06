@@ -38,59 +38,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-3",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 680.90741, 479.5, 61.0, 22.0 ],
-					"style" : "",
-					"text" : "output $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-9",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 496.90741, 479.5, 53.0, 22.0 ],
-					"style" : "",
-					"text" : "input $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-5",
-					"items" : [ "Ableton Push Live Port", ",", "Ableton Push User Port", ",", "to Max 1", ",", "to Max 2", ",", "<none>" ],
-					"maxclass" : "umenu",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 607.907471, 447.0, 165.0, 22.0 ],
-					"style" : ""
+					"numoutlets" : 0,
+					"patching_rect" : [ 398.25, 445.0, 45.0, 22.0 ],
+					"style" : "",
+					"text" : "print A"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-8",
-					"items" : [ "Ableton Push Live Port", ",", "Ableton Push User Port", ",", "from Max 1", ",", "from Max 2", ",", "<none>" ],
-					"maxclass" : "umenu",
+					"id" : "obj-3",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 422.40741, 447.0, 168.0, 22.0 ],
-					"style" : ""
+					"numoutlets" : 0,
+					"patching_rect" : [ 364.0, 493.0, 45.0, 22.0 ],
+					"style" : "",
+					"text" : "print B"
 				}
 
 			}
@@ -108,6 +74,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1978,9 +1945,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 665.0, 514.705811, 572.0, 35.0 ],
+									"patching_rect" : [ 665.0, 514.705811, 569.0, 35.0 ],
 									"style" : "",
-									"text" : "j.return out_dial.10 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
+									"text" : "j.return out/dial.10 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
 									"varname" : "rotary_1[10]"
 								}
 
@@ -1994,9 +1961,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 735.714355, 561.705811, 539.0, 35.0 ],
+									"patching_rect" : [ 735.714355, 561.705811, 536.0, 35.0 ],
 									"style" : "",
-									"text" : "j.return out_dial.11 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
+									"text" : "j.return out/dial.11 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
 									"varname" : "rotary_1[9]"
 								}
 
@@ -2514,9 +2481,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 598.0, 465.705811, 663.0, 22.0 ],
+									"patching_rect" : [ 598.0, 465.705811, 660.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_dial.9 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
+									"text" : "j.return out/dial.9 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
 									"varname" : "rotary_1[8]"
 								}
 
@@ -2775,9 +2742,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 530.0, 427.147095, 663.0, 22.0 ],
+									"patching_rect" : [ 530.0, 427.147095, 660.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_dial.8 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
+									"text" : "j.return out/dial.8 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
 									"varname" : "rotary_1[4]"
 								}
 
@@ -3036,9 +3003,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 463.999969, 396.125977, 663.0, 22.0 ],
+									"patching_rect" : [ 463.999969, 396.125977, 660.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_dial.7 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
+									"text" : "j.return out/dial.7 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
 									"varname" : "rotary_1[5]"
 								}
 
@@ -3297,9 +3264,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 390.999969, 364.10498, 663.0, 22.0 ],
+									"patching_rect" : [ 390.999969, 363.10498, 660.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_dial.6 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
+									"text" : "j.return out/dial.6 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
 									"varname" : "rotary_1[6]"
 								}
 
@@ -3558,9 +3525,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 324.999969, 334.083984, 663.0, 22.0 ],
+									"patching_rect" : [ 324.999969, 334.083984, 660.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_dial.5 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
+									"text" : "j.return out/dial.5 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
 									"varname" : "rotary_1[7]"
 								}
 
@@ -3819,9 +3786,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 255.0, 303.062988, 663.0, 22.0 ],
+									"patching_rect" : [ 255.0, 303.062988, 660.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_dial.4 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
+									"text" : "j.return out/dial.4 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
 									"varname" : "rotary_1[2]"
 								}
 
@@ -4080,9 +4047,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 189.0, 272.041992, 663.0, 22.0 ],
+									"patching_rect" : [ 189.0, 272.041992, 660.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_dial.3 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
+									"text" : "j.return out/dial.3 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
 									"varname" : "rotary_1[3]"
 								}
 
@@ -4341,9 +4308,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 116.0, 241.020996, 663.0, 22.0 ],
+									"patching_rect" : [ 116.0, 241.020996, 660.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_dial.2 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
+									"text" : "j.return out/dial.2 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
 									"varname" : "rotary_1[1]"
 								}
 
@@ -4602,9 +4569,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 210.0, 663.0, 22.0 ],
+									"patching_rect" : [ 50.0, 210.0, 660.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_dial.1 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
+									"text" : "j.return out/dial.1 @type integer @range 0 127 @clipmode both @repetitions/filter 1 @ramp/drive None @dataspace none",
 									"varname" : "rotary_1"
 								}
 
@@ -11092,9 +11059,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 687.75, 392.0, 409.0, 22.0 ],
+									"patching_rect" : [ 687.75, 392.0, 405.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.16 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.16 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[8]"
 								}
 
@@ -11107,9 +11074,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 666.25, 363.0, 409.0, 22.0 ],
+									"patching_rect" : [ 666.25, 363.0, 405.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.15 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.15 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[9]"
 								}
 
@@ -11122,9 +11089,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 634.25, 334.0, 409.0, 22.0 ],
+									"patching_rect" : [ 634.25, 334.0, 405.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.14 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.14 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[10]"
 								}
 
@@ -11137,9 +11104,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 616.25, 307.0, 409.0, 22.0 ],
+									"patching_rect" : [ 616.25, 307.0, 405.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.13 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.13 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[11]"
 								}
 
@@ -11152,9 +11119,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 596.25, 278.0, 409.0, 22.0 ],
+									"patching_rect" : [ 596.25, 278.0, 405.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.12 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.12 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[12]"
 								}
 
@@ -11167,9 +11134,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 563.25, 249.0, 408.0, 22.0 ],
+									"patching_rect" : [ 563.25, 249.0, 404.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.11 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.11 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[13]"
 								}
 
@@ -11182,9 +11149,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 542.0, 222.0, 409.0, 22.0 ],
+									"patching_rect" : [ 542.0, 222.0, 405.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.10 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.10 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[14]"
 								}
 
@@ -11197,9 +11164,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 516.25, 195.0, 402.0, 22.0 ],
+									"patching_rect" : [ 516.25, 195.0, 399.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.9 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.9 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[15]"
 								}
 
@@ -11211,7 +11178,7 @@
 									"numinlets" : 9,
 									"numoutlets" : 9,
 									"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
-									"patching_rect" : [ 519.0, 152.0, 225.0, 22.0 ],
+									"patching_rect" : [ 511.75, 158.0, 225.0, 22.0 ],
 									"style" : "",
 									"text" : "route 102 103 104 105 106 107 108 109"
 								}
@@ -11238,9 +11205,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 244.25, 392.0, 402.0, 22.0 ],
+									"patching_rect" : [ 244.25, 392.0, 399.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.8 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.8 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[4]"
 								}
 
@@ -11253,9 +11220,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 225.25, 363.0, 402.0, 22.0 ],
+									"patching_rect" : [ 225.25, 363.0, 399.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.7 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.7 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[5]"
 								}
 
@@ -11268,9 +11235,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 206.25, 335.0, 402.0, 22.0 ],
+									"patching_rect" : [ 206.25, 335.0, 399.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.6 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.6 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[6]"
 								}
 
@@ -11283,9 +11250,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 186.25, 307.0, 402.0, 22.0 ],
+									"patching_rect" : [ 186.25, 307.0, 399.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.5 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.5 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[7]"
 								}
 
@@ -11298,9 +11265,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 169.25, 278.0, 402.0, 22.0 ],
+									"patching_rect" : [ 169.25, 278.0, 399.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.4 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.4 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[2]"
 								}
 
@@ -11313,9 +11280,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 149.25, 249.0, 402.0, 22.0 ],
+									"patching_rect" : [ 149.25, 249.0, 399.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.3 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.3 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[3]"
 								}
 
@@ -11328,9 +11295,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 131.25, 222.0, 402.0, 22.0 ],
+									"patching_rect" : [ 131.25, 222.0, 399.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.2 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.2 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1[1]"
 								}
 
@@ -11343,9 +11310,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 111.25, 195.0, 402.0, 22.0 ],
+									"patching_rect" : [ 111.25, 195.0, 399.0, 22.0 ],
 									"style" : "",
-									"text" : "j.return out_toggle.1 @type boolean @clipmode none @repetitions/filter 1",
+									"text" : "j.return out/toggle.1 @type boolean @clipmode none @repetitions/filter 1",
 									"varname" : "toggleout_1"
 								}
 
@@ -11357,7 +11324,7 @@
 									"numinlets" : 9,
 									"numoutlets" : 9,
 									"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
-									"patching_rect" : [ 111.25, 159.0, 171.0, 22.0 ],
+									"patching_rect" : [ 115.25, 167.0, 171.0, 22.0 ],
 									"style" : "",
 									"text" : "route 20 21 22 23 24 25 26 27"
 								}
@@ -11891,24 +11858,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 3 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -12011,6 +11960,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-51", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -12025,15 +11983,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -12072,15 +12021,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 303.0, 206.5, 60.666672, 206.5 ],
 					"source" : [ "obj-49", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-5", 1 ]
 				}
 
 			}
@@ -12159,15 +12099,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-8", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-60", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -12187,19 +12118,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-7", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-9", 0 ]
+					"source" : [ "obj-92", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 2 ],
+					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-92", 0 ]
+					"source" : [ "obj-93", 0 ]
 				}
 
 			}
