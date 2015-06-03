@@ -697,11 +697,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1173,11 +1173,11 @@
 , 															{
 																"name" : "rdp-jamoma-style",
 																"default" : 																{
-																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+																	"fontface" : [ 0 ],
 																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																	"fontface" : [ 0 ]
+																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -2012,11 +2012,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"fontface" : [ 0 ],
 													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"fontface" : [ 0 ]
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -2275,11 +2275,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2631,11 +2631,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3300,11 +3300,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3580,7 +3580,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 68.0, 70.738281, 379.069763, 49.0 ],
+					"patching_rect" : [ 68.0, 70.738281, 382.0, 49.0 ],
 					"style" : "",
 					"text" : "j.message midinote @type array @clipmode none @ramp/drive None @dataspace time @unit midinote @description \"send midinote to poly\"",
 					"varname" : "midinote"
@@ -4099,11 +4099,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
