@@ -165,7 +165,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 5,
-					"outlettype" : [ "", "", "", "", "int" ],
+					"outlettype" : [ "", "float", "", "float", "int" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -742,11 +742,11 @@
 , 															{
 																"name" : "rdp-jamoma-style",
 																"default" : 																{
-																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																	"fontface" : [ 0 ],
-																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -1271,6 +1271,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-18",
@@ -1279,9 +1280,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 77.0, 60.0, 132.0, 129.0 ],
+					"patching_rect" : [ 77.0, 60.0, 137.0, 129.0 ],
 					"style" : "",
-					"text" : "j.parameter bands @type integer @priority 1 @description \"Number of bands of the filter\" @tags setup @repetitions/filter 1 @clipmode both @range 1 24",
+					"text" : "j.parameter bands @type integer @priority 1 @description \"Number of bands of the filter\" @tags setup @repetitions/filter 1 @clipmode both @range 1 24 @default 3",
 					"varname" : "bands[1]"
 				}
 
@@ -1313,13 +1314,13 @@
 					"logmarkers" : [ 0.0, 100.0, 1000.0, 10000.0 ],
 					"markercolor" : [ 0.509804, 0.509804, 0.509804, 1.0 ],
 					"maxclass" : "filtergraph~",
-					"nfilters" : 1,
+					"nfilters" : 5,
 					"numinlets" : 8,
 					"numoutlets" : 7,
 					"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 228.0, 610.0, 141.699982, 64.0 ],
-					"setfilter" : [ 0, 5, 1, 0, 0, 1000.0, 1.0, 1.414214, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"setfilter" : [ 4, 5, 1, 0, 0, 1000.0, 1.0, 1.414214, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 3, 5, 1, 0, 0, 1000.0, 1.0, 1.414214, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2, 5, 1, 0, 0, 1000.0, 1.0, 1.414214, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 5, 1, 0, 0, 1000.0, 1.0, 1.414214, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 5, 1, 0, 0, 1000.0, 1.0, 1.414214, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 					"style" : "",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -1899,11 +1900,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

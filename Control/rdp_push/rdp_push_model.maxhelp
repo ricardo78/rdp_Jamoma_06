@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 153.0, 81.0, 1139.0, 747.0 ],
+		"rect" : [ 220.0, 79.0, 1139.0, 747.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -4324,11 +4324,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
+													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"fontface" : [ 0 ],
-													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
+													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -5323,11 +5323,11 @@
 , 															{
 																"name" : "rdp-jamoma-style",
 																"default" : 																{
+																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																	"fontface" : [ 0 ],
-																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
+																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -7898,11 +7898,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
+													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"fontface" : [ 0 ],
-													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
+													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -8235,41 +8235,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-34",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 698.75, 677.0, 139.0, 22.0 ],
-					"style" : "",
-					"text" : "model:address /smplr_a"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "interface for rdp_sampler",
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-32",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "rdp_sampler_view.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 698.75, 708.0, 300.0, 105.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 300.0, 105.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-3",
 					"maxclass" : "newobj",
@@ -8388,15 +8353,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 873.75, 605.5, 107.5, 605.5 ],
 					"source" : [ "obj-31", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-32", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-34", 0 ]
 				}
 
 			}
@@ -8755,16 +8711,7 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-32::obj-37" : [ "loop_interpolation", "Interp.", 0 ],
-			"obj-32::obj-32" : [ "adsr_sustain", "Sustain", 0 ],
-			"obj-32::obj-134::obj-27" : [ "Threshold", "Threshold", 0 ],
-			"obj-32::obj-19" : [ "adsr_decay", "Decay", 0 ],
-			"obj-32::obj-9" : [ "adsr_attack", "Attack", 0 ],
-			"obj-32::obj-134::obj-12" : [ "Lookahead", "Lookahead", 0 ],
-			"obj-32::obj-134::obj-14" : [ "Preamp", "Preamp", 0 ],
-			"obj-32::obj-34" : [ "adsr_release", "Release", 0 ],
-			"obj-32::obj-134::obj-15" : [ "Postamp", "Postamp", 0 ],
-			"obj-32::obj-134::obj-13" : [ "Release", "Release", 0 ]
+
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -8800,32 +8747,6 @@
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
 				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
 				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rdp_sampler_view.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Audio/rdp_sampler",
-				"patcherrelativepath" : "../../Audio/rdp_sampler",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "RDPJamomaLogo2.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
-				"patcherrelativepath" : "../../Dependencies",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "wfmodes.png",
-				"bootpath" : "C74:/media/max/picts",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "wfknob.png",
-				"bootpath" : "C74:/media/max/picts",
-				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
@@ -8892,22 +8813,6 @@
 			}
 , 			{
 				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.ui.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive~.mxo",
 				"type" : "iLaX"
 			}
 , 			{

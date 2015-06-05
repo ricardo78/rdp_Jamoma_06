@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 176.0, 79.0, 1168.0, 747.0 ],
+		"rect" : [ 379.0, 95.0, 1168.0, 747.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -356,8 +356,8 @@
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ]
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -437,7 +437,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 108.333328, 243.5, 194.0, 62.0 ],
+					"patching_rect" : [ 108.333328, 249.5, 194.0, 62.0 ],
 					"style" : "",
 					"text" : "j.message pitch/bend @type array @clipmode none @ramp/drive None @dataspace none @repetitions/filter 0",
 					"varname" : "midiin[3]"
@@ -653,7 +653,7 @@
 					"numinlets" : 7,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 15.0, 314.0, 131.0, 22.0 ],
+					"patching_rect" : [ 14.999995, 338.0, 131.0, 22.0 ],
 					"style" : "",
 					"text" : "midiformat"
 				}
@@ -1226,7 +1226,7 @@
 					"destination" : [ "obj-179", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 24.5, 395.0, 349.5, 395.0 ],
+					"midpoints" : [ 24.499996, 420.0, 349.5, 420.0 ],
 					"source" : [ "obj-89", 0 ]
 				}
 
@@ -1310,8 +1310,8 @@
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ]
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
