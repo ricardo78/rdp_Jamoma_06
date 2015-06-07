@@ -38,13 +38,25 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-15",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 430.0, 382.0, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "Will add ducking functionality"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
 					"patching_rect" : [ 454.500305, 301.0, 29.5, 22.0 ],
-					"presentation_rect" : [ 458.500305, 304.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "t f f"
 				}
@@ -60,19 +72,6 @@
 					"patching_rect" : [ 500.500305, 301.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "t f f"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"maxclass" : "newobj",
-					"numinlets" : 6,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 160.000305, 403.0, 599.5, 22.0 ],
-					"style" : "",
-					"text" : "rdp.sampler.ducking"
 				}
 
 			}
@@ -475,37 +474,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-11", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-12", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-13", 1 ]
 				}
 
 			}
@@ -516,15 +488,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 510.000305, 350.5, 401.700317, 350.5 ],
 					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 3 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-14", 1 ]
 				}
 
 			}
@@ -615,28 +578,20 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-36", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-36", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
+					"destination" : [ "obj-7", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 285.600311, 438.0, 750.000305, 438.0 ],
+					"source" : [ "obj-36", 1 ]
 				}
 
 			}
@@ -685,15 +640,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 428.500305, 249.0, 180.000305, 249.0 ],
 					"source" : [ "obj-46", 6 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-11", 5 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-46", 9 ]
 				}
 
 			}
@@ -897,13 +843,6 @@
 				"type" : "JSON",
 				"implicit" : 1
 			}
-, 			{
-				"name" : "rdp.sampler.ducking.maxpat",
-				"bootpath" : "~/Dropbox/projects/et stykke for lys og piano max/max moduler/ricardo78-rdpozo_Modules-5e9fcbf/rdp.sampler/lib",
-				"patcherrelativepath" : "../../../../../Dropbox/projects/et stykke for lys og piano max/max moduler/ricardo78-rdpozo_Modules-5e9fcbf/rdp.sampler/lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
  ],
 		"embedsnapshot" : 0,
 		"styles" : [ 			{
@@ -927,11 +866,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"fontface" : [ 0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ]
 				}
 ,
 				"parentstyle" : "",
