@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 182.0, 97.0, 793.0, 583.0 ],
+		"rect" : [ 69.0, 79.0, 1017.0, 569.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,33 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 651.5, 259.0, 141.0, 22.0 ],
+					"presentation_rect" : [ 576.5, 371.463806, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "prepend pitchBendValue"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 630.5, 170.165894, 147.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend pitchBendRange"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"color" : [ 1.0, 0.873825, 0.609094, 1.0 ],
 					"fontface" : 0,
@@ -671,11 +698,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"fontface" : [ 0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1147,11 +1174,11 @@
 , 															{
 																"name" : "rdp-jamoma-style",
 																"default" : 																{
-																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+																	"fontface" : [ 0 ],
 																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																	"fontface" : [ 0 ]
+																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -1986,11 +2013,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+													"fontface" : [ 0 ],
 													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"fontface" : [ 0 ]
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -2249,11 +2276,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"fontface" : [ 0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2262,7 +2289,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 507.0, 228.0, 118.0, 22.0 ],
+					"patching_rect" : [ 507.0, 200.0, 118.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2333,7 +2360,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 150.0, 223.0, 598.0, 377.0 ],
+						"rect" : [ 808.0, 327.0, 598.0, 377.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2362,6 +2389,22 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+									"id" : "obj-2",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 130.0, 205.080811, 434.0, 35.0 ],
+									"style" : "",
+									"text" : "j.parameter loop/play/from @type decimal @clipmode none @ramp/drive None @dataspace none @priority 2",
+									"varname" : "loop/play/from"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
@@ -2370,25 +2413,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 130.0, 245.080811, 108.0, 22.0 ],
+									"patching_rect" : [ 130.0, 253.080811, 108.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend playFrom"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
-									"id" : "obj-2",
-									"linecount" : 3,
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 130.0, 176.887207, 428.0, 49.0 ],
-									"style" : "",
-									"text" : "j.parameter loop/play/from @type decimal @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 2 @default 1 @description \"start point for triggering the sample\"",
-									"varname" : "loop/interpolation[1]"
 								}
 
 							}
@@ -2529,7 +2556,7 @@
 									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 139.5, 284.040405, 17.5, 284.040405 ],
+									"midpoints" : [ 139.5, 302.040405, 17.5, 302.040405 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -2585,11 +2612,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"fontface" : [ 0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2598,7 +2625,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 471.0, 173.0, 154.0, 22.0 ],
+					"patching_rect" : [ 471.0, 145.0, 154.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3254,11 +3281,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"fontface" : [ 0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3267,7 +3294,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 489.466797, 201.0, 135.533203, 22.0 ],
+					"patching_rect" : [ 489.466797, 173.0, 135.533203, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3580,7 +3607,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 454.5, 140.702087, 106.0, 22.0 ],
+					"patching_rect" : [ 454.5, 112.702087, 106.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend midibase"
 				}
@@ -3635,20 +3662,61 @@
 				"box" : 				{
 					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-159",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 454.5, 69.867981, 310.0, 62.0 ],
+					"patching_rect" : [ 454.5, 69.867981, 535.0, 35.0 ],
 					"style" : "",
 					"text" : "j.parameter midibase @type integer @range 0 127 @clipmode both @ramp/drive None @dataspace none @priority 3 @default 60 @description \"set the midi base for conversion\"",
 					"varname" : "frequency"
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+					"id" : "obj-3",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 630.5, 112.702087, 359.0, 49.0 ],
+					"style" : "",
+					"text" : "j.parameter pitch/bend/range @type integer @range 0 12 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @unit midinote",
+					"varname" : "pitch/bend/range"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+					"id" : "obj-10",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 651.5, 201.536194, 338.0, 49.0 ],
+					"style" : "",
+					"text" : "j.parameter pitch/bend/value @type integer @range 0 127 @clipmode none @ramp/drive Max @ramp/function linear @dataspace none@default 64",
+					"varname" : "pitch/bend/value"
+				}
+
+			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-158", 0 ],
 					"disabled" : 0,
@@ -3671,7 +3739,7 @@
 					"destination" : [ "obj-2", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 498.966797, 375.5, 346.366791, 375.5 ],
+					"midpoints" : [ 498.966797, 337.731903, 346.366791, 337.731903 ],
 					"source" : [ "obj-130", 0 ]
 				}
 
@@ -3690,7 +3758,7 @@
 					"destination" : [ "obj-2", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 480.5, 368.5, 346.366791, 368.5 ],
+					"midpoints" : [ 480.5, 328.731903, 346.366791, 328.731903 ],
 					"source" : [ "obj-154", 0 ]
 				}
 
@@ -3736,7 +3804,7 @@
 					"destination" : [ "obj-2", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 516.5, 384.5, 346.366791, 384.5 ],
+					"midpoints" : [ 516.5, 346.231903, 346.366791, 346.231903 ],
 					"source" : [ "obj-169", 0 ]
 				}
 
@@ -3807,6 +3875,25 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 640.0, 356.0, 346.366791, 356.0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-168", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3849,7 +3936,17 @@
 					"destination" : [ "obj-2", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 464.0, 393.601044, 346.366791, 393.601044 ],
+					"midpoints" : [ 661.0, 367.0, 346.366791, 367.0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 464.0, 319.582947, 346.366791, 319.582947 ],
 					"source" : [ "obj-65", 0 ]
 				}
 
@@ -3912,13 +4009,6 @@
 				"name" : "rdp_sampler_model_poly.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Audio/rdp_sampler",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "transratio.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/2 Audio Examples/derivations-stereo-v1.07/patchers",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/2 Audio Examples/derivations-stereo-v1.07/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4012,11 +4102,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"fontface" : [ 0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
