@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 309.0, 106.0, 915.0, 515.0 ],
+		"rect" : [ 69.0, 79.0, 1017.0, 569.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,33 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 651.5, 259.0, 141.0, 22.0 ],
+					"presentation_rect" : [ 576.5, 371.463806, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "prepend pitchBendValue"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 630.5, 170.165894, 147.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend pitchBendRange"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"color" : [ 1.0, 0.873825, 0.609094, 1.0 ],
 					"fontface" : 0,
@@ -66,7 +93,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -425,7 +452,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 673.5, 44.0, 550.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter limiter/preamp @type decimal @range -6 48 @clipmode none @ramp/drive max @dataspace gain @unit dB @ramp/function linear @description \"The gain in dB applied to the signal before limiting.\" @default 6. @priority 2",
+									"text" : "j.parameter limiter/preamp @type decimal @range -6 48 @clipmode none @ramp/drive max @dataspace gain @unit dB @ramp/function linear @description \"The gain in dB applied to the signal before limiting.\" @default 6. @priority 2 @repetitions/filter 0",
 									"varname" : "preamp"
 								}
 
@@ -671,11 +698,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -684,7 +711,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 435.5, 276.0, 114.0, 22.0 ],
+					"patching_rect" : [ 361.239502, 400.761719, 114.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -711,7 +738,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -744,6 +771,19 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 50.0, 75.682861, 68.0, 22.0 ],
+									"style" : "",
+									"text" : "route none"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-2",
@@ -784,7 +824,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -841,7 +881,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 2,
+															"revision" : 3,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -1134,11 +1174,11 @@
 , 															{
 																"name" : "rdp-jamoma-style",
 																"default" : 																{
-																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																	"fontface" : [ 0 ],
-																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -1973,11 +2013,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
-													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"fontface" : [ 0 ],
-													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -2023,9 +2063,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 110.666664, 158.0, 393.0, 22.0 ],
+									"patching_rect" : [ 110.666664, 158.0, 379.0, 22.0 ],
 									"style" : "",
-									"text" : "j.parameter buffer/external/active @type boolean @default 0 @priority 1"
+									"text" : "j.parameter buffer/useExternal @type boolean @default 0 @priority 1"
 								}
 
 							}
@@ -2055,7 +2095,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 50.0, 56.0, 595.333252, 22.0 ],
+									"patching_rect" : [ 50.0, 48.0, 595.333252, 22.0 ],
 									"style" : "",
 									"text" : "j.parameter buffer/read @type string @clipmode none @description \"the string of the folder path\" @priority 2"
 								}
@@ -2134,7 +2174,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-80", 0 ],
+									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-12", 0 ]
@@ -2147,6 +2187,16 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-27", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-80", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 108.5, 101.404175, 59.5, 101.404175 ],
+									"source" : [ "obj-4", 1 ]
 								}
 
 							}
@@ -2204,10 +2254,42 @@
 								}
 
 							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "rdp-jamoma-style",
+								"default" : 								{
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
  ]
 					}
 ,
-					"patching_rect" : [ 311.0, 276.0, 118.0, 22.0 ],
+					"patching_rect" : [ 507.0, 200.0, 118.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2228,7 +2310,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 11.272736, 318.0, 31.0, 22.0 ],
+					"patching_rect" : [ 11.272736, 269.0, 31.0, 22.0 ],
 					"style" : "",
 					"text" : "thru"
 				}
@@ -2242,7 +2324,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 452.0, 127.202087, 50.0, 22.0 ],
+					"patching_rect" : [ 68.0, 316.463806, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -2273,12 +2355,12 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 151.0, 508.0, 650.0, 277.0 ],
+						"rect" : [ 808.0, 327.0, 598.0, 377.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2307,6 +2389,38 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+									"id" : "obj-2",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 130.0, 205.080811, 434.0, 35.0 ],
+									"style" : "",
+									"text" : "j.parameter loop/play/from @type decimal @clipmode none @ramp/drive None @dataspace none @priority 2",
+									"varname" : "loop/play/from"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 130.0, 253.080811, 108.0, 22.0 ],
+									"style" : "",
+									"text" : "prepend playFrom"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"format" : 6,
 									"id" : "obj-5",
 									"maxclass" : "flonum",
@@ -2314,20 +2428,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 94.0, 124.887207, 50.0, 22.0 ],
-									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-3",
-									"maxclass" : "toggle",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "int" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 8.0, 78.193604, 24.0, 24.0 ],
+									"patching_rect" : [ 27.0, 176.887207, 50.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -2339,7 +2440,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 8.0, 228.0, 30.0, 30.0 ],
+									"patching_rect" : [ 8.0, 302.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -2368,7 +2469,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 199.0, 178.080811, 114.0, 22.0 ],
+									"patching_rect" : [ 8.0, 95.080811, 114.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend loopPoints"
 								}
@@ -2384,40 +2485,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 94.0, 148.887207, 99.0, 22.0 ],
+									"patching_rect" : [ 27.0, 205.080811, 99.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend ducking"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-62",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 8.0, 104.193604, 81.0, 22.0 ],
-									"style" : "",
-									"text" : "prepend loop"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
-									"id" : "obj-13",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 8.0, 44.0, 615.0, 22.0 ],
-									"style" : "",
-									"text" : "j.parameter loop/active @type boolean @clipmode none @default 1 @description \"loop the sample\" @priority 1",
-									"varname" : "loop"
 								}
 
 							}
@@ -2430,9 +2500,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 199.0, 124.887207, 424.0, 49.0 ],
+									"patching_rect" : [ 8.0, 41.887207, 397.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter loop/points @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace time @unit millisecond @priority 3 @description \"set looppoints as list\"",
+									"text" : "j.parameter loop/points @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace time @unit millisecond @priority 1 @description \"set looppoints as list\"",
 									"varname" : "loop/points"
 								}
 
@@ -2446,24 +2516,15 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 94.0, 69.887207, 529.0, 49.0 ],
+									"patching_rect" : [ 27.0, 124.080811, 531.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter loop/interpolation @type decimal @range 0.001 50 @clipmode low @ramp/drive Max @ramp/function linear @dataspace time @unit millisecond @default 0.001 @description \"interpolation between loop points\" @priority 2",
+									"text" : "j.parameter loop/interpolation @type decimal @range 0.001 50 @clipmode low @ramp/drive Max @ramp/function linear @dataspace time @unit millisecond @default 0.001 @description \"interpolation between loop points\" @priority 3",
 									"varname" : "loop/interpolation"
 								}
 
 							}
  ],
 						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-13", 0 ]
-								}
-
-							}
-, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-39", 0 ],
 									"disabled" : 0,
@@ -2483,9 +2544,19 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-62", 0 ],
+									"destination" : [ "obj-3", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 139.5, 302.040405, 17.5, 302.040405 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -2495,7 +2566,7 @@
 									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 208.5, 211.846802, 17.5, 211.846802 ],
+									"midpoints" : [ 17.5, 211.846802, 17.5, 211.846802 ],
 									"source" : [ "obj-39", 0 ]
 								}
 
@@ -2514,16 +2585,7 @@
 									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-62", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"midpoints" : [ 103.5, 185.846802, 17.5, 185.846802 ],
+									"midpoints" : [ 36.5, 284.846802, 17.5, 284.846802 ],
 									"source" : [ "obj-63", 0 ]
 								}
 
@@ -2550,11 +2612,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2563,7 +2625,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 76.0, 276.0, 105.0, 22.0 ],
+					"patching_rect" : [ 471.0, 145.0, 154.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2584,7 +2646,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 477.239502, 461.0, 30.0, 30.0 ],
+					"patching_rect" : [ 493.239502, 502.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -2602,7 +2664,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2894,7 +2956,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 19.0, 36.0, 1002.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter adsr/retrigger @type decimal @range 0 1000 @clipmode both @ramp/drive None @dataspace time @unit millisecond @description \"Given as input, the word retrigger , followed by a float, sets the amount of time taken to ramp down to zero in the event of a retrigger while the envelope is active (the default is 5 milliseconds). This ramping prevents clicking.\" @default 1",
+									"text" : "j.parameter adsr/retrigger @type decimal @range 0 1000 @clipmode both @ramp/drive None @dataspace time @unit millisecond @description \"Given as input, the word retrigger , followed by a float, sets the amount of time taken to ramp down to zero in the event of a retrigger while the envelope is active (the default is 5 milliseconds). This ramping prevents clicking.\" @default 5",
 									"varname" : "adsr/retrigger"
 								}
 
@@ -3219,11 +3281,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3232,7 +3294,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 192.466797, 276.0, 111.0, 22.0 ],
+					"patching_rect" : [ 489.466797, 173.0, 135.533203, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3285,7 +3347,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 452.0, 154.202087, 92.0, 22.0 ],
+					"patching_rect" : [ 68.0, 345.463806, 92.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend voices"
 				}
@@ -3315,7 +3377,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 512.5, 359.761719, 107.0, 22.0 ],
+					"patching_rect" : [ 528.5, 400.761719, 107.0, 22.0 ],
 					"style" : "",
 					"text" : "j.parameterCreate"
 				}
@@ -3329,7 +3391,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 477.239502, 359.761719, 30.0, 30.0 ],
+					"patching_rect" : [ 493.239502, 400.761719, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -3342,7 +3404,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 11.272736, 397.0, 344.594055, 22.0 ],
+					"patching_rect" : [ 11.272736, 438.0, 344.594055, 22.0 ],
 					"style" : "",
 					"text" : "j.limiter~"
 				}
@@ -3355,7 +3417,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 174.069763, 461.0, 30.0, 30.0 ],
+					"patching_rect" : [ 174.069763, 502.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -3367,7 +3429,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 11.272736, 461.0, 30.0, 30.0 ],
+					"patching_rect" : [ 11.272736, 502.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -3380,7 +3442,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 174.069763, 428.0, 52.0, 22.0 ],
+					"patching_rect" : [ 174.069763, 469.0, 52.0, 22.0 ],
 					"style" : "",
 					"text" : "j.out~ R"
 				}
@@ -3394,7 +3456,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 11.272736, 428.0, 50.0, 22.0 ],
+					"patching_rect" : [ 11.272736, 469.0, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "j.out~ L"
 				}
@@ -3402,16 +3464,16 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 1.0, 0.827451, 0.345098, 1.0 ],
+					"color" : [ 0.659883, 0.869707, 1.0, 1.0 ],
 					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 11.272736, 359.761719, 344.594055, 22.0 ],
+					"patching_rect" : [ 11.272736, 400.761719, 344.594055, 22.0 ],
 					"style" : "",
 					"text" : "poly~ rdp_sampler_model_poly  16 args #1 @target 0"
 				}
@@ -3484,7 +3546,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 477.239502, 397.0, 201.0, 35.0 ],
+					"patching_rect" : [ 493.239502, 438.0, 201.0, 35.0 ],
 					"style" : "",
 					"text" : "j.model @tags audio @description \"a simple sampler\""
 				}
@@ -3515,7 +3577,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 452.0, 70.738281, 448.5, 49.0 ],
+					"patching_rect" : [ 68.0, 259.0, 379.069763, 49.0 ],
 					"style" : "",
 					"text" : "j.parameter voices @type integer @range -1 100 @clipmode both @ramp/drive None @dataspace none @priority 1 @default 30 @description \"Number of poly voices loaded on start\"",
 					"varname" : "voices"
@@ -3545,9 +3607,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 553.5, 218.202087, 111.0, 22.0 ],
+					"patching_rect" : [ 454.5, 112.702087, 106.0, 22.0 ],
 					"style" : "",
-					"text" : "prepend frequency"
+					"text" : "prepend midibase"
 				}
 
 			}
@@ -3600,20 +3662,61 @@
 				"box" : 				{
 					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-159",
-					"linecount" : 6,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 553.5, 127.202087, 347.0, 89.0 ],
+					"patching_rect" : [ 454.5, 69.867981, 535.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter frequency @type decimal @range 0 20000 @clipmode both @ramp/drive Max @ramp/function linear @dataspace time @unit Hz @priority 3 @default 10 @description \"Sets the base frequency used when calculating frequency values (e.g. A = 440.). The default base frequency is 440 Hz.\"",
+					"text" : "j.parameter midibase @type integer @range 0 127 @clipmode both @ramp/drive None @dataspace none @priority 3 @default 60 @description \"set the midi base for conversion\"",
 					"varname" : "frequency"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+					"id" : "obj-3",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 630.5, 112.702087, 359.0, 49.0 ],
+					"style" : "",
+					"text" : "j.parameter pitch/bend/range @type integer @range 0 12 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @unit midinote",
+					"varname" : "pitch/bend/range"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+					"id" : "obj-10",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 651.5, 201.536194, 338.0, 49.0 ],
+					"style" : "",
+					"text" : "j.parameter pitch/bend/value @type integer @range 0 127 @clipmode none @ramp/drive Max @ramp/function linear @dataspace none@default 64",
+					"varname" : "pitch/bend/value"
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-158", 0 ],
 					"disabled" : 0,
@@ -3633,10 +3736,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-168", 0 ],
+					"destination" : [ "obj-2", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 201.966797, 307.5, 20.772736, 307.5 ],
+					"midpoints" : [ 498.966797, 337.731903, 346.366791, 337.731903 ],
 					"source" : [ "obj-130", 0 ]
 				}
 
@@ -3652,10 +3755,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-168", 0 ],
+					"destination" : [ "obj-2", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 85.5, 307.5, 20.772736, 307.5 ],
+					"midpoints" : [ 480.5, 328.731903, 346.366791, 328.731903 ],
 					"source" : [ "obj-154", 0 ]
 				}
 
@@ -3698,10 +3801,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-168", 0 ],
+					"destination" : [ "obj-2", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 320.5, 307.5, 20.772736, 307.5 ],
+					"midpoints" : [ 516.5, 346.231903, 346.366791, 346.231903 ],
 					"source" : [ "obj-169", 0 ]
 				}
 
@@ -3720,7 +3823,7 @@
 					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 445.0, 390.0, 20.772736, 390.0 ],
+					"midpoints" : [ 370.739502, 431.0, 20.772736, 431.0 ],
 					"source" : [ "obj-170", 0 ]
 				}
 
@@ -3772,6 +3875,25 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 640.0, 356.0, 346.366791, 356.0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-168", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -3791,10 +3913,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-168", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 461.5, 251.0, 20.772736, 251.0 ],
+					"midpoints" : [ 77.5, 390.0, 20.772736, 390.0 ],
 					"source" : [ "obj-50", 0 ]
 				}
 
@@ -3811,10 +3933,20 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-168", 0 ],
+					"destination" : [ "obj-2", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 563.0, 251.601044, 20.772736, 251.601044 ],
+					"midpoints" : [ 661.0, 367.0, 346.366791, 367.0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 464.0, 319.582947, 346.366791, 319.582947 ],
 					"source" : [ "obj-65", 0 ]
 				}
 
@@ -3868,21 +4000,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdpozo_Modules/_Dependencies",
-				"patcherrelativepath" : "../../_Dependencies",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
+				"patcherrelativepath" : "../../Dependencies",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_sampler_model_poly.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdpozo_Modules/Audio/rdp_sampler",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rdp_sampler_ducking.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdpozo_Modules/Audio/rdp_sampler",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Audio/rdp_sampler",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -3977,11 +4102,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

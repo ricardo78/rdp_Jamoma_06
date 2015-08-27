@@ -26,3 +26,18 @@ jit.gl.hap provides native support for the HAP quicktime codec. Images are decod
 
 Shader pack by Vade
 http://001.vade.info
+
+cv.jit Library
+http://jmpelletier.com/cvjit/
+http://jmpelletier.com/freenect/
+
+
+Thanks to:
+Zachary Seldess, KAUST,  KVL_Kinect_Tracker
+http://www.zacharyseldess.com
+
+HC Gilje
+http://hcgilje.wordpress.com/vpt/
+
+The Jamoma Team
+http://jamoma.org/team/

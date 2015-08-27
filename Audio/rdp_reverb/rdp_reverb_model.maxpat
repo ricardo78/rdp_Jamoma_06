@@ -44,8 +44,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 569.0, 242.0, 50.0, 49.0 ],
-					"presentation_rect" : [ 609.0, 231.0, 0.0, 0.0 ],
+					"patching_rect" : [ 569.0, 242.0, 53.0, 49.0 ],
 					"style" : "",
 					"text" : "scale 0. 100. 0. 1."
 				}
@@ -59,8 +58,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 483.0, 223.0, 50.0, 49.0 ],
-					"presentation_rect" : [ 452.0, 211.0, 0.0, 0.0 ],
+					"patching_rect" : [ 483.0, 242.0, 53.0, 49.0 ],
 					"style" : "",
 					"text" : "scale 0. 100. 0. 1."
 				}
@@ -74,8 +72,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 392.0, 204.0, 50.0, 49.0 ],
-					"presentation_rect" : [ 404.0, 205.0, 0.0, 0.0 ],
+					"patching_rect" : [ 392.0, 235.0, 53.0, 49.0 ],
 					"style" : "",
 					"text" : "scale 0. 100. 0. 1."
 				}
@@ -89,8 +86,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 334.0, 204.0, 50.0, 49.0 ],
-					"presentation_rect" : [ 333.0, 204.0, 0.0, 0.0 ],
+					"patching_rect" : [ 334.0, 173.0, 53.0, 49.0 ],
 					"style" : "",
 					"text" : "scale 0. 100. 0. 1."
 				}
@@ -104,7 +100,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 284.0, 149.0, 50.0, 49.0 ],
+					"patching_rect" : [ 284.0, 112.0, 53.0, 49.0 ],
 					"style" : "",
 					"text" : "scale 0. 100. 0. 1."
 				}
@@ -225,9 +221,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 569.0, 180.0, 375.0, 49.0 ],
+					"patching_rect" : [ 569.0, 180.0, 389.0, 49.0 ],
 					"style" : "",
-					"text" : "j.parameter width @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 1",
+					"text" : "j.parameter width @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 100",
 					"varname" : "wet/dry[4]"
 				}
 
@@ -241,9 +237,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 483.0, 141.0, 461.0, 35.0 ],
+					"patching_rect" : [ 483.0, 141.0, 475.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter damping @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 1",
+					"text" : "j.parameter damping @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 100",
 					"varname" : "wet/dry[3]"
 				}
 
@@ -257,9 +253,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 392.0, 101.0, 552.0, 35.0 ],
+					"patching_rect" : [ 392.0, 101.0, 566.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter roomsize @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 0.5",
+					"text" : "j.parameter roomsize @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 50",
 					"varname" : "wet/dry[2]"
 				}
 
@@ -273,9 +269,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 334.0, 57.0, 610.0, 35.0 ],
+					"patching_rect" : [ 334.0, 57.0, 624.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter wet @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 0.5",
+					"text" : "j.parameter wet @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 50",
 					"varname" : "wet/dry[1]"
 				}
 
@@ -478,9 +474,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 284.0, 6.0, 660.0, 35.0 ],
+					"patching_rect" : [ 284.0, 6.0, 674.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter dry @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 1.",
+					"text" : "j.parameter dry @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 100.",
 					"varname" : "wet/dry"
 				}
 
@@ -710,8 +706,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdpozo_Modules/_Dependencies",
-				"patcherrelativepath" : "../../_Dependencies",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
+				"patcherrelativepath" : "../../Dependencies",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
@@ -789,8 +785,8 @@
 				"default" : 				{
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"fontface" : [ 0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
