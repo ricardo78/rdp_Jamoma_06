@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-5",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 137.0, 207.0, 30.0, 30.0 ],
+					"presentation_rect" : [ 82.0, 206.0, 0.0, 0.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"annotation" : "interface for brcosa",
 					"args" : [ "#1" ],
 					"bgmode" : 0,
@@ -48,7 +61,7 @@
 					"id" : "obj-4",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "rdp_gl_bleach_view.maxpat",
+					"name" : "rdp_gl_bleach.view.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -93,9 +106,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 17.0, 179.0, 142.0, 22.0 ],
+					"patching_rect" : [ 17.0, 179.0, 139.0, 22.0 ],
 					"style" : "",
-					"text" : "rdp_gl_bleach_model #1"
+					"text" : "rdp_gl_bleach.model #1"
 				}
 
 			}
@@ -106,6 +119,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 1 ]
 				}
 
 			}
@@ -124,7 +146,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "rdp_gl_bleach_model.maxpat",
+				"name" : "rdp_gl_bleach.model.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_gl_bleach",
 				"type" : "JSON",
 				"implicit" : 1
@@ -160,7 +182,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "rdp_gl_bleach_view.maxpat",
+				"name" : "rdp_gl_bleach.view.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_gl_bleach",
 				"type" : "JSON",
 				"implicit" : 1
