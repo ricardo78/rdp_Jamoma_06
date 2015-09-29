@@ -10,9 +10,9 @@ http://download.74objects.com/taptools/index.html
 The video modules is a compilation of code taken from cycling74's tutorials and HC Gilje's Video Projection Tool. VPT website: http://hcgilje.wordpress.com/vpt/
 VPT forum: http://www.nervousvision.com/vptforum/
 
-Freeverb by Olaf Matthes. (Included in the folder “Dependencies”)
+Freeverb by Olaf Matthes. (Included in the extarnal folder) 
 
-Mutation by Bill Vorn (Included in the folder “Dependencies”) 
+Mutation by Bill Vorn (Included in the extarnal folder) 
 http://billvorn.concordia.ca/research/software/lifetools.html
 
 Using two objects by Maurizio Giri 
