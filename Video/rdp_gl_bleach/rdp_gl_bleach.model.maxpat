@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -103,21 +103,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-94",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 240.0, 275.0, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "j.parameterCreate"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 20.0,
 					"id" : "obj-84",
@@ -201,7 +186,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -274,7 +259,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -783,7 +768,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 91.0, 158.5, 502.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter bleach/amount @type decimal @range 0. 10. @clipmode low @ramp/drive Max @ramp/function linear @dataspace none @default 0",
+					"text" : "j.parameter bleach/amount @type decimal @range 0. 10. @clipmode low @ramp/drive max @ramp/function linear @dataspace none @default 0",
 					"varname" : "bleach/amount"
 				}
 
@@ -867,36 +852,13 @@
 		"dependency_cache" : [ 			{
 				"name" : "bleachit.genjit",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_gl_bleach",
-				"patcherrelativepath" : ".",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
-				"patcherrelativepath" : "../../Dependencies",
 				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreatePresetDoc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -905,14 +867,6 @@
 			}
 , 			{
 				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -948,8 +902,8 @@
 				"default" : 				{
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,

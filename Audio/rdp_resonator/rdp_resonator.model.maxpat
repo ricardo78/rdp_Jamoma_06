@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -132,7 +132,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -737,11 +737,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -761,21 +761,6 @@
 ,
 					"style" : "",
 					"text" : "p limiter_parameter"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-67",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 519.372742, 498.0, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "j.parameterCreate"
 				}
 
 			}
@@ -925,7 +910,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 151.069763, 97.068115, 857.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter pitch @type array @range 12 108 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 12 24 48 56 78 80 90 108",
+					"text" : "j.parameter pitch @type array @range 12 108 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @default 12 24 48 56 78 80 90 108",
 					"varname" : "pitch/start"
 				}
 
@@ -1024,7 +1009,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 312.62915, 124.568115, 761.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter gain @type array @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace gain @unit linear @default 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8",
+					"text" : "j.parameter gain @type array @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @dataspace gain @unit linear @default 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8",
 					"varname" : "gain/start"
 				}
 
@@ -1120,9 +1105,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 455.747955, 165.568115, 592.0, 35.0 ],
+					"patching_rect" : [ 455.747955, 161.568115, 592.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter duration @type array @range 50 5000 @clipmode both @ramp/drive Max @ramp/function linear @dataspace time @unit millisecond @default 500 600 700 800 900 1000 1100 1200",
+					"text" : "j.parameter duration @type array @range 50 5000 @clipmode both @ramp/drive max @ramp/function linear @dataspace time @unit millisecond @default 500 600 700 800 900 1000 1100 1200",
 					"varname" : "duration/start"
 				}
 
@@ -1303,7 +1288,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 614.86676, 203.568115, 431.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter filter @type array @range 1 60 @clipmode both @ramp/drive Max @dataspace none @default 10 20 30 40 50 60 70 80",
+					"text" : "j.parameter filter @type array @range 1 60 @clipmode both @ramp/drive max @dataspace none @default 10 20 30 40 50 60 70 80",
 					"varname" : "filter/start"
 				}
 
@@ -1566,92 +1551,61 @@
 		"dependency_cache" : [ 			{
 				"name" : "rdp_poly_resonators_stereo.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Audio/rdp_resonator",
-				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.comb~.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/3rd party/Vitual Sound Library/virtualsound macros/filter macros",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.sig~.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/audio utility",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/audio utility",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/3rd party/Vitual Sound Library/virtualsound macros/audio utility",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.butterlp~.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/3rd party/Vitual Sound Library/virtualsound macros/filter macros",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.butterlpc.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/3rd party/Vitual Sound Library/virtualsound macros/filter macros",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.pi.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/math and numbers",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/math and numbers",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/3rd party/Vitual Sound Library/virtualsound macros/math and numbers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.defaulter.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/max utility",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/max utility",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/3rd party/Vitual Sound Library/virtualsound macros/max utility",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.dcblock~.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/3rd party/Vitual Sound Library/virtualsound macros/filter macros",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.highpass1~.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/3rd party/Vitual Sound Library/virtualsound macros/filter macros",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
-				"patcherrelativepath" : "../../Dependencies",
 				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreatePresetDoc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -1670,14 +1624,6 @@
 			}
 , 			{
 				"name" : "j.limiter~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1719,11 +1665,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

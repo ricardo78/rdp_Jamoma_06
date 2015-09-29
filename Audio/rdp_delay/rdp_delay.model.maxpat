@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -49,7 +49,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -654,11 +654,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -810,9 +810,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 869.0, 161.0, 285.0, 49.0 ],
+					"patching_rect" : [ 869.0, 161.0, 287.0, 49.0 ],
 					"style" : "",
-					"text" : "j.parameter depth @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace time @unit Hz @priority 3",
+					"text" : "j.parameter depth @type decimal @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @dataspace time @unit Hz @priority 3",
 					"varname" : "rate[1]"
 				}
 
@@ -1008,9 +1008,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 513.0, 106.0, 270.0, 76.0 ],
+					"patching_rect" : [ 513.0, 106.0, 273.0, 76.0 ],
 					"style" : "",
-					"text" : "j.parameter delay/right @type decimal @range 0 1000 @clipmode both @ramp/drive Max @ramp/function linear @dataspace time @unit millisecond @priority 1 @default 250 @description \"right delay\"",
+					"text" : "j.parameter delay/right @type decimal @range 0 1000 @clipmode both @ramp/drive max @ramp/function linear @dataspace time @unit millisecond @priority 1 @default 250 @description \"right delay\"",
 					"varname" : "delay/left[1]"
 				}
 
@@ -1026,23 +1026,8 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 625.0, 187.0, 161.0, 102.0 ],
 					"style" : "",
-					"text" : "j.parameter feedback/right @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 2",
+					"text" : "j.parameter feedback/right @type decimal @range 0 100 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @priority 2",
 					"varname" : "feedback/left[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-94",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 377.0, 583.0, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "j.parameterCreate"
 				}
 
 			}
@@ -1381,9 +1366,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 129.0, 106.0, 270.0, 76.0 ],
+					"patching_rect" : [ 129.0, 106.0, 273.0, 76.0 ],
 					"style" : "",
-					"text" : "j.parameter delay/left @type decimal @range 0 1000 @clipmode both @ramp/drive Max @ramp/function linear @dataspace time @unit millisecond @priority 1 @default 250 @description \"left delay\"",
+					"text" : "j.parameter delay/left @type decimal @range 0 1000 @clipmode both @ramp/drive max @ramp/function linear @dataspace time @unit millisecond @priority 1 @default 250 @description \"left delay\"",
 					"varname" : "delay/left"
 				}
 
@@ -1399,7 +1384,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 241.0, 187.0, 161.0, 102.0 ],
 					"style" : "",
-					"text" : "j.parameter feedback/left @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 2",
+					"text" : "j.parameter feedback/left @type decimal @range 0 100 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @priority 2",
 					"varname" : "feedback/left"
 				}
 
@@ -1413,9 +1398,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 799.0, 106.0, 352.0, 49.0 ],
+					"patching_rect" : [ 799.0, 106.0, 379.0, 49.0 ],
 					"style" : "",
-					"text" : "j.parameter rate @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace time @unit Hz @priority 3",
+					"text" : "j.parameter rate @type decimal @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @dataspace time @unit Hz @priority 3",
 					"varname" : "rate"
 				}
 
@@ -1945,29 +1930,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
-				"patcherrelativepath" : "../../Dependencies",
 				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreatePresetDoc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -1982,14 +1945,6 @@
 			}
 , 			{
 				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2035,11 +1990,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

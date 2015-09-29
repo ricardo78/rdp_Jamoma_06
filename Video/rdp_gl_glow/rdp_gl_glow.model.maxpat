@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -45,9 +45,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 439.0, 243.0, 425.0, 35.0 ],
+					"patching_rect" : [ 439.0, 243.0, 499.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter glow/smoothing @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @default 0",
+					"text" : "j.parameter glow/smoothing @type decimal @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @default 0",
 					"varname" : "target[3]"
 				}
 
@@ -61,9 +61,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 325.0, 191.0, 426.0, 35.0 ],
+					"patching_rect" : [ 325.0, 191.0, 614.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter glow/tolerance @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @default 0",
+					"text" : "j.parameter glow/tolerance @type decimal @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @default 0",
 					"varname" : "target[2]"
 				}
 
@@ -72,14 +72,13 @@
 				"box" : 				{
 					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-27",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 119.0, 96.0, 423.0, 35.0 ],
+					"patching_rect" : [ 119.0, 96.0, 669.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter glow/amount @type decimal @range 0 50 @clipmode both @ramp/drive Max @ramp/function linear @default 0",
+					"text" : "j.parameter glow/amount @type decimal @range 0 50 @clipmode both @ramp/drive max @ramp/function linear @default 0",
 					"varname" : "target[1]"
 				}
 
@@ -108,7 +107,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 568.5, 294.0, 357.0, 49.0 ],
 					"style" : "",
-					"text" : "j.parameter blur/amount @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 1 @default 0.",
+					"text" : "j.parameter blur/amount @type decimal @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @priority 1 @default 0.",
 					"varname" : "blur"
 				}
 
@@ -258,21 +257,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-94",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 298.333252, 483.0, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "j.parameterCreate"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 20.0,
 					"id" : "obj-84",
@@ -356,7 +340,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -429,7 +413,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -926,7 +910,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1371,7 +1355,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1754,14 +1738,13 @@
 				"box" : 				{
 					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-26",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 229.0, 147.0, 407.0, 35.0 ],
+					"patching_rect" : [ 229.0, 147.0, 653.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter glow/target @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @default 0",
+					"text" : "j.parameter glow/target @type decimal @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @default 0",
 					"varname" : "target"
 				}
 
@@ -1986,37 +1969,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "rdp_gl_blur_slab.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_gl_blur",
-				"patcherrelativepath" : "../rdp_gl_blur",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_gl_glow",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
-				"patcherrelativepath" : "../../Dependencies",
 				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreatePresetDoc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -2025,14 +1985,6 @@
 			}
 , 			{
 				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2067,9 +2019,9 @@
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"fontface" : [ 0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,

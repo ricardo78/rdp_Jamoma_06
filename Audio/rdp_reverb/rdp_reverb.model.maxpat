@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -216,14 +216,14 @@
 				"box" : 				{
 					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-12",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 569.0, 180.0, 389.0, 49.0 ],
+					"patching_rect" : [ 569.0, 180.0, 402.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter width @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 100",
+					"text" : "j.parameter width @type decimal @range 0 100 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @default 100",
 					"varname" : "wet/dry[4]"
 				}
 
@@ -239,7 +239,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 483.0, 141.0, 475.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter damping @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 100",
+					"text" : "j.parameter damping @type decimal @range 0 100 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @default 100",
 					"varname" : "wet/dry[3]"
 				}
 
@@ -253,9 +253,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 392.0, 101.0, 566.0, 35.0 ],
+					"patching_rect" : [ 392.0, 100.0, 566.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter roomsize @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 50",
+					"text" : "j.parameter roomsize @type decimal @range 0 100 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @default 50",
 					"varname" : "wet/dry[2]"
 				}
 
@@ -269,25 +269,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 334.0, 57.0, 624.0, 35.0 ],
+					"patching_rect" : [ 334.0, 57.0, 639.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter wet @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 50",
+					"text" : "j.parameter wet @type decimal @range 0 100 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @default 50",
 					"varname" : "wet/dry[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-94",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 186.0, 373.0, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "j.parameterCreate"
 				}
 
 			}
@@ -474,9 +459,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 284.0, 6.0, 674.0, 35.0 ],
+					"patching_rect" : [ 284.0, 5.0, 667.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter dry @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 100.",
+					"text" : "j.parameter dry @type decimal @range 0 100 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @default 100.",
 					"varname" : "wet/dry"
 				}
 
@@ -707,29 +692,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
-				"patcherrelativepath" : "../../Dependencies",
 				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreatePresetDoc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -742,14 +705,6 @@
 			}
 , 			{
 				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -784,8 +739,8 @@
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}

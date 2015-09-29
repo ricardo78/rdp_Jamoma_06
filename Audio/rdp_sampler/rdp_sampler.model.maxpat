@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -44,7 +44,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 651.5, 259.0, 141.0, 22.0 ],
-					"presentation_rect" : [ 576.5, 371.463806, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "prepend pitchBendValue"
 				}
@@ -93,7 +92,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -698,11 +697,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -738,7 +737,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -824,7 +823,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -881,7 +880,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 3,
+															"revision" : 5,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -1174,11 +1173,11 @@
 , 															{
 																"name" : "rdp-jamoma-style",
 																"default" : 																{
-																	"fontface" : [ 0 ],
-																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+																	"fontface" : [ 0 ],
+																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -2013,11 +2012,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
-													"fontface" : [ 0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"fontface" : [ 0 ],
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -2276,11 +2275,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2355,7 +2354,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2516,9 +2515,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 27.0, 124.080811, 531.0, 49.0 ],
+									"patching_rect" : [ 27.0, 124.080811, 557.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter loop/interpolation @type decimal @range 0.001 50 @clipmode low @ramp/drive Max @ramp/function linear @dataspace time @unit millisecond @default 0.001 @description \"interpolation between loop points\" @priority 3",
+									"text" : "j.parameter loop/interpolation @type decimal @range 0.001 50 @clipmode low @ramp/drive max @ramp/function linear @dataspace time @unit millisecond @default 0.001 @description \"interpolation between loop points\" @priority 3",
 									"varname" : "loop/interpolation"
 								}
 
@@ -2612,11 +2611,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2664,7 +2663,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2970,9 +2969,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 127.5, 93.0, 893.5, 49.0 ],
+									"patching_rect" : [ 127.5, 93.0, 924.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter adsr/maxsustain @type decimal @range -1 100000 @clipmode low @ramp/drive Max @ramp/function linear @dataspace time @unit millisecond @description \"Given as input the word maxsustain followed by a float sets the maximum amount of time that the envelope will remain in the sustain stage. A negative number sets no maximum the envelope will remain forever in the sustain stage until a note-off is received\" @priority 2 @default -1",
+									"text" : "j.parameter adsr/maxsustain @type decimal @range -1 100000 @clipmode low @ramp/drive max @ramp/function linear @dataspace time @unit millisecond @description \"Given as input the word maxsustain followed by a float sets the maximum amount of time that the envelope will remain in the sustain stage. A negative number sets no maximum the envelope will remain forever in the sustain stage until a note-off is received\" @priority 2 @default -1",
 									"varname" : "adsr/maxsustain"
 								}
 
@@ -2986,9 +2985,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 347.0, 204.139771, 674.0, 35.0 ],
+									"patching_rect" : [ 347.0, 204.139771, 707.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter adsr/attack @type decimal @range 0 1000 @clipmode low @ramp/drive Max @ramp/function linear @dataspace time @unit millisecond @priority 4 @default 1 @description \"set the attack in (ms)\"",
+									"text" : "j.parameter adsr/attack @type decimal @range 0 1000 @clipmode low @ramp/drive max @ramp/function linear @dataspace time @unit millisecond @priority 4 @default 1 @description \"set the attack in (ms)\"",
 									"varname" : "adsr/attack"
 								}
 
@@ -3002,9 +3001,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 439.0, 245.100037, 582.0, 35.0 ],
+									"patching_rect" : [ 439.0, 245.100037, 615.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter adsr/decay @type decimal @range 0 1000 @clipmode both @ramp/drive Max @ramp/function linear @dataspace time @unit millisecond @priority 5 @default 10 @description \"set decay in ms\"",
+									"text" : "j.parameter adsr/decay @type decimal @range 0 1000 @clipmode both @ramp/drive max @ramp/function linear @dataspace time @unit millisecond @priority 5 @default 10 @description \"set decay in ms\"",
 									"varname" : "adsr/decay"
 								}
 
@@ -3018,9 +3017,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 537.0, 292.0, 486.0, 49.0 ],
+									"patching_rect" : [ 537.0, 292.0, 531.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter adsr/sustain @type decimal @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace gain @unit dB @priority 6 @default 0.5 @description \"set the gain of the sustain\"",
+									"text" : "j.parameter adsr/sustain @type decimal @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @dataspace gain @unit dB @priority 6 @default 0.5 @description \"set the gain of the sustain\"",
 									"varname" : "adsr/sustain"
 								}
 
@@ -3029,14 +3028,14 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-112",
-									"linecount" : 4,
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 641.0, 351.0, 380.0, 62.0 ],
+									"patching_rect" : [ 641.0, 351.0, 424.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter adsr/release @type decimal @range 0 8000 @clipmode both @ramp/drive Max @ramp/function linear @dataspace time @unit millisecond @priority 7 @default 1000 @description \"set the release of the adsr\"",
+									"text" : "j.parameter adsr/release @type decimal @range 0 8000 @clipmode both @ramp/drive max @ramp/function linear @dataspace time @unit millisecond @priority 7 @default 1000 @description \"set the release of the adsr\"",
 									"varname" : "adsr/release"
 								}
 
@@ -3281,11 +3280,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3365,21 +3364,6 @@
 					"patching_rect" : [ 68.0, 127.202087, 103.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend midinote"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-74",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 528.5, 400.761719, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "j.parameterCreate"
 				}
 
 			}
@@ -3683,9 +3667,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 630.5, 112.702087, 359.0, 49.0 ],
+					"patching_rect" : [ 630.5, 112.702087, 382.0, 49.0 ],
 					"style" : "",
-					"text" : "j.parameter pitch/bend/range @type integer @range 0 12 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @unit midinote",
+					"text" : "j.parameter pitch/bend/range @type integer @range 0 12 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @unit midinote",
 					"varname" : "pitch/bend/range"
 				}
 
@@ -3699,9 +3683,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 651.5, 201.536194, 338.0, 49.0 ],
+					"patching_rect" : [ 651.5, 201.536194, 323.0, 49.0 ],
 					"style" : "",
-					"text" : "j.parameter pitch/bend/value @type integer @range 0 127 @clipmode none @ramp/drive Max @ramp/function linear @dataspace none@default 64",
+					"text" : "j.parameter pitch/bend/value @type integer @range 0 127 @clipmode none @ramp/drive max @ramp/function linear @dataspace none@default 64",
 					"varname" : "pitch/bend/value"
 				}
 
@@ -4001,14 +3985,12 @@
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
-				"patcherrelativepath" : "../../Dependencies",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_sampler_model_poly.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Audio/rdp_sampler",
-				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4016,27 +3998,6 @@
 				"name" : "thru.maxpat",
 				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreatePresetDoc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -4057,14 +4018,6 @@
 			}
 , 			{
 				"name" : "j.limiter~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -4102,11 +4055,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"fontface" : [ 0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
