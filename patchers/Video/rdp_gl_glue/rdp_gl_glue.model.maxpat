@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 166.0, 92.0, 1094.0, 550.0 ],
+		"rect" : [ 166.0, 92.0, 755.0, 550.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -954,13 +954,13 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
+				"bootpath" : "~/Documents/Max 7/Packages/rdp_Jamoma_06/misc",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "glue.genjit",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_gl_glue",
+				"bootpath" : "~/Documents/Max 7/Packages/rdp_Jamoma_06/patchers/Video/rdp_gl_glue",
 				"type" : "gJIT",
 				"implicit" : 1
 			}
@@ -1004,10 +1004,10 @@
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",

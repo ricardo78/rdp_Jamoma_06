@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 68.0, 79.0, 1181.0, 768.0 ],
+		"rect" : [ 68.0, 79.0, 853.0, 768.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -655,10 +655,10 @@
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1081,8 +1081,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 11.0, 6.0, 43.0, 42.5 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 225.0, 398.0, 40.0, 40.875 ],
-					"varname" : "logo"
+					"presentation_rect" : [ 225.0, 398.0, 40.0, 40.875 ]
 				}
 
 			}
@@ -1928,12 +1927,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "RDPJamomaLogo.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
-				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "thru.maxpat",
 				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
 				"type" : "JSON",
@@ -1991,10 +1984,10 @@
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",

@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 655.0, 282.0, 751.0, 483.0 ],
+		"rect" : [ 318.0, 364.0, 603.0, 483.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -999,7 +999,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
+				"bootpath" : "~/Documents/Max 7/Packages/rdp_Jamoma_06/misc",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
