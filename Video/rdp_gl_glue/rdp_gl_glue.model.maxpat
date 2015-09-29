@@ -610,14 +610,14 @@
 				"box" : 				{
 					"color" : [ 0.803922, 0.529412, 0.823529, 1.0 ],
 					"id" : "obj-22",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 134.5, 164.0, 349.0, 62.0 ],
+					"patching_rect" : [ 134.5, 164.0, 933.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter fade @type decimal @range -3. 3. @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 2 @default 1 @description \"Setting the threshold of the image\"",
+					"text" : "j.parameter fade @type decimal @range -3. 3. @clipmode both @ramp/drive max @ramp/function linear @dataspace none @priority 2 @default 1 @description \"Setting the threshold of the image\"",
 					"varname" : "threshold[1]"
 				}
 
@@ -740,21 +740,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-94",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 396.0, 415.81543, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "j.parameterCreate"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 20.0,
 					"id" : "obj-84",
@@ -842,14 +827,14 @@
 				"box" : 				{
 					"color" : [ 0.803922, 0.529412, 0.823529, 1.0 ],
 					"id" : "obj-21",
-					"linecount" : 4,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 121.5, 66.18457, 375.0, 62.0 ],
+					"patching_rect" : [ 121.5, 66.18457, 959.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter threshold @type decimal @range -3. 3. @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @priority 3 @default 1 @description \"Setting the threshold of the image\"",
+					"text" : "j.parameter threshold @type decimal @range -3. 3. @clipmode both @ramp/drive max @ramp/function linear @dataspace none @priority 3 @default 1 @description \"Setting the threshold of the image\"",
 					"varname" : "threshold"
 				}
 
@@ -974,24 +959,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreatePresetDoc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "glue.genjit",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_gl_glue",
 				"type" : "gJIT",
@@ -1003,14 +970,6 @@
 			}
 , 			{
 				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1044,11 +1003,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

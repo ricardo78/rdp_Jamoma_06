@@ -155,23 +155,8 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 506.5, 362.0, 30.0, 30.0 ],
+					"patching_rect" : [ 296.5, 351.0, 30.0, 30.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-94",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 506.5, 291.0, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "j.parameterCreate"
 				}
 
 			}
@@ -241,7 +226,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 506.5, 330.0, 338.0, 22.0 ],
+					"patching_rect" : [ 296.5, 319.0, 338.0, 22.0 ],
 					"style" : "",
 					"text" : "j.model @tags radialblur @description \"a model for radialblur\""
 				}
@@ -811,9 +796,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 99.0, 124.5, 598.0, 22.0 ],
+					"patching_rect" : [ 99.0, 124.5, 599.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter width @type decimal @clipmode none @ramp/drive Max @ramp/function linear @dataspace none",
+					"text" : "j.parameter width @type decimal @clipmode none @ramp/drive max @ramp/function linear @dataspace none",
 					"varname" : "width"
 				}
 
@@ -828,7 +813,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 159.0, 158.0, 678.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter origin @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @default 0.5 0.5",
+					"text" : "j.parameter origin @type array @clipmode none @ramp/drive max @ramp/function linear @dataspace none @default 0.5 0.5",
 					"varname" : "origin"
 				}
 
@@ -937,29 +922,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
-				"patcherrelativepath" : "../../../../../../../../Github_Development_Library/rdp_Jamoma_06/Dependencies",
 				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"patcherrelativepath" : "../../../../components/data/parameterCreate",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../../javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreatePresetDoc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../../javascript",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -968,14 +931,6 @@
 			}
 , 			{
 				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
 , 			{

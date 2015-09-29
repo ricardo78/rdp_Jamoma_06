@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 721.0, 282.0, 751.0, 483.0 ],
+		"rect" : [ 655.0, 282.0, 751.0, 483.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,14 +40,14 @@
 				"box" : 				{
 					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
 					"id" : "obj-9",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 164.0, 129.0, 370.5, 49.0 ],
+					"patching_rect" : [ 164.0, 129.0, 574.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter slide/down @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 4",
+					"text" : "j.parameter slide/down @type decimal @range 0 100 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @default 4",
 					"varname" : "slide/up[1]"
 				}
 
@@ -114,21 +114,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 409.0, 394.0, 30.0, 30.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-94",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 409.0, 323.0, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "j.parameterCreate"
 				}
 
 			}
@@ -863,9 +848,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 56.0, 83.0, 478.5, 35.0 ],
+					"patching_rect" : [ 56.0, 83.0, 692.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter slide/up @type decimal @range 0 100 @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @default 4",
+					"text" : "j.parameter slide/up @type decimal @range 0 100 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @default 4",
 					"varname" : "slide/up"
 				}
 
@@ -1019,37 +1004,11 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreatePresetDoc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "j.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
 , 			{

@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -172,7 +172,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -208,14 +208,14 @@
 								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-14",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 11.0, 18.0, 597.0, 49.0 ],
+									"patching_rect" : [ 11.0, 18.0, 752.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter scale @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 3 @description \"The 3D scaling factor in the form x y z (default = 0.5000 0.5000 0.5)\" @default 0.5 0.5 0.5",
+									"text" : "j.parameter scale @type array @clipmode none @ramp/drive max @ramp/function linear @dataspace none @priority 3 @description \"The 3D scaling factor in the form x y z (default = 0.5000 0.5000 0.5)\" @default 0.5 0.5 0.5",
 									"varname" : "scale[1]"
 								}
 
@@ -278,9 +278,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 38.0, 103.5, 570.0, 35.0 ],
+									"patching_rect" : [ 38.0, 103.5, 715.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter position @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 4 @default 0. 0. 0. @description \"The 3D origin in the form x y z\"",
+									"text" : "j.parameter position @type array @clipmode none @ramp/drive max @ramp/function linear @dataspace none @priority 4 @default 0. 0. 0. @description \"The 3D origin in the form x y z\"",
 									"varname" : "position"
 								}
 
@@ -292,14 +292,14 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-53",
-									"linecount" : 4,
+									"linecount" : 3,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 55.0, 189.5, 553.0, 62.0 ],
+									"patching_rect" : [ 55.0, 189.5, 689.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter rotate @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 5 @description \"Sets the current rotation (which in Jitter is expressed in angle/axis format) to the concatenation of rotations about the positive x y and z axes (in that order). Angles are expressed in degrees.\"",
+									"text" : "j.parameter rotate @type array @clipmode none @ramp/drive max @ramp/function linear @dataspace none @priority 5 @description \"Sets the current rotation (which in Jitter is expressed in angle/axis format) to the concatenation of rotations about the positive x y and z axes (in that order). Angles are expressed in degrees.\"",
 									"varname" : "rotate"
 								}
 
@@ -396,8 +396,8 @@
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
@@ -435,7 +435,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -476,9 +476,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 257.356689, 183.68457, 534.0, 35.0 ],
+									"patching_rect" : [ 257.356689, 183.68457, 597.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter shape/rotate @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 4 @description \"rotate around center of 3D shape\" @default 0. 0. 0.",
+									"text" : "j.parameter shape/rotate @type array @clipmode none @ramp/drive max @ramp/function linear @dataspace none @priority 4 @description \"rotate around center of 3D shape\" @default 0. 0. 0.",
 									"varname" : "shape/rotate"
 								}
 
@@ -492,9 +492,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 171.856689, 141.18457, 619.5, 35.0 ],
+									"patching_rect" : [ 171.856689, 141.18457, 651.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter shape/dimension @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 3 @description \"Set shape dimension to 3D shapes\" @default 20 20",
+									"text" : "j.parameter shape/dimension @type array @clipmode none @ramp/drive max @ramp/function linear @dataspace none @priority 3 @description \"Set shape dimension to 3D shapes\" @default 20 20",
 									"varname" : "shape/dimension"
 								}
 
@@ -508,9 +508,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 132.887939, 93.18457, 658.46875, 35.0 ],
+									"patching_rect" : [ 132.887939, 93.18457, 708.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter shape/cornerpin @type array @clipmode none @ramp/drive Max @ramp/function linear @dataspace none @priority 2 @description \"cornerpin plane\" @default -1. 1. 1. 1. -1. -1. 1. -1.",
+									"text" : "j.parameter shape/cornerpin @type array @clipmode none @ramp/drive max @ramp/function linear @dataspace none @priority 2 @description \"cornerpin plane\" @default -1. 1. 1. 1. -1. -1. 1. -1.",
 									"varname" : "shape/cornerpin"
 								}
 
@@ -559,7 +559,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -954,8 +954,8 @@
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
 													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"fontface" : [ 0 ],
 													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 												}
@@ -994,7 +994,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 3,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -1504,8 +1504,8 @@
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
 													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"fontface" : [ 0 ],
 													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 												}
@@ -1622,9 +1622,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 368.356689, 244.0, 423.0, 49.0 ],
+									"patching_rect" : [ 368.356689, 244.0, 485.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter shape/radius @type decimal @clipmode none @ramp/drive scheduler @ramp/function linear @dataspace none @priority 5 @description \"The radius of sphere shape\" @default 0.5",
+									"text" : "j.parameter shape/radius @type decimal @clipmode none @ramp/drive max @ramp/function linear @dataspace none @priority 5 @description \"The radius of sphere shape\" @default 0.5",
 									"varname" : "shape/radius"
 								}
 
@@ -1829,8 +1829,8 @@
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
@@ -2016,21 +2016,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-94",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 890.0, 393.0, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "j.parameterCreate"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 20.0,
 					"id" : "obj-84",
@@ -2121,14 +2106,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-74",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 394.0, 94.0, 452.0, 62.0 ],
+					"patching_rect" : [ 394.0, 94.0, 752.0, 49.0 ],
 					"style" : "",
-					"text" : "j.parameter color @type array @clipmode both @ramp/drive Max @ramp/function linear @dataspace none @dataspace none @priority 6 @description \"The draw color in the form red green blue alpha (default = 1.0000 1.0000 1.0000 1.) The list elements should be in the range 0. 1.\" @range 0. 1. @default 1. 1. 1. 1.",
+					"text" : "j.parameter color @type array @clipmode both @ramp/drive max @ramp/function linear @dataspace none @dataspace none @priority 6 @description \"The draw color in the form red green blue alpha (default = 1.0000 1.0000 1.0000 1.) The list elements should be in the range 0. 1.\" @range 0. 1. @default 1. 1. 1. 1.",
 					"varname" : "color[1]"
 				}
 
@@ -2156,14 +2141,14 @@
 				"box" : 				{
 					"color" : [ 0.803922, 0.529412, 0.823529, 1.0 ],
 					"id" : "obj-1",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 431.0, 205.925232, 416.0, 49.0 ],
+					"patching_rect" : [ 431.0, 205.925232, 715.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter saturation @type decimal @range 0. 1. @clipmode both @ramp/drive Max @ramp/function linear @description \"Set the saturation of the color\" @default 1. @priority 7",
+					"text" : "j.parameter saturation @type decimal @range 0. 1. @clipmode both @ramp/drive max @ramp/function linear @description \"Set the saturation of the color\" @default 1. @priority 7",
 					"varname" : "saturation"
 				}
 
@@ -2496,29 +2481,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
-				"patcherrelativepath" : "../../Dependencies",
 				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreatePresetDoc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -2527,14 +2490,6 @@
 			}
 , 			{
 				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2577,8 +2532,8 @@
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}

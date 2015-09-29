@@ -40,14 +40,13 @@
 				"box" : 				{
 					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
 					"id" : "obj-18",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 266.0, 124.0, 585.0, 35.0 ],
+					"patching_rect" : [ 266.0, 124.0, 600.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter angle @type decimal @clipmode none @ramp/drive Max @ramp/function linear @dataspace none",
+					"text" : "j.parameter angle @type decimal @clipmode none @ramp/drive max @ramp/function linear @dataspace none",
 					"varname" : "mirror[2]"
 				}
 
@@ -60,9 +59,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 165.0, 99.0, 686.0, 22.0 ],
+					"patching_rect" : [ 165.0, 99.0, 600.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter origin @type decimal @clipmode none @ramp/drive Max @ramp/function linear @dataspace none",
+					"text" : "j.parameter origin @type decimal @clipmode none @ramp/drive max @ramp/function linear @dataspace none",
 					"varname" : "mirror[1]"
 				}
 
@@ -181,21 +180,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 256.0, 349.0, 30.0, 30.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-94",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 256.0, 285.0, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "j.parameterCreate"
 				}
 
 			}
@@ -866,9 +850,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 70.0, 72.0, 781.0, 22.0 ],
+					"patching_rect" : [ 70.0, 71.0, 602.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter mirror @type decimal @clipmode none @ramp/drive Max @ramp/function linear @dataspace none",
+					"text" : "j.parameter mirror @type decimal @clipmode none @ramp/drive max @ramp/function linear @dataspace none",
 					"varname" : "mirror"
 				}
 
@@ -882,9 +866,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 359.0, 164.0, 492.0, 35.0 ],
+					"patching_rect" : [ 359.0, 164.0, 516.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter color @type array @range 0 1 @clipmode both @ramp/drive Max @ramp/function linear @dataspace color @unit rgb @default 0. 0. 0. 1.",
+					"text" : "j.parameter color @type array @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @dataspace color @unit rgb @default 0. 0. 0. 1.",
 					"varname" : "color"
 				}
 
@@ -1038,37 +1022,11 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreatePresetDoc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "j.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
 , 			{
