@@ -38,12 +38,26 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"format" : 6,
+					"id" : "obj-25",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 99.0, 147.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 139.0, 206.0, 87.0, 22.0 ],
+					"patching_rect" : [ 155.0, 208.0, 87.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend origin"
 				}
@@ -89,7 +103,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 99.0, 153.5, 52.0, 21.0 ],
+					"patching_rect" : [ 99.0, 208.0, 52.0, 21.0 ],
 					"style" : "",
 					"text" : "width $1"
 				}
@@ -796,7 +810,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 99.0, 124.5, 599.0, 22.0 ],
+					"patching_rect" : [ 99.0, 85.0, 599.0, 22.0 ],
 					"style" : "",
 					"text" : "j.parameter width @type decimal @clipmode none @ramp/drive max @ramp/function linear @dataspace none",
 					"varname" : "width"
@@ -811,9 +825,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 159.0, 158.0, 678.0, 22.0 ],
+					"patching_rect" : [ 183.0, 112.0, 665.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter origin @type array @clipmode none @ramp/drive max @ramp/function linear @dataspace none @default 0.5 0.5",
+					"text" : "j.parameter origin @type array @clipmode none @ramp/drive max @ramp/function linear @dataspace none @default 0. 0.",
 					"varname" : "origin"
 				}
 
@@ -875,6 +889,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -893,7 +916,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
+					"destination" : [ "obj-25", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
