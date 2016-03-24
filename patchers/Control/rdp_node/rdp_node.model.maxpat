@@ -593,7 +593,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
@@ -618,7 +617,8 @@
 									"knobsize" : 20.0,
 									"maxclass" : "nodes",
 									"nodecolor" : [ 0.65098, 0.666667, 0.662745, 0.49 ],
-									"nsize" : [ 0.1 ],
+									"nodenumber" : 10,
+									"nsize" : [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ],
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
@@ -627,8 +627,8 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 0.0, 0.0, 468.520599, 461.605164 ],
 									"style" : "",
-									"xplace" : [ 0.1 ],
-									"yplace" : [ 0.1 ]
+									"xplace" : [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ],
+									"yplace" : [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ]
 								}
 
 							}
