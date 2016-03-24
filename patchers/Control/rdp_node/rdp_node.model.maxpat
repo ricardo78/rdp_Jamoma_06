@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 3,
-			"architecture" : "x64",
+			"minor" : 2,
+			"revision" : 1,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 191.0, 107.0, 1036.0, 674.0 ],
+		"rect" : [ 305.0, 119.0, 1038.0, 700.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"color" : [ 0.803922, 0.529412, 0.823529, 1.0 ],
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 278.0, 537.0, 114.0, 22.0 ],
+					"style" : "",
+					"text" : "j.parameter_Create"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
@@ -72,9 +85,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x64",
+							"minor" : 2,
+							"revision" : 1,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -547,13 +560,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x64",
+							"minor" : 2,
+							"revision" : 1,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 42.0, 402.0, 469.0, 462.0 ],
+						"rect" : [ 43.0, 401.0, 469.0, 462.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -700,9 +713,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x64",
+							"minor" : 2,
+							"revision" : 1,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1077,39 +1090,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.775126, 0.553662, 0.780762, 1.0 ],
-					"fontface" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-38",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 25.000011, 569.0, 197.0, 22.0 ],
-					"style" : "",
-					"text" : "j.return node/values @type generic",
-					"varname" : "nodes"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-94",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 261.0, 533.0, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "j.parameterCreate"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 20.0,
 					"id" : "obj-9",
@@ -1231,12 +1211,12 @@
 				"box" : 				{
 					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 					"id" : "obj-11",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 571.5, 279.0, 303.0, 62.0 ],
+					"patching_rect" : [ 571.5, 279.0, 421.5, 49.0 ],
 					"style" : "",
 					"text" : "j.parameter node/amount @type integer @range 1 10 @clipmode both @ramp/drive None @ramp/function linear @dataspace none @default 10 @description \"Number of nodes\" @priority 1",
 					"varname" : "node/amount"
@@ -1382,9 +1362,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x64",
+							"minor" : 2,
+							"revision" : 1,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1870,9 +1850,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x64",
+							"minor" : 2,
+							"revision" : 1,
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -2347,6 +2327,21 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.803922, 0.529412, 0.823529, 1.0 ],
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 25.000011, 575.0, 185.0, 22.0 ],
+					"style" : "",
+					"text" : "j.return node/values @type array",
+					"varname" : "node/values"
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -2405,7 +2400,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
+					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-21", 0 ]
@@ -2537,7 +2532,7 @@
 					"destination" : [ "obj-46", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 135.500011, 331.75, 443.333374, 331.75 ],
+					"midpoints" : [ 135.500015, 331.75, 443.333374, 331.75 ],
 					"source" : [ "obj-56", 3 ]
 				}
 
@@ -2600,40 +2595,55 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-3::obj-171" : [ "live.text[10]", "live.text", 0 ],
+			"obj-3::obj-170" : [ "live.text[9]", "live.text", 0 ],
+			"obj-3::obj-169" : [ "live.text[8]", "live.text", 0 ],
+			"obj-3::obj-168" : [ "live.text[7]", "live.text", 0 ],
+			"obj-3::obj-167" : [ "live.text[6]", "live.text", 0 ],
+			"obj-3::obj-166" : [ "live.text[5]", "live.text", 0 ],
+			"obj-3::obj-165" : [ "live.text[4]", "live.text", 0 ],
+			"obj-3::obj-164" : [ "live.text[3]", "live.text", 0 ],
+			"obj-3::obj-163" : [ "live.text[2]", "live.text", 0 ],
+			"obj-3::obj-162" : [ "live.text[1]", "live.text", 0 ],
+			"obj-3::obj-175" : [ "live.text[14]", "live.text", 0 ],
+			"obj-3::obj-174" : [ "live.text[13]", "live.text", 0 ],
+			"obj-3::obj-173" : [ "live.text[12]", "live.text", 0 ],
+			"obj-3::obj-172" : [ "live.text[11]", "live.text", 0 ],
+			"obj-3::obj-176" : [ "live.text[15]", "live.text", 0 ],
+			"obj-3::obj-161" : [ "live.text", "live.text", 0 ]
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
-				"patcherrelativepath" : "../../Dependencies",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/misc",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
+				"name" : "j.parameter_create.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameter_create",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.thisparentpatcher.js",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.parameterCreatePresetDoc.js",
+				"name" : "j.parameter_create_preset_doc.js",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../../Max 7/Packages/Jamoma/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameter_array.mxo",
-				"type" : "iLaX"
 			}
 , 			{
 				"name" : "j.return.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.parameter_array.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2649,14 +2659,6 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "j.node.mxo",
 				"type" : "iLaX"
 			}
@@ -2664,8 +2666,16 @@
 				"name" : "j.init.mxo",
 				"type" : "iLaX"
 			}
+, 			{
+				"name" : "j.map.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.unit.mxo",
+				"type" : "iLaX"
+			}
  ],
-		"embedsnapshot" : 0,
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -2687,11 +2697,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"fontface" : [ 0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 1,
-			"revision" : 0,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -234,8 +234,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 1,
-							"revision" : 0,
+							"minor" : 2,
+							"revision" : 1,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -307,8 +307,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 1,
-											"revision" : 0,
+											"minor" : 2,
+											"revision" : 1,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -942,22 +942,22 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-6::obj-176" : [ "live.text[15]", "live.text", 0 ],
+			"obj-6::obj-166" : [ "live.text[5]", "live.text", 0 ],
+			"obj-6::obj-165" : [ "live.text[4]", "live.text", 0 ],
 			"obj-6::obj-161" : [ "live.text", "live.text", 0 ],
+			"obj-6::obj-176" : [ "live.text[15]", "live.text", 0 ],
 			"obj-6::obj-164" : [ "live.text[3]", "live.text", 0 ],
-			"obj-6::obj-170" : [ "live.text[9]", "live.text", 0 ],
-			"obj-6::obj-172" : [ "live.text[11]", "live.text", 0 ],
 			"obj-6::obj-163" : [ "live.text[2]", "live.text", 0 ],
-			"obj-6::obj-174" : [ "live.text[13]", "live.text", 0 ],
-			"obj-6::obj-171" : [ "live.text[10]", "live.text", 0 ],
-			"obj-6::obj-167" : [ "live.text[6]", "live.text", 0 ],
 			"obj-6::obj-162" : [ "live.text[1]", "live.text", 0 ],
 			"obj-6::obj-175" : [ "live.text[14]", "live.text", 0 ],
-			"obj-6::obj-169" : [ "live.text[8]", "live.text", 0 ],
+			"obj-6::obj-174" : [ "live.text[13]", "live.text", 0 ],
 			"obj-6::obj-173" : [ "live.text[12]", "live.text", 0 ],
-			"obj-6::obj-165" : [ "live.text[4]", "live.text", 0 ],
-			"obj-6::obj-166" : [ "live.text[5]", "live.text", 0 ],
-			"obj-6::obj-168" : [ "live.text[7]", "live.text", 0 ]
+			"obj-6::obj-172" : [ "live.text[11]", "live.text", 0 ],
+			"obj-6::obj-171" : [ "live.text[10]", "live.text", 0 ],
+			"obj-6::obj-170" : [ "live.text[9]", "live.text", 0 ],
+			"obj-6::obj-169" : [ "live.text[8]", "live.text", 0 ],
+			"obj-6::obj-168" : [ "live.text[7]", "live.text", 0 ],
+			"obj-6::obj-167" : [ "live.text[6]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1031,11 +1031,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"fontface" : [ 0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
