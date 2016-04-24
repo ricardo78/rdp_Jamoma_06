@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 5,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 420.0, 80.0, 1048.0, 776.0 ],
+		"rect" : [ 358.0, 80.0, 1048.0, 776.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -125,7 +125,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 335.0, 801.0, 133.0, 22.0 ],
 					"style" : "",
-					"text" : "j.out 1 @type jit_matrix"
+					"text" : "j.out 1 @tags jit_matrix"
 				}
 
 			}
@@ -151,21 +151,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 559.25, 833.0, 30.0, 30.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-94",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 612.25, 765.0, 107.0, 22.0 ],
-					"style" : "",
-					"text" : "j.parameterCreate"
 				}
 
 			}
@@ -527,8 +512,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1201,32 +1186,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "gl_pointmask.js",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_gl_mask",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_mask",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RDPJamomaLogo.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/misc",
 				"type" : "PNG ",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreatePresetDoc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -1246,14 +1213,6 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "j.out.mxo",
 				"type" : "iLaX"
 			}
@@ -1262,7 +1221,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0,
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -1284,11 +1243,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"fontface" : [ 0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
