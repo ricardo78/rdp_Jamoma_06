@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 312.0, 157.0, 1107.0, 652.0 ],
+		"rect" : [ 299.0, 157.0, 1107.0, 652.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 633.0, 109.5, 97.0, 22.0 ],
+					"patching_rect" : [ 707.0, 108.5, 97.0, 22.0 ],
 					"style" : "",
 					"text" : "j.remote amount"
 				}
@@ -1655,7 +1655,6 @@
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 597.0, 105.0 ],
 					"source" : [ "obj-18", 0 ]
 				}
 

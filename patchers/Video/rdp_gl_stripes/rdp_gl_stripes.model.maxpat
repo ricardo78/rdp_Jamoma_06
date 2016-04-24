@@ -56,10 +56,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 556.0, 266.0, 87.0, 22.0 ],
-					"presentation_rect" : [ 564.0, 249.5, 0.0, 0.0 ],
+					"patching_rect" : [ 556.0, 266.0, 98.0, 22.0 ],
 					"style" : "",
-					"text" : "prepend angle"
+					"text" : "prepend amount"
 				}
 
 			}
@@ -909,7 +908,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 556.0, 208.5, 283.0, 49.0 ],
+					"patching_rect" : [ 556.0, 208.5, 285.0, 49.0 ],
 					"style" : "",
 					"text" : "j.parameter amount @type integer @range 1 400 @clipmode both @ramp/drive max @ramp/function linear @dataspace none",
 					"varname" : "amount"
@@ -1053,7 +1052,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 565.5, 308.0, 271.0, 308.0, 271.0, 245.0, 51.5, 245.0 ],
+					"midpoints" : [ 565.5, 295.0, 271.0, 295.0, 271.0, 245.0, 51.5, 245.0 ],
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -1079,8 +1078,8 @@
  ],
 		"parameters" : 		{
 			"obj-6::obj-176" : [ "live.text[15]", "live.text", 0 ],
-			"obj-6::obj-171" : [ "live.text[10]", "live.text", 0 ],
 			"obj-6::obj-161" : [ "live.text", "live.text", 0 ],
+			"obj-6::obj-171" : [ "live.text[10]", "live.text", 0 ],
 			"obj-6::obj-166" : [ "live.text[5]", "live.text", 0 ],
 			"obj-6::obj-175" : [ "live.text[14]", "live.text", 0 ],
 			"obj-6::obj-174" : [ "live.text[13]", "live.text", 0 ],
