@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -37,6 +37,32 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"color" : [ 0.803922, 0.529412, 0.823529, 1.0 ],
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 618.0, 353.0, 114.0, 22.0 ],
+					"style" : "",
+					"text" : "j.parameter_Create"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 556.0, 266.0, 98.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend amount"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
 					"id" : "obj-18",
@@ -268,7 +294,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -341,7 +367,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -873,6 +899,22 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.803922, 0.529412, 0.823529, 1.0 ],
+					"id" : "obj-9",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 556.0, 208.5, 285.0, 49.0 ],
+					"style" : "",
+					"text" : "j.parameter amount @type integer @range 1 400 @clipmode both @ramp/drive max @ramp/function linear @dataspace none",
+					"varname" : "amount"
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -1007,6 +1049,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 565.5, 295.0, 271.0, 295.0, 271.0, 245.0, 51.5, 245.0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1014,11 +1066,57 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
+		"parameters" : 		{
+			"obj-6::obj-176" : [ "live.text[15]", "live.text", 0 ],
+			"obj-6::obj-161" : [ "live.text", "live.text", 0 ],
+			"obj-6::obj-171" : [ "live.text[10]", "live.text", 0 ],
+			"obj-6::obj-166" : [ "live.text[5]", "live.text", 0 ],
+			"obj-6::obj-175" : [ "live.text[14]", "live.text", 0 ],
+			"obj-6::obj-174" : [ "live.text[13]", "live.text", 0 ],
+			"obj-6::obj-173" : [ "live.text[12]", "live.text", 0 ],
+			"obj-6::obj-172" : [ "live.text[11]", "live.text", 0 ],
+			"obj-6::obj-162" : [ "live.text[1]", "live.text", 0 ],
+			"obj-6::obj-167" : [ "live.text[6]", "live.text", 0 ],
+			"obj-6::obj-170" : [ "live.text[9]", "live.text", 0 ],
+			"obj-6::obj-168" : [ "live.text[7]", "live.text", 0 ],
+			"obj-6::obj-164" : [ "live.text[3]", "live.text", 0 ],
+			"obj-6::obj-163" : [ "live.text[2]", "live.text", 0 ],
+			"obj-6::obj-169" : [ "live.text[8]", "live.text", 0 ],
+			"obj-6::obj-165" : [ "live.text[4]", "live.text", 0 ]
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/misc",
 				"type" : "PNG ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.parameter_create.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameter_create",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.thisparentpatcher.js",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.parameter_create_preset_doc.js",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -1037,8 +1135,48 @@
 				"name" : "j.in.mxo",
 				"type" : "iLaX"
 			}
+, 			{
+				"name" : "j.map.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.unit.mxo",
+				"type" : "iLaX"
+			}
  ],
-		"autosave" : 0
+		"autosave" : 0,
+		"styles" : [ 			{
+				"name" : "AudioStatus_Menu",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
+				"name" : "rdp-jamoma-style",
+				"default" : 				{
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+ ]
 	}
 
 }
