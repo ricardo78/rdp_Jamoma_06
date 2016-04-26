@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 4,
+			"minor" : 2,
+			"revision" : 2,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -716,13 +716,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 4,
+							"minor" : 2,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 112.0, 352.0, 246.0, 494.0 ],
+						"rect" : [ 571.0, 249.0, 247.0, 493.0 ],
 						"bgcolor" : [ 0.878431, 0.878431, 0.858824, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -752,6 +752,28 @@
 						"subpatcher_template" : "",
 						"title" : "no_model_address",
 						"boxes" : [ 							{
+								"box" : 								{
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+									"fontsize" : 10.0,
+									"format" : 6,
+									"id" : "obj-17",
+									"maxclass" : "flonum",
+									"maximum" : 1.0,
+									"minimum" : 0.0,
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 26.083328, 569.825867, 47.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 185.124039, 407.277771, 47.0, 20.0 ],
+									"style" : "",
+									"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
+									"tricolor" : [ 0.882353, 0.988235, 1.0, 1.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
 									"fontsize" : 10.0,
@@ -794,7 +816,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 229.170609, 772.18512, 67.0, 30.0 ],
+									"patching_rect" : [ 363.291687, 778.18512, 67.0, 30.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 7.0, 338.777771, 131.0, 18.0 ],
 									"style" : "",
@@ -813,7 +835,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 348.216248, 742.18512, 67.0, 30.0 ],
+									"patching_rect" : [ 338.091248, 755.0, 67.0, 30.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 7.0, 317.777771, 131.0, 18.0 ],
 									"style" : "",
@@ -930,24 +952,6 @@
 									"presentation_rect" : [ 7.0, 362.56662, 135.349686, 18.0 ],
 									"style" : "",
 									"text" : "Corner color (convenience)",
-									"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.54902, 0.545098, 0.552941, 0.0 ],
-									"fontname" : "Arial",
-									"fontsize" : 10.0,
-									"id" : "obj-108",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 5.0, 205.277771, 140.0, 18.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 5.0, 407.388916, 135.349686, 18.0 ],
-									"style" : "",
-									"text" : "Layer color",
 									"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ]
 								}
 
@@ -1264,7 +1268,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 419.674561, 832.889343, 121.0, 22.0 ],
+									"patching_rect" : [ 452.976746, 832.889343, 121.0, 22.0 ],
 									"style" : "",
 									"text" : "j.remote corner/color"
 								}
@@ -1373,7 +1377,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 107.166656, 571.825867, 36.0, 18.0 ],
+									"patching_rect" : [ 136.5, 613.825867, 36.0, 18.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 155.125992, 407.277771, 20.0, 18.0 ],
 									"style" : "",
@@ -1390,7 +1394,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 92.166656, 556.825867, 36.0, 18.0 ],
+									"patching_rect" : [ 87.75, 602.825867, 36.0, 18.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 141.349686, 407.277771, 20.0, 18.0 ],
 									"style" : "",
@@ -1607,7 +1611,7 @@
 									"numinlets" : 11,
 									"numoutlets" : 11,
 									"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "" ],
-									"patching_rect" : [ 363.291687, 537.825867, 124.0, 22.0 ],
+									"patching_rect" : [ 398.291687, 529.005493, 124.0, 22.0 ],
 									"style" : "",
 									"text" : "j.list2parameter 4"
 								}
@@ -1851,7 +1855,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 494.75, 537.825867, 83.0, 22.0 ],
+									"patching_rect" : [ 529.75, 529.005493, 83.0, 22.0 ],
 									"style" : "",
 									"text" : "j.remote color"
 								}
@@ -2002,7 +2006,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 225.170609, 543.825867, 47.0, 20.0 ],
+									"patching_rect" : [ 234.714249, 563.825867, 47.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 185.124039, 447.277771, 59.0, 20.0 ],
 									"style" : "",
@@ -2109,23 +2113,6 @@
 									"presentation_rect" : [ 172.263687, 408.277771, 20.0, 18.0 ],
 									"style" : "",
 									"text" : "R",
-									"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 10.0,
-									"id" : "obj-104",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 338.091248, 322.0, 81.0, 18.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 82.657608, 448.277771, 36.0, 18.0 ],
-									"style" : "",
-									"text" : "Color",
 									"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ]
 								}
 
@@ -2334,7 +2321,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 128.583328, 541.825867, 47.0, 20.0 ],
+									"patching_rect" : [ 125.626968, 569.825867, 47.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 185.124039, 428.277771, 52.0, 20.0 ],
 									"style" : "",
@@ -2437,28 +2424,6 @@
 									"pt2" : [ 0.5, 0.95 ],
 									"rounded" : 0,
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-									"fontsize" : 10.0,
-									"format" : 6,
-									"id" : "obj-17",
-									"maxclass" : "flonum",
-									"maximum" : 1.0,
-									"minimum" : 0.0,
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 26.083328, 541.825867, 47.0, 20.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 185.124039, 407.277771, 59.0, 20.0 ],
-									"style" : "",
-									"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
-									"tricolor" : [ 0.882353, 0.988235, 1.0, 1.0 ]
 								}
 
 							}
@@ -3128,11 +3093,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"fontface" : [ 0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3622,7 +3587,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo2.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/misc",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
@@ -3649,7 +3614,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0,
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -3671,11 +3636,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"fontface" : [ 0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"fontface" : [ 0 ]
 				}
 ,
 				"parentstyle" : "",
