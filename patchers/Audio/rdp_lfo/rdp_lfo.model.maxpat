@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -44,22 +44,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 12.0, 84.0, 30.0, 30.0 ],
+					"patching_rect" : [ 639.239502, 573.0, 30.0, 30.0 ],
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 12.0, 126.0, 30.0, 22.0 ],
-					"style" : "",
-					"text" : "j.in"
 				}
 
 			}
@@ -70,7 +56,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 639.239502, 678.0, 30.0, 30.0 ],
+					"patching_rect" : [ 639.239502, 668.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -160,7 +146,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -367,7 +353,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -872,7 +858,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1357,11 +1343,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1413,7 +1399,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -2373,7 +2359,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-106", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
@@ -2436,39 +2422,39 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-11::obj-165" : [ "live.text[4]", "live.text", 0 ],
 			"obj-11::obj-161" : [ "live.text", "live.text", 0 ],
-			"obj-11::obj-174" : [ "live.text[13]", "live.text", 0 ],
-			"obj-11::obj-164" : [ "live.text[3]", "live.text", 0 ],
-			"obj-11::obj-173" : [ "live.text[12]", "live.text", 0 ],
-			"obj-11::obj-172" : [ "live.text[11]", "live.text", 0 ],
+			"obj-11::obj-166" : [ "live.text[5]", "live.text", 0 ],
+			"obj-11::obj-176" : [ "live.text[15]", "live.text", 0 ],
 			"obj-11::obj-171" : [ "live.text[10]", "live.text", 0 ],
 			"obj-11::obj-170" : [ "live.text[9]", "live.text", 0 ],
 			"obj-11::obj-169" : [ "live.text[8]", "live.text", 0 ],
 			"obj-11::obj-168" : [ "live.text[7]", "live.text", 0 ],
 			"obj-11::obj-167" : [ "live.text[6]", "live.text", 0 ],
-			"obj-11::obj-166" : [ "live.text[5]", "live.text", 0 ],
-			"obj-11::obj-165" : [ "live.text[4]", "live.text", 0 ],
-			"obj-11::obj-175" : [ "live.text[14]", "live.text", 0 ],
-			"obj-11::obj-163" : [ "live.text[2]", "live.text", 0 ],
 			"obj-11::obj-162" : [ "live.text[1]", "live.text", 0 ],
-			"obj-11::obj-176" : [ "live.text[15]", "live.text", 0 ]
+			"obj-11::obj-175" : [ "live.text[14]", "live.text", 0 ],
+			"obj-11::obj-174" : [ "live.text[13]", "live.text", 0 ],
+			"obj-11::obj-173" : [ "live.text[12]", "live.text", 0 ],
+			"obj-11::obj-172" : [ "live.text[11]", "live.text", 0 ],
+			"obj-11::obj-163" : [ "live.text[2]", "live.text", 0 ],
+			"obj-11::obj-164" : [ "live.text[3]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "j.parameter_create.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameter_create",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/patchers/components/data/parameter_create",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.parameter_create_preset_doc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -2498,10 +2484,6 @@
 				"name" : "j.model.mxo",
 				"type" : "iLaX"
 			}
-, 			{
-				"name" : "j.in.mxo",
-				"type" : "iLaX"
-			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
@@ -2525,11 +2507,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"fontface" : [ 0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
