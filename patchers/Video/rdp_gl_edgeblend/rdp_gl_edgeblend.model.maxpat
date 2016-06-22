@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 1,
-			"architecture" : "x86",
+			"revision" : 3,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 309.0, 360.0, 790.0, 494.0 ],
+		"rect" : [ 228.0, 378.0, 790.0, 494.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,31 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 370.0, 385.0, 114.0, 22.0 ],
+					"style" : "",
+					"text" : "j.parameter_Create"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 281.5, 302.522827, 135.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend param gamma"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -57,7 +82,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 170.0, 231.522827, 572.0, 22.0 ],
+					"patching_rect" : [ 170.0, 215.522827, 572.0, 22.0 ],
 					"style" : "",
 					"text" : "j.parameter edge/invert @type boolean @description \"Invert edge blending.\" @default 0"
 				}
@@ -138,7 +163,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 138.0, 193.0, 604.0, 35.0 ],
+					"patching_rect" : [ 138.0, 177.0, 604.0, 35.0 ],
 					"style" : "",
 					"text" : "j.parameter edge/bottom @type decimal @range 0. 1. @clipmode low @ramp/drive max @ramp/function linear @dataspace none @default 0 @description \"left edgeblend\"",
 					"varname" : "edge/left[3]"
@@ -154,7 +179,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 117.333344, 156.0, 662.0, 35.0 ],
+					"patching_rect" : [ 117.333344, 140.0, 662.0, 35.0 ],
 					"style" : "",
 					"text" : "j.parameter edge/right @type decimal @range 0. 1. @clipmode low @ramp/drive max @ramp/function linear @dataspace none @default 0 @description \"left edgeblend\"",
 					"varname" : "edge/left[2]"
@@ -170,7 +195,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 96.666664, 117.0, 685.0, 35.0 ],
+					"patching_rect" : [ 96.666664, 101.0, 685.0, 35.0 ],
 					"style" : "",
 					"text" : "j.parameter edge/top @type decimal @range 0. 1. @clipmode low @ramp/drive max @ramp/function linear @dataspace none @default 0 @description \"left edgeblend\"",
 					"varname" : "edge/left[1]"
@@ -274,8 +299,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
-							"architecture" : "x86",
+							"revision" : 3,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -347,8 +372,8 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 1,
-											"architecture" : "x86",
+											"revision" : 3,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -504,10 +529,10 @@
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
 													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 													"fontface" : [ 0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -855,10 +880,10 @@
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -891,9 +916,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 76.0, 343.0, 225.0, 22.0 ],
+					"patching_rect" : [ 76.0, 343.0, 232.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.gl.slab Jamoma @file tr.edgeblend.jxs",
+					"text" : "jit.gl.slab Jamoma @file tr.edgeblend+.jxs",
 					"varname" : "edge"
 				}
 
@@ -938,15 +963,41 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 76.0, 80.0, 685.0, 35.0 ],
+					"patching_rect" : [ 76.0, 64.0, 685.0, 35.0 ],
 					"style" : "",
 					"text" : "j.parameter edge/left @type decimal @range 0. 1. @clipmode low @ramp/drive max @ramp/function linear @dataspace none @default 0 @description \"left edgeblend\"",
 					"varname" : "edge/left"
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
+					"id" : "obj-20",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 281.5, 245.5, 496.0, 49.0 ],
+					"style" : "",
+					"text" : "j.parameter edge/gamma @type decimal @range 0 10 @clipmode both @ramp/drive none @dataspace none @default 0.1 @tags gamma @description \"Gamma correction for edge blend\"",
+					"varname" : "gamma"
+				}
+
+			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 291.0, 332.0, 85.5, 332.0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 3 ],
 					"disabled" : 0,
@@ -1008,6 +1059,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -1085,10 +1145,47 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-19::obj-171" : [ "live.text[10]", "live.text", 0 ],
+			"obj-19::obj-176" : [ "live.text[15]", "live.text", 0 ],
+			"obj-19::obj-163" : [ "live.text[2]", "live.text", 0 ],
+			"obj-19::obj-168" : [ "live.text[7]", "live.text", 0 ],
+			"obj-19::obj-174" : [ "live.text[13]", "live.text", 0 ],
+			"obj-19::obj-166" : [ "live.text[5]", "live.text", 0 ],
+			"obj-19::obj-172" : [ "live.text[11]", "live.text", 0 ],
+			"obj-19::obj-164" : [ "live.text[3]", "live.text", 0 ],
+			"obj-19::obj-161" : [ "live.text", "live.text", 0 ],
+			"obj-19::obj-169" : [ "live.text[8]", "live.text", 0 ],
+			"obj-19::obj-175" : [ "live.text[14]", "live.text", 0 ],
+			"obj-19::obj-167" : [ "live.text[6]", "live.text", 0 ],
+			"obj-19::obj-162" : [ "live.text[1]", "live.text", 0 ],
+			"obj-19::obj-173" : [ "live.text[12]", "live.text", 0 ],
+			"obj-19::obj-165" : [ "live.text[4]", "live.text", 0 ],
+			"obj-19::obj-170" : [ "live.text[9]", "live.text", 0 ]
+		}
+,
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/misc",
 				"type" : "PNG ",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.parameter_create.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/patchers/components/data/parameter_create",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.thisparentpatcher.js",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.parameter_create_preset_doc.js",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/javascript",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -1105,6 +1202,14 @@
 			}
 , 			{
 				"name" : "j.in.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.map.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
  ],
@@ -1131,10 +1236,10 @@
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"fontface" : [ 0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
