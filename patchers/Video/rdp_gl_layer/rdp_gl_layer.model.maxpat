@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 106.0, 1152.0, 689.0 ],
+		"rect" : [ 135.0, 117.0, 1152.0, 689.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -395,11 +395,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -508,9 +508,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 132.887939, 93.18457, 668.0, 35.0 ],
+									"patching_rect" : [ 132.887939, 93.18457, 683.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter shape/cornerpin @type array @clipmode none @ramp/drive max @ramp/function linear @dataspace none @priority 2 @description \"cornerpin plane\" @default -1. 1. 1. 1. -1. -1. 1. -1. @repetitions/filter 1",
+									"text" : "j.parameter shape/cornerpin @type array @clipmode none @ramp/drive max @ramp/function linear @dataspace none @priority 2 @description \"cornerpin plane\" @default -1. 1. 1. 1. -1. -1. 1. -1. @repetitions/filter 0",
 									"varname" : "shape/cornerpin"
 								}
 
@@ -595,20 +595,6 @@
 												"box" : 												{
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
-													"id" : "obj-102",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 323.5, 358.0, 121.0, 22.0 ],
-													"style" : "",
-													"text" : "s #1-reset-Cornerpin"
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"fontname" : "Arial",
-													"fontsize" : 12.0,
 													"id" : "obj-33",
 													"maxclass" : "message",
 													"numinlets" : 2,
@@ -643,11 +629,11 @@
 													"id" : "obj-163",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 3,
-													"outlettype" : [ "bang", "int", "int" ],
-													"patching_rect" : [ 50.0, 175.0, 46.0, 22.0 ],
+													"numoutlets" : 1,
+													"outlettype" : [ "int" ],
+													"patching_rect" : [ 65.0, 179.0, 30.0, 22.0 ],
 													"style" : "",
-													"text" : "t b 0 0"
+													"text" : "t 0"
 												}
 
 											}
@@ -821,20 +807,10 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-102", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"midpoints" : [ 59.5, 230.0, 333.0, 230.0 ],
-													"source" : [ "obj-163", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-167", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-163", 1 ]
+													"source" : [ "obj-163", 0 ]
 												}
 
 											}
@@ -953,11 +929,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
-													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 													"fontface" : [ 0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1033,7 +1009,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 755.0, 73.5, 145.0, 22.0 ],
+													"patching_rect" : [ 907.077271, 100.5, 145.0, 22.0 ],
 													"style" : "",
 													"text" : "j.message resetcornerpin"
 												}
@@ -1075,21 +1051,6 @@
 													"outlettype" : [ "bang" ],
 													"patching_rect" : [ 907.077271, 141.0, 20.0, 20.0 ],
 													"style" : ""
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"fontname" : "Arial",
-													"fontsize" : 12.0,
-													"id" : "obj-50",
-													"maxclass" : "newobj",
-													"numinlets" : 0,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 907.077271, 73.5, 119.0, 22.0 ],
-													"style" : "",
-													"text" : "r #1-reset-Cornerpin"
 												}
 
 											}
@@ -1380,15 +1341,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-17", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-50", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-83", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
@@ -1503,11 +1455,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
-													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 													"fontface" : [ 0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1828,11 +1780,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2531,11 +2483,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"fontface" : [ 0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
