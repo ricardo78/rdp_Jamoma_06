@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -98,14 +98,14 @@
 					"id" : "obj-49",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "int" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -139,11 +139,24 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"comment" : "",
+									"id" : "obj-2",
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 57.0, 343.5, 30.0, 30.0 ],
+									"presentation_rect" : [ 59.0, 343.5, 0.0, 0.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-31",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 40.0, 212.0, 69.0, 22.0 ],
+									"patching_rect" : [ 77.0, 232.0, 69.0, 22.0 ],
 									"style" : "",
 									"text" : "print Read:"
 								}
@@ -225,14 +238,14 @@
 									"id" : "obj-13",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "int" ],
 									"patcher" : 									{
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -267,11 +280,24 @@
 										"boxes" : [ 											{
 												"box" : 												{
 													"comment" : "",
+													"id" : "obj-3",
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 347.0, 317.0, 30.0, 30.0 ],
+													"presentation_rect" : [ 346.0, 329.0, 0.0, 0.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
 													"id" : "obj-2",
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 70.0, 317.0, 30.0, 30.0 ],
+													"patching_rect" : [ 87.0, 316.0, 30.0, 30.0 ],
 													"style" : ""
 												}
 
@@ -298,7 +324,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 70.0, 283.0, 255.0, 23.0 ],
+													"patching_rect" : [ 87.0, 282.0, 255.0, 23.0 ],
 													"style" : "",
 													"text" : "getframecount, getfps, getdim, getduration"
 												}
@@ -311,11 +337,11 @@
 													"id" : "obj-33",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 1,
-													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 70.0, 240.0, 31.0, 23.0 ],
+													"numoutlets" : 2,
+													"outlettype" : [ "int", "bang" ],
+													"patching_rect" : [ 70.0, 232.0, 36.0, 23.0 ],
 													"style" : "",
-													"text" : "t b"
+													"text" : "t 1 b"
 												}
 
 											}
@@ -379,10 +405,20 @@
 											}
 , 											{
 												"patchline" : 												{
+													"destination" : [ "obj-3", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"midpoints" : [ 79.5, 271.5, 356.5, 271.5 ],
+													"source" : [ "obj-33", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-36", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-33", 0 ]
+													"source" : [ "obj-33", 1 ]
 												}
 
 											}
@@ -417,11 +453,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"fontface" : [ 0 ],
 													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-													"fontface" : [ 0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -528,6 +564,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-13", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-48", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -577,7 +622,7 @@
 									"destination" : [ "obj-31", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 109.5, 198.5, 49.5, 198.5 ],
+									"midpoints" : [ 109.5, 198.5, 86.5, 198.5 ],
 									"source" : [ "obj-21", 0 ]
 								}
 
@@ -658,11 +703,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -716,7 +761,7 @@
 					"color" : [ 0.882353, 0.988235, 1.0, 1.0 ],
 					"id" : "obj-34",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patcher" : 					{
@@ -724,7 +769,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -758,26 +803,14 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "message",
-									"numinlets" : 2,
+									"comment" : "",
+									"id" : "obj-1",
+									"maxclass" : "inlet",
+									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 34.0, 207.0, 144.0, 22.0 ],
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 202.850647, 95.0, 30.0, 30.0 ],
 									"style" : ""
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-2",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 215.0, 292.0, 229.0, 22.0 ],
-									"style" : "",
-									"text" : "0"
 								}
 
 							}
@@ -854,7 +887,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 2,
-											"revision" : 1,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -1166,11 +1199,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"fontface" : [ 0 ],
 													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-													"fontface" : [ 0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1243,16 +1276,16 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-33", 0 ],
+									"destination" : [ "obj-56", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-15", 0 ]
+									"source" : [ "obj-1", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 1 ],
+									"destination" : [ "obj-33", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-15", 0 ]
@@ -1318,15 +1351,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-2", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-56", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-38", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1365,11 +1389,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1378,7 +1402,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 55.5, 193.0, 77.0, 22.0 ],
+					"patching_rect" : [ 55.5, 206.0, 77.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1400,7 +1424,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 55.5, 166.0, 123.0, 22.0 ],
+					"patching_rect" : [ 55.5, 159.0, 123.0, 22.0 ],
 					"style" : "",
 					"text" : "j.node file @priority 2"
 				}
@@ -1445,7 +1469,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -1790,11 +1814,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"fontface" : [ 0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2215,7 +2239,7 @@
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 65.0, 222.0, 34.0, 222.0 ],
+					"midpoints" : [ 65.0, 235.0, 34.0, 235.0 ],
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -2242,6 +2266,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 240.0, 506.0, 10.0, 506.0, 10.0, 198.0, 65.0, 198.0 ],
+					"source" : [ "obj-49", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-66", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2254,7 +2288,7 @@
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 195.0, 229.0, 34.0, 229.0 ],
+					"midpoints" : [ 195.0, 242.0, 34.0, 242.0 ],
 					"source" : [ "obj-55", 0 ]
 				}
 
@@ -2282,20 +2316,20 @@
 		"parameters" : 		{
 			"obj-6::obj-166" : [ "live.text[5]", "live.text", 0 ],
 			"obj-6::obj-165" : [ "live.text[4]", "live.text", 0 ],
-			"obj-6::obj-161" : [ "live.text", "live.text", 0 ],
-			"obj-6::obj-176" : [ "live.text[15]", "live.text", 0 ],
 			"obj-6::obj-164" : [ "live.text[3]", "live.text", 0 ],
 			"obj-6::obj-163" : [ "live.text[2]", "live.text", 0 ],
-			"obj-6::obj-162" : [ "live.text[1]", "live.text", 0 ],
+			"obj-6::obj-176" : [ "live.text[15]", "live.text", 0 ],
 			"obj-6::obj-175" : [ "live.text[14]", "live.text", 0 ],
 			"obj-6::obj-174" : [ "live.text[13]", "live.text", 0 ],
 			"obj-6::obj-173" : [ "live.text[12]", "live.text", 0 ],
 			"obj-6::obj-172" : [ "live.text[11]", "live.text", 0 ],
 			"obj-6::obj-171" : [ "live.text[10]", "live.text", 0 ],
+			"obj-6::obj-161" : [ "live.text", "live.text", 0 ],
 			"obj-6::obj-170" : [ "live.text[9]", "live.text", 0 ],
 			"obj-6::obj-169" : [ "live.text[8]", "live.text", 0 ],
 			"obj-6::obj-168" : [ "live.text[7]", "live.text", 0 ],
-			"obj-6::obj-167" : [ "live.text[6]", "live.text", 0 ]
+			"obj-6::obj-167" : [ "live.text[6]", "live.text", 0 ],
+			"obj-6::obj-162" : [ "live.text[1]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -2306,19 +2340,19 @@
 			}
 , 			{
 				"name" : "j.parameter_create.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameter_create",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/patchers/components/data/parameter_create",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.parameter_create_preset_doc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -2385,11 +2419,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"fontface" : [ 0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
