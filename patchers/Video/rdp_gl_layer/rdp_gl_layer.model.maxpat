@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 5,
+			"minor" : 2,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 106.0, 1152.0, 689.0 ],
+		"rect" : [ 34.0, 79.0, 1152.0, 689.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,51 @@
 		"subpatcher_template" : "",
 		"title" : "gl_layer",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "float", "float", "float" ],
+					"patching_rect" : [ 394.0, 85.0, 69.0, 22.0 ],
+					"style" : "",
+					"text" : "unpack f f f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 394.0, 143.0, 94.0, 22.0 ],
+					"style" : "",
+					"text" : "pak f f f f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.804844, 0.527957, 0.824703, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-14",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 469.0, 80.5, 601.0, 49.0 ],
+					"style" : "",
+					"text" : "j.parameter alpha @type decimal @clipmode both @ramp/drive max @ramp/function linear @dataspace none @dataspace none @priority 7 @description \"The draw color in the form red green blue alpha (default = 1.0000 1.0000 1.0000 ) The list elements should be in the range 0. 1.\" @range 0. 1. @default 1.",
+					"varname" : "color[2]"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
@@ -171,8 +216,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -395,11 +440,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -434,8 +479,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -508,9 +553,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 132.887939, 93.18457, 708.0, 35.0 ],
+									"patching_rect" : [ 132.887939, 93.18457, 683.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter shape/cornerpin @type array @clipmode none @ramp/drive max @ramp/function linear @dataspace none @priority 2 @description \"cornerpin plane\" @default -1. 1. 1. 1. -1. -1. 1. -1.",
+									"text" : "j.parameter shape/cornerpin @type array @clipmode none @ramp/drive max @ramp/function linear @dataspace none @priority 2 @description \"cornerpin plane\" @default -1. 1. 1. 1. -1. -1. 1. -1. @repetitions/filter 0",
 									"varname" : "shape/cornerpin"
 								}
 
@@ -558,8 +603,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -592,20 +637,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
-												"box" : 												{
-													"fontname" : "Arial",
-													"fontsize" : 12.0,
-													"id" : "obj-102",
-													"maxclass" : "newobj",
-													"numinlets" : 1,
-													"numoutlets" : 0,
-													"patching_rect" : [ 323.5, 358.0, 121.0, 22.0 ],
-													"style" : "",
-													"text" : "s #1-reset-Cornerpin"
-												}
-
-											}
-, 											{
 												"box" : 												{
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
@@ -643,11 +674,11 @@
 													"id" : "obj-163",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 3,
-													"outlettype" : [ "bang", "int", "int" ],
-													"patching_rect" : [ 50.0, 175.0, 46.0, 22.0 ],
+													"numoutlets" : 1,
+													"outlettype" : [ "int" ],
+													"patching_rect" : [ 65.0, 179.0, 30.0, 22.0 ],
 													"style" : "",
-													"text" : "t b 0 0"
+													"text" : "t 0"
 												}
 
 											}
@@ -821,20 +852,10 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-102", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"midpoints" : [ 59.5, 230.0, 333.0, 230.0 ],
-													"source" : [ "obj-163", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-167", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"source" : [ "obj-163", 1 ]
+													"source" : [ "obj-163", 0 ]
 												}
 
 											}
@@ -953,11 +974,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
-													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"fontface" : [ 0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -993,8 +1014,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -1033,7 +1054,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 755.0, 73.5, 145.0, 22.0 ],
+													"patching_rect" : [ 907.077271, 100.5, 145.0, 22.0 ],
 													"style" : "",
 													"text" : "j.message resetcornerpin"
 												}
@@ -1075,21 +1096,6 @@
 													"outlettype" : [ "bang" ],
 													"patching_rect" : [ 907.077271, 141.0, 20.0, 20.0 ],
 													"style" : ""
-												}
-
-											}
-, 											{
-												"box" : 												{
-													"fontname" : "Arial",
-													"fontsize" : 12.0,
-													"id" : "obj-50",
-													"maxclass" : "newobj",
-													"numinlets" : 0,
-													"numoutlets" : 1,
-													"outlettype" : [ "" ],
-													"patching_rect" : [ 907.077271, 73.5, 119.0, 22.0 ],
-													"style" : "",
-													"text" : "r #1-reset-Cornerpin"
 												}
 
 											}
@@ -1380,15 +1386,6 @@
 											}
 , 											{
 												"patchline" : 												{
-													"destination" : [ "obj-17", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-50", 0 ]
-												}
-
-											}
-, 											{
-												"patchline" : 												{
 													"destination" : [ "obj-83", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
@@ -1503,11 +1500,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
-													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"fontface" : [ 0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -1603,9 +1600,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 11.0, 27.0, 780.356689, 22.0 ],
+									"patching_rect" : [ 11.0, 27.0, 711.0, 22.0 ],
 									"style" : "",
-									"text" : "j.parameter shape/type @type string @clipmode none @priority 1 @description \"Type of shape\" @default plane",
+									"text" : "j.parameter shape/type @type string @clipmode none @priority 1 @description \"Type of shape\" @default plane @repetitions/filter 1",
 									"varname" : "shape[1]"
 								}
 
@@ -1828,11 +1825,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"fontface" : [ 0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2106,14 +2103,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-74",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 394.0, 94.0, 752.0, 49.0 ],
+					"patching_rect" : [ 394.0, 7.5, 480.0, 62.0 ],
 					"style" : "",
-					"text" : "j.parameter color @type array @clipmode both @ramp/drive max @ramp/function linear @dataspace none @dataspace none @priority 6 @description \"The draw color in the form red green blue alpha (default = 1.0000 1.0000 1.0000 1.) The list elements should be in the range 0. 1.\" @range 0. 1. @default 1. 1. 1. 1.",
+					"text" : "j.parameter color @type array @clipmode both @ramp/drive max @ramp/function linear @dataspace none @dataspace none @priority 6 @description \"The draw color in the form red green blue alpha (default = 1.0000 1.0000 1.0000 ) The list elements should be in the range 0. 1.\" @range 0. 1. @default 1. 1. 1.",
 					"varname" : "color[1]"
 				}
 
@@ -2146,9 +2143,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 431.0, 205.925232, 715.0, 35.0 ],
+					"patching_rect" : [ 431.0, 212.925232, 567.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter saturation @type decimal @range 0. 1. @clipmode both @ramp/drive max @ramp/function linear @description \"Set the saturation of the color\" @default 1. @priority 7",
+					"text" : "j.parameter saturation @type decimal @range 0. 1. @clipmode both @ramp/drive max @ramp/function linear @description \"Set the saturation of the color\" @default 1. @priority 8",
 					"varname" : "saturation"
 				}
 
@@ -2281,6 +2278,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-23", 3 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2328,6 +2334,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-65", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -2351,6 +2366,33 @@
 					"hidden" : 0,
 					"midpoints" : [ 32.0, 382.0, 78.0, 382.0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-32", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-32", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-32", 0 ]
 				}
 
 			}
@@ -2461,7 +2503,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-65", 0 ],
+					"destination" : [ "obj-32", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-74", 0 ]
@@ -2480,7 +2522,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/misc",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
@@ -2509,7 +2551,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0,
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -2531,11 +2573,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
