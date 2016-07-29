@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 5,
+			"minor" : 2,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -44,7 +44,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 164.0, 251.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 87.0, 251.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -148,43 +147,25 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "rdp_gl_slide.model.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_gl_slide",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_slide",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RDPJamomaLogo.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/misc",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.parameterCreate.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/parameterCreate",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameterCreatePresetDoc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "rdp_gl_slide.view.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Video/rdp_gl_slide",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_slide",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RDPJamomaLogo2.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/misc",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
@@ -194,14 +175,6 @@
 			}
 , 			{
 				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -229,7 +202,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }
