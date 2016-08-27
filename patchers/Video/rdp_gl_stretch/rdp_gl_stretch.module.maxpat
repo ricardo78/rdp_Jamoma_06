@@ -11,7 +11,7 @@
 ,
 		"rect" : [ 136.0, 122.0, 640.0, 480.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -44,7 +44,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 153.0, 194.0, 30.0, 30.0 ],
-					"presentation_rect" : [ 136.0, 194.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -106,6 +105,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 5.0, 5.0, 150.0, 70.0 ],
+					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 150.0, 70.0 ],
 					"viewvisibility" : 1
 				}
@@ -141,13 +141,7 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2::obj-12::obj-166" : [ "live.text[5]", "live.text", 0 ],
-			"obj-2::obj-12::obj-165" : [ "live.text[4]", "live.text", 0 ],
-			"obj-2::obj-12::obj-164" : [ "live.text[3]", "live.text", 0 ],
-			"obj-2::obj-12::obj-163" : [ "live.text[2]", "live.text", 0 ],
-			"obj-2::obj-12::obj-162" : [ "live.text[1]", "live.text", 0 ],
 			"obj-2::obj-12::obj-161" : [ "live.text", "live.text", 0 ],
-			"obj-2::obj-12::obj-176" : [ "live.text[15]", "live.text", 0 ],
 			"obj-2::obj-12::obj-175" : [ "live.text[14]", "live.text", 0 ],
 			"obj-2::obj-12::obj-174" : [ "live.text[13]", "live.text", 0 ],
 			"obj-2::obj-12::obj-173" : [ "live.text[12]", "live.text", 0 ],
@@ -156,54 +150,68 @@
 			"obj-2::obj-12::obj-170" : [ "live.text[9]", "live.text", 0 ],
 			"obj-2::obj-12::obj-169" : [ "live.text[8]", "live.text", 0 ],
 			"obj-2::obj-12::obj-168" : [ "live.text[7]", "live.text", 0 ],
-			"obj-2::obj-12::obj-167" : [ "live.text[6]", "live.text", 0 ]
+			"obj-2::obj-12::obj-167" : [ "live.text[6]", "live.text", 0 ],
+			"obj-2::obj-12::obj-166" : [ "live.text[5]", "live.text", 0 ],
+			"obj-2::obj-12::obj-165" : [ "live.text[4]", "live.text", 0 ],
+			"obj-2::obj-12::obj-164" : [ "live.text[3]", "live.text", 0 ],
+			"obj-2::obj-12::obj-163" : [ "live.text[2]", "live.text", 0 ],
+			"obj-2::obj-12::obj-162" : [ "live.text[1]", "live.text", 0 ],
+			"obj-2::obj-12::obj-176" : [ "live.text[15]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "rdp_gl_stretch.view.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_stretch",
+				"patcherrelativepath" : "../../../../../Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_stretch",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.list2parameter.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/patchers/components/data/list2parameter",
+				"patcherrelativepath" : "../../../Jamoma_06/patchers/components/data/list2parameter",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RDPJamomaLogo2.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/misc",
+				"patcherrelativepath" : "../../../../../Github_Development_Library/rdp_Jamoma_06/misc",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_gl_stretch.model.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_stretch",
+				"patcherrelativepath" : "../../../../../Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_stretch",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/misc",
+				"patcherrelativepath" : "../../../../../Github_Development_Library/rdp_Jamoma_06/misc",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.parameter_create.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/patchers/components/data/parameter_create",
+				"patcherrelativepath" : "../../../Jamoma_06/patchers/components/data/parameter_create",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.thisparentpatcher.js",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/javascript",
+				"patcherrelativepath" : "../../../Jamoma_06/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.parameter_create_preset_doc.js",
 				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/javascript",
+				"patcherrelativepath" : "../../../Jamoma_06/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
