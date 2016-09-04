@@ -89,7 +89,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 599.25, 548.422363, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 74.299377, 22.5, 70.098755, 20.0 ],
+					"presentation_rect" : [ 75.299377, 22.5, 219.098755, 20.0 ],
 					"style" : "",
 					"text" : "Play",
 					"texton" : "Play",
@@ -184,7 +184,7 @@
 					"prefix" : "Macintosh SSD:/Users/delpozo/Dropbox/projects/RAM Nov.4-2015/video/",
 					"prefix_mode" : 2,
 					"presentation" : 1,
-					"presentation_rect" : [ 4.299377, 43.5, 140.098755, 20.0 ],
+					"presentation_rect" : [ 4.299377, 43.5, 290.098755, 20.0 ],
 					"style" : ""
 				}
 
@@ -1303,11 +1303,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"fontface" : [ 0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1402,8 +1402,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 13.0, 6.5, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, -0.5, 150.0, 70.0 ],
-					"text" : "/no_model_address",
+					"presentation_rect" : [ 0.0, -0.5, 300.0, 70.0 ],
+					"text" : "/no_..ess",
 					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 				}
 
@@ -1623,11 +1623,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"fontface" : [ 0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

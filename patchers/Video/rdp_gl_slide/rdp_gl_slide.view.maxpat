@@ -3,9 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 5,
-			"architecture" : "x86",
+			"minor" : 2,
+			"revision" : 4,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -52,7 +52,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 649.5, 201.11438, 44.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.848755, 22.0, 44.0, 45.0 ],
+					"presentation_rect" : [ 174.848755, 22.0, 44.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "slide_down",
@@ -82,9 +82,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
-							"architecture" : "x86",
+							"minor" : 2,
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -982,10 +982,10 @@
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
 									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1052,7 +1052,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 649.5, 144.61438, 44.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 14.848755, 22.0, 44.0, 45.0 ],
+					"presentation_rect" : [ 69.848755, 22.0, 44.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "slide_up",
@@ -1084,7 +1084,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 306.0, 60.0, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, -0.5, 150.0, 70.0 ],
+					"presentation_rect" : [ 0.0, -0.5, 300.0, 70.0 ],
 					"text" : "/no_..ess",
 					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 				}
@@ -1198,13 +1198,13 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-32" : [ "slide_up", "Up", 0 ],
-			"obj-2" : [ "slide_down", "Down", 0 ]
+			"obj-2" : [ "slide_down", "Down", 0 ],
+			"obj-32" : [ "slide_up", "Up", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo2.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/Dependencies",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/misc",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
@@ -1225,7 +1225,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }

@@ -3,9 +3,9 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 6,
-			"architecture" : "x86",
+			"minor" : 2,
+			"revision" : 4,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -49,7 +49,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 283.0, 256.903015, 47.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 107.125, 38.5, 47.0, 20.0 ],
+					"presentation_rect" : [ 227.125, 31.5, 47.0, 20.0 ],
 					"style" : "",
 					"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
 					"tricolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
@@ -70,7 +70,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 225.0, 256.903015, 47.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 58.125, 38.5, 47.0, 20.0 ],
+					"presentation_rect" : [ 158.5, 31.5, 47.0, 20.0 ],
 					"style" : "",
 					"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
 					"tricolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
@@ -119,7 +119,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 232.541687, 225.61438, 69.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.125, 39.5, 42.0, 18.0 ],
+					"presentation_rect" : [ 113.5, 32.5, 42.0, 18.0 ],
 					"style" : "",
 					"text" : "Origin:",
 					"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
@@ -137,7 +137,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 322.541687, 112.61438, 61.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 13.125, 25.5, 43.0, 18.0 ],
+					"presentation_rect" : [ 13.125, 31.5, 43.0, 18.0 ],
 					"style" : "",
 					"text" : "Width:",
 					"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
@@ -158,7 +158,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 395.125, 112.61438, 47.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 58.125, 24.5, 47.0, 20.0 ],
+					"presentation_rect" : [ 58.125, 30.5, 47.0, 20.0 ],
 					"style" : "",
 					"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
 					"tricolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
@@ -178,9 +178,9 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 6,
-							"architecture" : "x86",
+							"minor" : 2,
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1076,11 +1076,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"fontface" : [ 0 ],
+									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1131,7 +1131,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.0, 24.0, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, -0.5, 150.0, 70.0 ],
+					"presentation_rect" : [ 0.0, -0.5, 300.0, 70.0 ],
 					"text" : "/no_..ess",
 					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 				}
@@ -1288,7 +1288,7 @@
 			}
 , 			{
 				"name" : "j.list2parameter.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/list2parameter",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/patchers/components/data/list2parameter",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1309,7 +1309,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0,
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -1331,11 +1331,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"fontface" : [ 0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

@@ -475,11 +475,11 @@
 , 											{
 												"name" : "rdp-jamoma-style",
 												"default" : 												{
+													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 													"fontface" : [ 0 ],
-													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -825,11 +825,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -885,13 +885,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-16",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 492.0, 257.0, 652.0, 22.0 ],
+					"patching_rect" : [ 492.0, 257.0, 368.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter div @type decimal @clipmode none @ramp/drive max @ramp/function linear @unit linear @dataspace none",
+					"text" : "j.parameter div @type decimal @clipmode none @ramp/drive max @ramp/function linear @unit linear @dataspace none @default 4",
 					"varname" : "div"
 				}
 
@@ -1034,22 +1035,22 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-19::obj-161" : [ "live.text", "live.text", 0 ],
+			"obj-19::obj-169" : [ "live.text[8]", "live.text", 0 ],
+			"obj-19::obj-166" : [ "live.text[5]", "live.text", 0 ],
+			"obj-19::obj-172" : [ "live.text[11]", "live.text", 0 ],
 			"obj-19::obj-176" : [ "live.text[15]", "live.text", 0 ],
 			"obj-19::obj-175" : [ "live.text[14]", "live.text", 0 ],
-			"obj-19::obj-174" : [ "live.text[13]", "live.text", 0 ],
-			"obj-19::obj-173" : [ "live.text[12]", "live.text", 0 ],
-			"obj-19::obj-172" : [ "live.text[11]", "live.text", 0 ],
-			"obj-19::obj-171" : [ "live.text[10]", "live.text", 0 ],
+			"obj-19::obj-161" : [ "live.text", "live.text", 0 ],
+			"obj-19::obj-164" : [ "live.text[3]", "live.text", 0 ],
 			"obj-19::obj-170" : [ "live.text[9]", "live.text", 0 ],
-			"obj-19::obj-169" : [ "live.text[8]", "live.text", 0 ],
 			"obj-19::obj-168" : [ "live.text[7]", "live.text", 0 ],
 			"obj-19::obj-167" : [ "live.text[6]", "live.text", 0 ],
-			"obj-19::obj-166" : [ "live.text[5]", "live.text", 0 ],
+			"obj-19::obj-173" : [ "live.text[12]", "live.text", 0 ],
+			"obj-19::obj-162" : [ "live.text[1]", "live.text", 0 ],
 			"obj-19::obj-165" : [ "live.text[4]", "live.text", 0 ],
-			"obj-19::obj-164" : [ "live.text[3]", "live.text", 0 ],
-			"obj-19::obj-163" : [ "live.text[2]", "live.text", 0 ],
-			"obj-19::obj-162" : [ "live.text[1]", "live.text", 0 ]
+			"obj-19::obj-171" : [ "live.text[10]", "live.text", 0 ],
+			"obj-19::obj-174" : [ "live.text[13]", "live.text", 0 ],
+			"obj-19::obj-163" : [ "live.text[2]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1136,11 +1137,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"fontface" : [ 0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
