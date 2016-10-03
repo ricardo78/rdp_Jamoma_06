@@ -38,6 +38,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 171.0, 137.0, 342.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"linecount" : 2,
 					"maxclass" : "newobj",
@@ -1103,8 +1115,8 @@
 												"default" : 												{
 													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 													"fontface" : [ 0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 												}
 ,
@@ -1453,8 +1465,8 @@
 								"default" : 								{
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"fontface" : [ 0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
@@ -1511,7 +1523,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.0, 280.0, 81.0, 22.0 ],
+					"patching_rect" : [ 91.0, 196.522827, 81.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend crop"
 				}
@@ -1520,12 +1532,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-10",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 100.0, 110.522827, 711.0, 35.0 ],
+					"patching_rect" : [ 62.0, 58.522827, 770.0, 22.0 ],
 					"style" : "",
 					"text" : "j.parameter crop @type array @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @default 0. 0. 1. 1.",
 					"varname" : "crop"
@@ -1545,6 +1556,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
@@ -1644,22 +1664,22 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-19::obj-161" : [ "live.text", "live.text", 0 ],
-			"obj-19::obj-176" : [ "live.text[15]", "live.text", 0 ],
-			"obj-19::obj-175" : [ "live.text[14]", "live.text", 0 ],
-			"obj-19::obj-174" : [ "live.text[13]", "live.text", 0 ],
-			"obj-19::obj-173" : [ "live.text[12]", "live.text", 0 ],
-			"obj-19::obj-172" : [ "live.text[11]", "live.text", 0 ],
-			"obj-19::obj-171" : [ "live.text[10]", "live.text", 0 ],
-			"obj-19::obj-170" : [ "live.text[9]", "live.text", 0 ],
-			"obj-19::obj-169" : [ "live.text[8]", "live.text", 0 ],
 			"obj-19::obj-168" : [ "live.text[7]", "live.text", 0 ],
-			"obj-19::obj-167" : [ "live.text[6]", "live.text", 0 ],
+			"obj-19::obj-173" : [ "live.text[12]", "live.text", 0 ],
+			"obj-19::obj-171" : [ "live.text[10]", "live.text", 0 ],
+			"obj-19::obj-175" : [ "live.text[14]", "live.text", 0 ],
+			"obj-19::obj-163" : [ "live.text[2]", "live.text", 0 ],
 			"obj-19::obj-166" : [ "live.text[5]", "live.text", 0 ],
 			"obj-19::obj-165" : [ "live.text[4]", "live.text", 0 ],
+			"obj-19::obj-169" : [ "live.text[8]", "live.text", 0 ],
+			"obj-19::obj-172" : [ "live.text[11]", "live.text", 0 ],
 			"obj-19::obj-164" : [ "live.text[3]", "live.text", 0 ],
-			"obj-19::obj-163" : [ "live.text[2]", "live.text", 0 ],
-			"obj-19::obj-162" : [ "live.text[1]", "live.text", 0 ]
+			"obj-19::obj-161" : [ "live.text", "live.text", 0 ],
+			"obj-19::obj-167" : [ "live.text[6]", "live.text", 0 ],
+			"obj-19::obj-170" : [ "live.text[9]", "live.text", 0 ],
+			"obj-19::obj-174" : [ "live.text[13]", "live.text", 0 ],
+			"obj-19::obj-162" : [ "live.text[1]", "live.text", 0 ],
+			"obj-19::obj-176" : [ "live.text[15]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1748,8 +1768,8 @@
 				"default" : 				{
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"fontface" : [ 0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
