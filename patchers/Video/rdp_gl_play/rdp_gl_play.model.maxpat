@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 281.0, 106.0, 918.0, 591.0 ],
+		"rect" : [ 227.0, 131.0, 556.0, 591.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 327.0, 431.5, 29.5, 22.0 ],
+					"patching_rect" : [ 301.350647, 145.5, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "1"
 				}
@@ -69,7 +69,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 352.5, 344.0, 54.0, 22.0 ],
+					"patching_rect" : [ 396.5, 401.0, 54.0, 22.0 ],
 					"style" : "",
 					"text" : "print #1:"
 				}
@@ -95,12 +95,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-9",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 59.0, 344.0, 287.0, 49.0 ],
+					"patching_rect" : [ 57.0, 344.0, 231.0, 62.0 ],
 					"style" : "",
 					"text" : "jit.movie @autostart 0 @adapt 0 @vol 0. @unique 1 @engine viddll @output_texture 1 @cache_size 0.5 @automatic 1 @colormode uyvy"
 				}
@@ -138,7 +138,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 59.0, 498.0, 153.0, 22.0 ],
+					"patching_rect" : [ 57.0, 498.0, 153.0, 22.0 ],
 					"style" : "",
 					"text" : "j.out 1 @tags jit_gl_texture"
 				}
@@ -151,7 +151,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 59.0, 533.0, 30.0, 30.0 ],
+					"patching_rect" : [ 57.0, 533.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -315,7 +315,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 59.0, 214.0, 59.0, 22.0 ],
+					"patching_rect" : [ 59.0, 224.0, 59.0, 22.0 ],
 					"style" : "",
 					"text" : "tosymbol"
 				}
@@ -327,10 +327,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
-					"outlettype" : [ "", "dispose", "int" ],
-					"patching_rect" : [ 59.0, 176.0, 233.0, 22.0 ],
+					"outlettype" : [ "", "clear", "int" ],
+					"patching_rect" : [ 59.0, 176.0, 63.0, 22.0 ],
 					"style" : "",
-					"text" : "t s dispose 0"
+					"text" : "t s clear 0"
 				}
 
 			}
@@ -420,7 +420,7 @@
 					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 321.5, 331.0, 68.5, 331.0 ],
+					"midpoints" : [ 321.5, 331.0, 66.5, 331.0 ],
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -430,7 +430,7 @@
 					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 282.5, 331.0, 68.5, 331.0 ],
+					"midpoints" : [ 282.5, 331.0, 66.5, 331.0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -619,22 +619,22 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-6::obj-176" : [ "live.text[15]", "live.text", 0 ],
-			"obj-6::obj-163" : [ "live.text[2]", "live.text", 0 ],
-			"obj-6::obj-162" : [ "live.text[1]", "live.text", 0 ],
 			"obj-6::obj-161" : [ "live.text", "live.text", 0 ],
-			"obj-6::obj-175" : [ "live.text[14]", "live.text", 0 ],
-			"obj-6::obj-174" : [ "live.text[13]", "live.text", 0 ],
-			"obj-6::obj-173" : [ "live.text[12]", "live.text", 0 ],
-			"obj-6::obj-172" : [ "live.text[11]", "live.text", 0 ],
+			"obj-6::obj-162" : [ "live.text[1]", "live.text", 0 ],
+			"obj-6::obj-165" : [ "live.text[4]", "live.text", 0 ],
 			"obj-6::obj-171" : [ "live.text[10]", "live.text", 0 ],
+			"obj-6::obj-174" : [ "live.text[13]", "live.text", 0 ],
+			"obj-6::obj-163" : [ "live.text[2]", "live.text", 0 ],
+			"obj-6::obj-176" : [ "live.text[15]", "live.text", 0 ],
+			"obj-6::obj-166" : [ "live.text[5]", "live.text", 0 ],
+			"obj-6::obj-172" : [ "live.text[11]", "live.text", 0 ],
+			"obj-6::obj-175" : [ "live.text[14]", "live.text", 0 ],
+			"obj-6::obj-164" : [ "live.text[3]", "live.text", 0 ],
 			"obj-6::obj-170" : [ "live.text[9]", "live.text", 0 ],
 			"obj-6::obj-169" : [ "live.text[8]", "live.text", 0 ],
 			"obj-6::obj-168" : [ "live.text[7]", "live.text", 0 ],
 			"obj-6::obj-167" : [ "live.text[6]", "live.text", 0 ],
-			"obj-6::obj-166" : [ "live.text[5]", "live.text", 0 ],
-			"obj-6::obj-165" : [ "live.text[4]", "live.text", 0 ],
-			"obj-6::obj-164" : [ "live.text[3]", "live.text", 0 ]
+			"obj-6::obj-173" : [ "live.text[12]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -698,11 +698,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"fontface" : [ 0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ]
 				}
 ,
 				"parentstyle" : "",
