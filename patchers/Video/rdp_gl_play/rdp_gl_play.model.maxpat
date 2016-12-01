@@ -38,6 +38,64 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 847.0, 431.0, 29.5, 22.0 ],
+					"style" : "",
+					"text" : "0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 847.0, 396.0, 314.0, 22.0 ],
+					"style" : "",
+					"text" : "j.message reset/position @type generic @clipmode none",
+					"varname" : "reset_width"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.752705, 1.0, 0.614129, 1.0 ],
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 490.166687, 703.0, 562.0, 22.0 ],
+					"style" : "",
+					"text" : "j.return fps @type generic @clipmode none @ramp/drive max @ramp/function linear @dataspace none",
+					"varname" : "loop_points_return[2]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.752705, 1.0, 0.614129, 1.0 ],
+					"id" : "obj-5",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 630.166687, 653.0, 356.0, 35.0 ],
+					"style" : "",
+					"text" : "j.return timescale @type generic @clipmode none @ramp/drive max @ramp/function linear @dataspace none",
+					"varname" : "loop_points_return[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-88",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -666,9 +724,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 877.05957, 7.0, 362.0, 49.0 ],
+					"patching_rect" : [ 877.05957, 7.0, 363.0, 49.0 ],
 					"style" : "",
-					"text" : "j.message frame @type integer @clipmode none @range 0. 1. @ramp/function linear @repetitions/filter 0 @dataspace none @description \"Move to a specific frame in the video.\"",
+					"text" : "j.message frame @type integer @clipmode none @ramp/function linear @repetitions/filter 0 @dataspace none @description \"Move to a specific frame in the video.\"",
 					"varname" : "currentFrame[2]"
 				}
 
@@ -729,36 +787,6 @@
 					"patching_rect" : [ 248.649353, 592.0, 209.0, 35.0 ],
 					"style" : "",
 					"text" : "j.model @tags video @description \"a model for playing back hap codec\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.882353, 0.988235, 1.0, 1.0 ],
-					"id" : "obj-57",
-					"linecount" : 3,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 98.666687, 252.5, 341.0, 49.0 ],
-					"style" : "",
-					"text" : "j.parameter drawto @type string @repetitions/filter 0 @priority 1 @description \"name of rendering context to render to\" @default Jamoma"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-58",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 98.666687, 308.5, 96.0, 22.0 ],
-					"style" : "",
-					"text" : "prepend drawto"
 				}
 
 			}
@@ -1352,13 +1380,14 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 956.0, 266.0, 668.0, 22.0 ],
+					"patching_rect" : [ 956.0, 267.0, 645.0, 35.0 ],
 					"style" : "",
-					"text" : "j.message position @type decimal @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @dataspace none",
+					"text" : "j.message position @type decimal @range 0 1 @clipmode wrap @ramp/drive max @ramp/function linear @dataspace none",
 					"varname" : "position"
 				}
 
@@ -1370,6 +1399,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -1488,6 +1535,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-29", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-29", 3 ]
 				}
 
 			}
@@ -1637,25 +1702,6 @@
 					"hidden" : 0,
 					"midpoints" : [ 473.900818, 352.75, 94.666672, 352.75 ],
 					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-58", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-57", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"midpoints" : [ 108.166687, 345.0, 94.666672, 345.0 ],
-					"source" : [ "obj-58", 0 ]
 				}
 
 			}
@@ -1886,9 +1932,9 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"fontface" : [ 0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"fontface" : [ 0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}

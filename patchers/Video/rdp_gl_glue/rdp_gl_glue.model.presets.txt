@@ -1,0 +1,15 @@
+
+- preset "Visualize_init"
+- description "something about this preset"
+# ###########################################
+# 
+drawto Automatic
+fade -1.125984
+xfade 1.000000
+threshold 1.204724
+blend/enable 0
+blend/type alphablend
+data/active 1
+data/bypass 0
+# 
+# ###########################################

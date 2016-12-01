@@ -1,0 +1,16 @@
+
+- preset "Vizualize_init"
+- description "something about this preset"
+# ###########################################
+# 
+drawto Automatic
+contrast 1.000000
+brightness 1.000000
+saturation 1.000000
+alpha 2.102362
+blend/enable 0
+blend/type alphablend
+data/active 1
+data/bypass 0
+# 
+# ###########################################
