@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -172,14 +172,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-3",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 80.5, 308.0, 225.0, 49.0 ],
+					"patching_rect" : [ 80.5, 308.0, 202.5, 35.0 ],
 					"style" : "",
-					"text" : "jit.gl.slab @file v001.stretch.jxs @colormode uyvy @depth_enable 0 @blend_enable 0 @automatic 1"
+					"text" : "jit.gl.slab @file v001.stretch.jxs @depth_enable 0 @blend_enable 0"
 				}
 
 			}
@@ -492,8 +492,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -502,11 +502,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"fontface" : [ 0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

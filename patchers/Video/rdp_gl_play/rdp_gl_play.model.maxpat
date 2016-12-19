@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -216,7 +216,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 1,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -417,7 +417,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 1,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -975,7 +975,7 @@
 							"major" : 7,
 							"minor" : 3,
 							"revision" : 1,
-							"architecture" : "x64",
+							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
@@ -1313,14 +1313,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-9",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 85.166672, 382.5, 284.0, 49.0 ],
+					"patching_rect" : [ 85.166672, 389.5, 284.0, 35.0 ],
 					"style" : "",
-					"text" : "jit.movie @autostart 0 @adapt 1 @vol 0. @unique 1 @engine hap @output_texture 1 @automatic 1 @colormode uyvy"
+					"text" : "jit.movie @autostart 0 @vol 0. @unique 1 @engine hap @output_texture 1 @automatic 1"
 				}
 
 			}
@@ -1922,8 +1922,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1932,11 +1932,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"fontface" : [ 0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

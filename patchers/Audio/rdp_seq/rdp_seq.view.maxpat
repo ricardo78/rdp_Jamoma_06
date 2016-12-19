@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -38,36 +38,6 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"columns" : 16,
-					"id" : "obj-146",
-					"maxclass" : "matrixctrl",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "list", "list" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 246.916656, 435.0, 273.0, 18.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 46.5, 242.828461, 18.0 ],
-					"rows" : 1,
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 246.916656, 401.0, 104.0, 22.0 ],
-					"style" : "",
-					"text" : "j.receive seq_pos"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"activebgcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"activebgoncolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
 					"activetextcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
@@ -87,7 +57,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 440.0, 196.0, 91.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 110.0, 24.5, 67.0, 17.0 ],
+					"presentation_rect" : [ 156.0, 24.5, 67.0, 17.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "overdub",
@@ -143,7 +113,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 440.0, 156.0, 91.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 45.171539, 24.5, 62.828461, 17.0 ],
+					"presentation_rect" : [ 91.171539, 24.5, 62.828461, 17.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "record",
@@ -199,7 +169,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 440.0, 111.0, 91.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 24.5, 38.171539, 17.0 ],
+					"presentation_rect" : [ 5.0, 24.5, 84.171539, 17.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "play",
@@ -231,118 +201,6 @@
 					"patching_rect" : [ 550.727295, 111.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "j.remote play"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
-					"id" : "obj-8",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 206.727295, 147.922363, 104.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote quantum"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"activedialcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
-					"activeneedlecolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-					"appearance" : 1,
-					"bordercolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-					"dialcolor" : [ 0.752941, 0.784314, 0.839216, 0.0 ],
-					"focusbordercolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
-					"fontface" : 0,
-					"fontsize" : 9.0,
-					"id" : "obj-60",
-					"maxclass" : "live.dial",
-					"needlecolor" : [ 0.321569, 0.321569, 0.321569, 0.0 ],
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "float" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 149.060608, 136.422363, 25.0, 36.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 253.828461, 24.5, 39.0, 36.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "quantum",
-							"parameter_shortname" : "Quantum",
-							"parameter_type" : 1,
-							"parameter_mmax" : 16.0,
-							"parameter_initial" : [ 4 ],
-							"parameter_unitstyle" : 0,
-							"parameter_units" : "%.1f dB",
-							"parameter_defer" : 1,
-							"parameter_invisible" : 2,
-							"parameter_mapping_index" : 3
-						}
-
-					}
-,
-					"textcolor" : [ 0.882353, 0.988235, 1.0, 1.0 ],
-					"tribordercolor" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-					"varname" : "quantum"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"activebgcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"activebgoncolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
-					"activetextcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
-					"activetextoncolor" : [ 0.803922, 0.898039, 0.909804, 1.0 ],
-					"automation" : "0",
-					"automationon" : "1",
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgoncolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bordercolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
-					"focusbordercolor" : [ 0.6, 0.6, 0.6, 1.0 ],
-					"fontface" : 0,
-					"id" : "obj-26",
-					"maxclass" : "live.text",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 440.0, 63.0, 91.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 179.0, 24.5, 68.828461, 17.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_longname" : "metronome",
-							"parameter_shortname" : "Metronome",
-							"parameter_type" : 2,
-							"parameter_mmax" : 1.0,
-							"parameter_enum" : [ "0", "1" ],
-							"parameter_initial" : [ 0.0 ],
-							"parameter_invisible" : 2
-						}
-
-					}
-,
-					"text" : "Metronome",
-					"textcolor" : [ 0.490196, 0.498039, 0.517647, 1.0 ],
-					"texton" : "Metronome",
-					"varname" : "metronome"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 550.727295, 63.0, 118.0, 22.0 ],
-					"style" : "",
-					"text" : "j.remote metronome"
 				}
 
 			}
@@ -446,28 +304,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-146", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-13", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -482,37 +322,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-60", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-60", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-8", 0 ]
 				}
 
 			}
@@ -527,11 +340,9 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-26" : [ "metronome", "Metronome", 0 ],
+			"obj-11" : [ "overdub", "Overdub", 0 ],
 			"obj-2" : [ "play", "Play", 0 ],
-			"obj-9" : [ "record", "Record", 0 ],
-			"obj-60" : [ "quantum", "Quantum", 0 ],
-			"obj-11" : [ "overdub", "Overdub", 0 ]
+			"obj-9" : [ "record", "Record", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -544,10 +355,6 @@
 			}
 , 			{
 				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive.mxo",
 				"type" : "iLaX"
 			}
  ],
@@ -646,8 +453,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -665,11 +472,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"fontface" : [ 0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

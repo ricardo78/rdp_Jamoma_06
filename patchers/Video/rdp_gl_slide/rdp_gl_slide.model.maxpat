@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -192,14 +192,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 11.595187,
 					"id" : "obj-16",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 15.0, 305.0, 331.0, 34.0 ],
+					"patching_rect" : [ 15.0, 305.0, 245.0, 21.0 ],
 					"style" : "",
-					"text" : "jit.gl.slab @colormode uyvy @depth_enable 0 @blend_enable 0 @automatic 1"
+					"text" : "jit.gl.slab @depth_enable 0 @blend_enable 0"
 				}
 
 			}
@@ -243,9 +242,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 15.0, 267.0, 503.0, 21.0 ],
+					"patching_rect" : [ 15.0, 267.0, 332.0, 21.0 ],
 					"style" : "",
-					"text" : "jit.gl.slab @file tp.slide.jxs @colormode uyvy @depth_enable 0 @blend_enable 0 @automatic 1"
+					"text" : "jit.gl.slab @file tp.slide.jxs @depth_enable 0 @blend_enable 0"
 				}
 
 			}
@@ -326,7 +325,7 @@
 					"destination" : [ "obj-11", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 24.5, 348.0, 553.5, 348.0, 553.5, 256.0, 508.5, 256.0 ],
+					"midpoints" : [ 24.5, 348.0, 553.5, 348.0, 553.5, 256.0, 337.5, 256.0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -520,8 +519,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -530,11 +529,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"fontface" : [ 0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
