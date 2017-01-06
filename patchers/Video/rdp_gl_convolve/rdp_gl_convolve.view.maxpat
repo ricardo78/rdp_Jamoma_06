@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -47,7 +47,7 @@
 					"outlinecolor" : [ 0.548258, 0.730898, 0.449716, 1.0 ],
 					"patching_rect" : [ 730.0, 141.61438, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 91.85733, 21.11438, 14.0, 14.0 ],
+					"presentation_rect" : [ 149.85733, 20.80719, 14.0, 14.0 ],
 					"style" : ""
 				}
 
@@ -63,7 +63,7 @@
 					"outlinecolor" : [ 0.548258, 0.730898, 0.449716, 1.0 ],
 					"patching_rect" : [ 712.0, 44.61438, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 49.304535, 21.11438, 14.0, 14.0 ],
+					"presentation_rect" : [ 107.304535, 20.80719, 14.0, 14.0 ],
 					"style" : ""
 				}
 
@@ -103,7 +103,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 423.5, 172.61438, 113.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 103.85733, 37.11438, 32.0, 15.0 ],
+					"presentation_rect" : [ 161.85733, 36.80719, 32.0, 15.0 ],
 					"style" : "",
 					"text" : "Height",
 					"textcolor" : [ 0.803922, 0.898039, 0.909804, 1.0 ]
@@ -119,7 +119,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 479.5, 107.61438, 110.0, 15.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 61.304535, 37.11438, 30.0, 15.0 ],
+					"presentation_rect" : [ 119.304535, 36.80719, 30.0, 15.0 ],
 					"style" : "",
 					"text" : "Width",
 					"textcolor" : [ 0.803922, 0.898039, 0.909804, 1.0 ]
@@ -141,7 +141,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 497.5, 162.61438, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 93.66452, 19.11438, 50.38562, 50.38562 ],
+					"presentation_rect" : [ 151.66452, 18.80719, 50.38562, 50.38562 ],
 					"size" : 700.0,
 					"style" : "",
 					"thickness" : 40.0
@@ -163,7 +163,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 549.5, 96.61438, 40.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 51.111725, 19.11438, 50.38562, 50.38562 ],
+					"presentation_rect" : [ 109.111725, 18.80719, 50.38562, 50.38562 ],
 					"size" : 700.0,
 					"style" : "",
 					"thickness" : 40.0
@@ -219,8 +219,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4.227295, 4.5, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, -0.5, 150.0, 70.0 ],
-					"text" : "/no_model_address",
+					"presentation_rect" : [ 0.0, -0.5, 300.0, 70.0 ],
+					"text" : "/no_..ess",
 					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 				}
 
@@ -537,10 +537,10 @@
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"fontface" : [ 0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
