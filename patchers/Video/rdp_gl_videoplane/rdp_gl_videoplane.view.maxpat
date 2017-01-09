@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -61,7 +61,7 @@
 							"parameter_shortname" : "Layer",
 							"parameter_type" : 1,
 							"parameter_mmin" : 1.0,
-							"parameter_mmax" : 8.0,
+							"parameter_mmax" : 30.0,
 							"parameter_unitstyle" : 0,
 							"parameter_invisible" : 2
 						}
@@ -694,11 +694,11 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-2" : [ "Alpha", "Alpha", 0 ],
 			"obj-14" : [ "saturation", "Saturation", 0 ],
-			"obj-16" : [ "blend_type", "blend_type", 0 ],
+			"obj-2" : [ "Alpha", "Alpha", 0 ],
 			"obj-23" : [ "render_context", "Render context", 0 ],
-			"obj-15" : [ "Layer", "Layer", 0 ]
+			"obj-15" : [ "Layer", "Layer", 0 ],
+			"obj-16" : [ "blend_type", "blend_type", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -829,10 +829,10 @@
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"fontface" : [ 0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
+					"fontface" : [ 0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
