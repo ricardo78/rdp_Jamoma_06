@@ -44,7 +44,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 325.5, 34.0, 30.0, 30.0 ],
+					"patching_rect" : [ 362.5, 37.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -57,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 325.5, 242.0, 113.0, 22.0 ],
+					"patching_rect" : [ 268.5, 101.0, 113.0, 22.0 ],
 					"style" : "",
 					"text" : "rdp_seq.model seq"
 				}
@@ -306,25 +306,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-25::obj-4::obj-171" : [ "live.text[10]", "live.text", 0 ],
-			"obj-25::obj-4::obj-167" : [ "live.text[6]", "live.text", 0 ],
-			"obj-25::obj-4::obj-173" : [ "live.text[12]", "live.text", 0 ],
-			"obj-25::obj-4::obj-163" : [ "live.text[2]", "live.text", 0 ],
-			"obj-25::obj-4::obj-170" : [ "live.text[9]", "live.text", 0 ],
-			"obj-25::obj-4::obj-175" : [ "live.text[14]", "live.text", 0 ],
-			"obj-25::obj-4::obj-166" : [ "live.text[5]", "live.text", 0 ],
-			"obj-25::obj-4::obj-174" : [ "live.text[13]", "live.text", 0 ],
-			"obj-25::obj-4::obj-176" : [ "live.text[15]", "live.text", 0 ],
-			"obj-25::obj-4::obj-169" : [ "live.text[8]", "live.text", 0 ],
-			"obj-25::obj-4::obj-165" : [ "live.text[4]", "live.text", 0 ],
-			"obj-25::obj-4::obj-161" : [ "live.text", "live.text", 0 ],
-			"obj-25::obj-4::obj-162" : [ "live.text[1]", "live.text", 0 ],
-			"obj-25::obj-4::obj-164" : [ "live.text[3]", "live.text", 0 ],
-			"obj-25::obj-4::obj-172" : [ "live.text[11]", "live.text", 0 ],
-			"obj-25::obj-4::obj-168" : [ "live.text[7]", "live.text", 0 ]
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "rdp_gl_brcosa.model.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_brcosa",
@@ -386,24 +367,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.parameter_create.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/patchers/components/data/parameter_create",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.thisparentpatcher.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameter_create_preset_doc.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "j.receive.mxo",
 				"type" : "iLaX"
 			}
@@ -437,14 +400,6 @@
 			}
 , 			{
 				"name" : "j.in~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.map.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
  ],
@@ -493,11 +448,14 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
+					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
-					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
@@ -507,10 +465,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
+
 				}
 ,
 				"parentstyle" : "",
@@ -588,11 +543,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+					"fontface" : [ 0 ]
 				}
 ,
 				"parentstyle" : "",
