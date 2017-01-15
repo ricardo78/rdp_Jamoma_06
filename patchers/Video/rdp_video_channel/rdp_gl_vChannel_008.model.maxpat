@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 389.0, 132.0, 734.0, 383.0 ],
+		"rect" : [ 312.0, 118.0, 795.0, 533.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,27 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"annotation" : "a model for edgeblending",
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 84.0, 237.0, 167.0, 22.0 ],
+					"style" : "",
+					"text" : "rdp_gl_cropZoom.model crop"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 362.5, 37.0, 30.0, 30.0 ],
+					"patching_rect" : [ 492.5, 37.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -57,7 +71,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 268.5, 101.0, 113.0, 22.0 ],
+					"patching_rect" : [ 398.5, 101.0, 113.0, 22.0 ],
 					"style" : "",
 					"text" : "rdp_seq.model seq"
 				}
@@ -71,7 +85,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 79.0, 101.0, 133.0, 22.0 ],
+					"patching_rect" : [ 84.0, 48.0, 133.0, 22.0 ],
 					"style" : "",
 					"text" : "rdp_gl_play.model play"
 				}
@@ -123,7 +137,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 79.0, 341.173676, 174.0, 22.0 ],
+					"patching_rect" : [ 84.0, 346.173676, 174.0, 22.0 ],
 					"style" : "",
 					"text" : "rdp_gl_videoplane.model layer"
 				}
@@ -137,7 +151,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 79.0, 178.333313, 163.0, 22.0 ],
+					"patching_rect" : [ 84.0, 123.333313, 163.0, 22.0 ],
 					"style" : "",
 					"text" : "rdp_gl_convolve.model conv"
 				}
@@ -151,7 +165,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 79.0, 247.166656, 152.0, 22.0 ],
+					"patching_rect" : [ 84.0, 198.166656, 152.0, 22.0 ],
 					"style" : "",
 					"text" : "rdp_gl_mirror.model mirror"
 				}
@@ -165,7 +179,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 79.0, 145.0, 161.0, 22.0 ],
+					"patching_rect" : [ 84.0, 86.333313, 161.0, 22.0 ],
 					"style" : "",
 					"text" : "rdp_gl_stripes.model stripes"
 				}
@@ -179,7 +193,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 79.0, 309.166656, 139.0, 22.0 ],
+					"patching_rect" : [ 84.0, 311.166656, 139.0, 22.0 ],
 					"style" : "",
 					"text" : "rdp_gl_slide.model slide"
 				}
@@ -193,7 +207,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 79.0, 214.000031, 166.0, 22.0 ],
+					"patching_rect" : [ 84.0, 161.000031, 166.0, 22.0 ],
 					"style" : "",
 					"text" : "rdp_gl_kaleido.model kaleido"
 				}
@@ -207,7 +221,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 79.0, 278.166656, 162.0, 22.0 ],
+					"patching_rect" : [ 84.0, 275.166656, 162.0, 22.0 ],
 					"style" : "",
 					"text" : "rdp_gl_brcosa.model brcosa"
 				}
@@ -226,6 +240,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-27", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-100", 0 ]
@@ -282,7 +305,7 @@
 					"destination" : [ "obj-100", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 88.5, 265.166656 ],
+					"midpoints" : [ 93.5, 212.166656 ],
 					"source" : [ "obj-91", 0 ]
 				}
 
@@ -363,6 +386,12 @@
 , 			{
 				"name" : "rdp_seq.model.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Audio/rdp_seq",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rdp_gl_cropZoom.model.maxpat",
+				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_cropZoom",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -448,14 +477,13 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
-					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
@@ -465,7 +493,8 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -544,10 +573,10 @@
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",

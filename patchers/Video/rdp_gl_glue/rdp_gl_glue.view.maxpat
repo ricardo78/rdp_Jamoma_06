@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -53,7 +53,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 345.5, 204.0, 44.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 100.815071, 20.5, 44.0, 45.0 ],
+					"presentation_rect" : [ 212.815063, 20.5, 44.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "xfade",
@@ -102,7 +102,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 345.5, 148.61438, 44.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 53.331913, 20.5, 44.0, 45.0 ],
+					"presentation_rect" : [ 126.831909, 20.5, 44.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "Fade",
@@ -165,7 +165,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 345.5, 88.61438, 44.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.848755, 20.5, 44.0, 45.0 ],
+					"presentation_rect" : [ 40.848755, 20.5, 44.0, 45.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "threshold",
@@ -240,8 +240,8 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2.0, 10.5, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, -0.5, 150.0, 70.0 ],
-					"text" : "/no_model_address",
+					"presentation_rect" : [ 0.331913, -0.5, 300.0, 70.0 ],
+					"text" : "/no_..ess",
 					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 				}
 
@@ -321,9 +321,9 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-14" : [ "Fade", "Fade", 0 ],
 			"obj-32" : [ "threshold", "Threshold", 0 ],
-			"obj-6" : [ "xfade", "Xfade", 0 ],
-			"obj-14" : [ "Fade", "Fade", 0 ]
+			"obj-6" : [ "xfade", "Xfade", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -454,10 +454,10 @@
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"fontface" : [ 0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",

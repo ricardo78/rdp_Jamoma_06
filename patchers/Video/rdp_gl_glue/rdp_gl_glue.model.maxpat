@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 248.0, 195.0, 855.0, 431.0 ],
+		"rect" : [ 66.0, 294.0, 855.0, 431.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -231,9 +231,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 108.5, 303.5, 282.0, 35.0 ],
+					"patching_rect" : [ 108.5, 303.5, 237.0, 35.0 ],
 					"style" : "",
-					"text" : "jit.gl.pix @gen rdp_glue @depth_enable 0 @blend_enable 0 @automatic 1"
+					"text" : "jit.gl.pix @gen rdp_glue @depth_enable 0 @blend_enable 0"
 				}
 
 			}
@@ -354,7 +354,7 @@
 					"destination" : [ "obj-6", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 75.0, 285.092285, 381.0, 285.092285 ],
+					"midpoints" : [ 75.0, 285.092285, 336.0, 285.092285 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -597,10 +597,10 @@
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"fontface" : [ 0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"fontface" : [ 0 ]
 				}
 ,
 				"parentstyle" : "",
