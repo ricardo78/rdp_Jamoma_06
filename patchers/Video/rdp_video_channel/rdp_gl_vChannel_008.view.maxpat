@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 131.0, 45.0, 961.0, 798.0 ],
+		"rect" : [ 131.0, 45.0, 965.0, 816.0 ],
 		"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -56,31 +56,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 661.0, 530.0, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 484.42511, 300.0, 70.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "interface for rdp_seq",
-					"args" : [ "seq" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-5",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "rdp_seq.view.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 438.0, 553.0, 300.0, 70.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 20.42511, 300.0, 70.0 ],
+					"presentation_rect" : [ 0.0, 343.5, 300.0, 70.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -113,7 +89,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 131.0, 136.0, 300.0, 105.0 ],
+						"rect" : [ 131.0, 66.0, 300.0, 105.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1315,8 +1291,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1334,11 +1310,11 @@
 , 							{
 								"name" : "rdp-jamoma-style",
 								"default" : 								{
-									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"fontface" : [ 0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1358,7 +1334,7 @@
 ,
 					"patching_rect" : [ 335.900024, 381.118042, 300.0, 105.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 91.42511, 300.0, 105.0 ],
+					"presentation_rect" : [ 0.0, 20.5, 300.0, 105.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1382,7 +1358,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 502.61792, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 628.42511, 300.0, 70.0 ],
+					"presentation_rect" : [ 0.0, 487.5, 300.0, 70.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1406,31 +1382,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 275.11792, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 340.42511, 300.0, 70.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "interface for convolve",
-					"args" : [ "conv" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-6",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "rdp_gl_convolve.view.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 10.0, 198.117981, 300.0, 70.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 268.42511, 300.0, 70.0 ],
+					"presentation_rect" : [ 0.0, 199.5, 300.0, 70.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1454,7 +1406,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 349.0, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 412.42511, 300.0, 70.0 ],
+					"presentation_rect" : [ 0.0, 271.5, 300.0, 70.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1478,7 +1430,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 117.618042, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 197.42511, 300.0, 70.0 ],
+					"presentation_rect" : [ 0.0, 127.5, 300.0, 70.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1502,7 +1454,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 428.289673, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 556.42511, 300.0, 70.0 ],
+					"presentation_rect" : [ 0.0, 415.5, 300.0, 70.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1526,7 +1478,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 574.61792, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 699.5, 300.0, 70.0 ],
+					"presentation_rect" : [ 0.0, 559.5, 300.0, 70.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1545,7 +1497,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 322.227295, 9.5, 300.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, -0.5, 300.0, 770.0 ],
+					"presentation_rect" : [ 0.0, -0.5, 300.0, 630.0 ],
 					"text" : "/no_model_address",
 					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 				}
@@ -1610,30 +1562,26 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-11::obj-14" : [ "read_files", "Read files", 0 ],
-			"obj-12::obj-15" : [ "Layer", "Layer", 0 ],
-			"obj-11::obj-26" : [ "framereport", "Frame report", 0 ],
-			"obj-10::obj-32" : [ "contrast", "Contrast", 0 ],
-			"obj-11::obj-105" : [ "reset_loop", "Reset loop", 0 ],
-			"obj-5::obj-2" : [ "play[1]", "Play", 0 ],
 			"obj-24::obj-29" : [ "div[1]", "Div", 0 ],
-			"obj-11::obj-19" : [ "loop_report", "Loop report", 0 ],
-			"obj-10::obj-15" : [ "Saturation", "Saturation", 0 ],
-			"obj-12::obj-14" : [ "saturation", "Saturation", 0 ],
-			"obj-12::obj-23" : [ "render_context", "Render context", 0 ],
-			"obj-11::obj-60" : [ "rate", "Rate", 0 ],
-			"obj-36::obj-2" : [ "slide_down", "Down", 0 ],
-			"obj-11::obj-18" : [ "loop_mode", "Loop mode", 0 ],
+			"obj-11::obj-26" : [ "framereport", "Frame report", 0 ],
 			"obj-11::obj-15" : [ "play", "Play", 0 ],
-			"obj-12::obj-16" : [ "blend_type", "blend_type", 0 ],
-			"obj-12::obj-2" : [ "Alpha", "Alpha", 0 ],
-			"obj-36::obj-32" : [ "slide_up", "Up", 0 ],
-			"obj-5::obj-11" : [ "overdub", "Overdub", 0 ],
-			"obj-10::obj-16" : [ "Alpha[1]", "Alpha", 0 ],
-			"obj-6::obj-4" : [ "sum", "Sum", 0 ],
+			"obj-12::obj-14" : [ "saturation", "Saturation", 0 ],
+			"obj-11::obj-19" : [ "loop_report", "Loop report", 0 ],
+			"obj-11::obj-18" : [ "loop_mode", "Loop mode", 0 ],
+			"obj-12::obj-23" : [ "render_context", "Render context", 0 ],
 			"obj-33::obj-37" : [ "amount", "Amount", 0 ],
-			"obj-5::obj-9" : [ "record", "Record", 0 ],
-			"obj-10::obj-14" : [ "Brightness", "Brightness", 0 ]
+			"obj-12::obj-16" : [ "blend_type", "blend_type", 0 ],
+			"obj-10::obj-32" : [ "contrast", "Contrast", 0 ],
+			"obj-11::obj-60" : [ "rate", "Rate", 0 ],
+			"obj-12::obj-2" : [ "Alpha", "Alpha", 0 ],
+			"obj-11::obj-105" : [ "reset_loop", "Reset loop", 0 ],
+			"obj-36::obj-32" : [ "slide_up", "Up", 0 ],
+			"obj-11::obj-14" : [ "read_files", "Read files", 0 ],
+			"obj-10::obj-15" : [ "Saturation", "Saturation", 0 ],
+			"obj-12::obj-15" : [ "Layer", "Layer", 0 ],
+			"obj-10::obj-16" : [ "Alpha[1]", "Alpha", 0 ],
+			"obj-10::obj-14" : [ "Brightness", "Brightness", 0 ],
+			"obj-36::obj-2" : [ "slide_down", "Down", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1667,12 +1615,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "rdp_gl_convolve.view.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_convolve",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "rdp_gl_kaleido.view.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_kaleido",
 				"type" : "JSON",
@@ -1691,21 +1633,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "rdp_seq.view.maxpat",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Audio/rdp_seq",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "rdp_gl_cropZoom.view.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_cropZoom",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "RDPJamomaLogo2.png",
-				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/misc",
-				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
@@ -1774,13 +1704,9 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
@@ -1791,7 +1717,11 @@
 						"autogradient" : 0
 					}
 ,
-					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1850,8 +1780,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1869,11 +1799,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
