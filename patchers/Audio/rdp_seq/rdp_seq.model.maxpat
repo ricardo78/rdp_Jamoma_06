@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -198,7 +198,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 92.0, 413.0, 51.0, 23.0 ],
+					"patching_rect" : [ 92.0, 327.0, 51.0, 23.0 ],
 					"style" : "",
 					"text" : "seq~"
 				}
@@ -240,9 +240,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 92.0, 449.241272, 278.0, 22.0 ],
+					"patching_rect" : [ 92.0, 367.241272, 385.0, 22.0 ],
 					"style" : "",
-					"text" : "j.return sequence @type generic @clipmode none",
+					"text" : "j.return sequence @type generic @clipmode none @repetitions/filter 0",
 					"varname" : "sequence"
 				}
 
@@ -269,7 +269,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 192.0, 286.0, 56.0, 22.0 ],
+					"patching_rect" : [ 155.0, 260.0, 56.0, 22.0 ],
 					"style" : "",
 					"text" : "dump $1"
 				}
@@ -553,11 +553,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"fontface" : [ 0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
