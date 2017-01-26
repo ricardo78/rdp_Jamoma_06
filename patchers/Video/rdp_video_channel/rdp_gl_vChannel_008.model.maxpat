@@ -782,7 +782,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 297.5, 40.0, 30.0, 30.0 ],
+									"patching_rect" : [ 546.5, 284.0, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -3055,49 +3055,42 @@
 		"dependency_cache" : [ 			{
 				"name" : "rdp_gl_brcosa.model.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_brcosa",
-				"patcherrelativepath" : "./Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_brcosa",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_gl_kaleido.model.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_kaleido",
-				"patcherrelativepath" : "./Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_kaleido",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_gl_slide.model.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_slide",
-				"patcherrelativepath" : "./Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_slide",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_gl_stripes.model.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_stripes",
-				"patcherrelativepath" : "./Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_stripes",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_gl_mirror.model.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_mirror",
-				"patcherrelativepath" : "./Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_mirror",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_gl_videoplane.model.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_videoplane",
-				"patcherrelativepath" : "./Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_videoplane",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_gl_play.model.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_play",
-				"patcherrelativepath" : "./Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_play",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3110,14 +3103,12 @@
 , 			{
 				"name" : "rdp_gl_cropZoom.model.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_cropZoom",
-				"patcherrelativepath" : "./Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Video/rdp_gl_cropZoom",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rdp_seq.model.maxpat",
 				"bootpath" : "~/Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Audio/rdp_seq",
-				"patcherrelativepath" : "./Documents/Github_Development_Library/rdp_Jamoma_06/patchers/Audio/rdp_seq",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3207,6 +3198,9 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
@@ -3217,14 +3211,11 @@
 						"autogradient" : 0
 					}
 ,
-					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3283,8 +3274,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3302,11 +3293,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"fontface" : [ 0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ]
 				}
 ,
 				"parentstyle" : "",

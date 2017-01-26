@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -37,6 +37,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patching_rect" : [ 501.0, 489.0, 114.0, 22.0 ],
+					"style" : "",
+					"text" : "j.parameter_Create"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "message",
@@ -188,14 +200,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-17",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 165.0, 71.5, 497.0, 35.0 ],
+					"patching_rect" : [ 165.0, 71.5, 670.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter origin @type decimal @range 0. 5. @clipmode wrap @ramp/drive max @ramp/function linear @dataspace none",
+					"text" : "j.parameter origin @type decimal @range 0. 5. @clipmode both @ramp/drive max @ramp/function linear @dataspace none",
 					"varname" : "mirror[1]"
 				}
 
@@ -388,7 +399,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 359.0, 164.0, 516.0, 35.0 ],
+					"patching_rect" : [ 359.0, 163.0, 548.0, 35.0 ],
 					"style" : "",
 					"text" : "j.parameter color @type array @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @dataspace color @unit rgb @default 0. 0. 0. 1.",
 					"varname" : "color"
@@ -414,14 +425,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-16",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 70.0, 28.5, 592.0, 35.0 ],
+					"patching_rect" : [ 70.0, 28.5, 665.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter mirror @type decimal @range 0 1 @clipmode wrap @ramp/drive max @ramp/function linear @dataspace none",
+					"text" : "j.parameter mirror @type decimal @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @dataspace none",
 					"varname" : "mirror"
 				}
 
@@ -667,7 +677,44 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-19::obj-164" : [ "live.text[3]", "live.text", 0 ],
+			"obj-19::obj-165" : [ "live.text[4]", "live.text", 0 ],
+			"obj-19::obj-166" : [ "live.text[5]", "live.text", 0 ],
+			"obj-19::obj-170" : [ "live.text[9]", "live.text", 0 ],
+			"obj-19::obj-169" : [ "live.text[8]", "live.text", 0 ],
+			"obj-19::obj-168" : [ "live.text[7]", "live.text", 0 ],
+			"obj-19::obj-167" : [ "live.text[6]", "live.text", 0 ],
+			"obj-19::obj-163" : [ "live.text[2]", "live.text", 0 ],
+			"obj-19::obj-176" : [ "live.text[15]", "live.text", 0 ],
+			"obj-19::obj-162" : [ "live.text[1]", "live.text", 0 ],
+			"obj-19::obj-175" : [ "live.text[14]", "live.text", 0 ],
+			"obj-19::obj-174" : [ "live.text[13]", "live.text", 0 ],
+			"obj-19::obj-173" : [ "live.text[12]", "live.text", 0 ],
+			"obj-19::obj-172" : [ "live.text[11]", "live.text", 0 ],
+			"obj-19::obj-171" : [ "live.text[10]", "live.text", 0 ],
+			"obj-19::obj-161" : [ "live.text", "live.text", 0 ]
+		}
+,
 		"dependency_cache" : [ 			{
+				"name" : "j.parameter_create.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/patchers/components/data/parameter_create",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.thisparentpatcher.js",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.parameter_create_preset_doc.js",
+				"bootpath" : "~/Documents/Max 7/Packages/Jamoma_06/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "j.parameter.mxo",
 				"type" : "iLaX"
 			}
@@ -689,6 +736,14 @@
 			}
 , 			{
 				"name" : "j.message.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.map.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.unit.mxo",
 				"type" : "iLaX"
 			}
  ],
@@ -778,8 +833,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -788,11 +843,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"fontface" : [ 0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"fontface" : [ 0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

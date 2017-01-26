@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 1,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -98,9 +98,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 157.0, 104.5, 730.0, 22.0 ],
+					"patching_rect" : [ 157.0, 104.5, 727.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter offset @type array @range 0 1 @clipmode wrap @ramp/drive max @ramp/function linear @dataspace none @default 1. 1.",
+					"text" : "j.parameter offset @type array @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @default 1. 1.",
 					"varname" : "origin[1]"
 				}
 
@@ -251,9 +251,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 63.0, 57.5, 730.0, 22.0 ],
+					"patching_rect" : [ 63.0, 57.5, 727.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter origin @type array @range 0 1 @clipmode wrap @ramp/drive max @ramp/function linear @dataspace none @default 0. 0.",
+					"text" : "j.parameter origin @type array @range 0 1 @clipmode both @ramp/drive max @ramp/function linear @dataspace none @default 0. 0.",
 					"varname" : "origin"
 				}
 
@@ -587,8 +587,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -597,11 +597,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"fontface" : [ 0 ],
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"fontface" : [ 0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
