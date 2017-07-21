@@ -13,3 +13,15 @@ data/active 1
 data/bypass 0
 # 
 # ###########################################
+
+- preset "INit"
+- description "something about this preset"
+# ###########################################
+# 
+fade -0.559055
+xfade 1.000000
+threshold 1.141732
+data/active 1
+data/bypass 0
+# 
+# ###########################################

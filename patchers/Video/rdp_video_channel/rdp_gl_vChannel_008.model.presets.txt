@@ -1,0 +1,104 @@
+
+- preset "Test_2"
+- description "something about this preset"
+# ###########################################
+# 
+alpha/file/path "SSD Macintosh:/Users/delpozo/Dropbox/Projects/Westaman_vest 2017/Video/"
+alpha/file/select "water-H.246 Automatic_hap.mov"
+alpha/file/play 1
+alpha/loop/points 0.000000 36984.000000
+alpha/loop/mode normal
+alpha/loop/report 0
+alpha/rate 1.000000
+alpha/framereport 0
+alpha/data/active 1
+brcosa/contrast 1.000000
+brcosa/brightness 1.000000
+brcosa/saturation 1.000000
+brcosa/alpha 2.102362
+brcosa/data/active 1
+brcosa/data/bypass 0
+crop/crop 0.000000 0.000000 1.000000 1.000000
+crop/data/active 1
+crop/data/bypass 1
+crop/offset 0.000000 0.000000
+crop/zoom 1.000000 1.000000
+glue/fade 1.000000
+glue/xfade 1.000000
+glue/threshold 1.000000
+glue/data/active 1
+glue/data/bypass 0
+kaleido/data/active 1
+kaleido/data/bypass 1
+kaleido/div 100.000000
+kaleido/offset 0.000000 0.000000
+kaleido/origin 0.000000 0.000000
+kaleido/scale 1.000000 1.000000
+layer/drawto Automatic
+layer/color 1.000000 1.000000 1.000000
+layer/alpha 0.000000
+layer/preview_alpha 1.000000
+layer/saturation 1.000000
+layer/layer/order 8
+layer/blend/enable 1
+layer/blend/type alphablend
+layer/data/active 1
+layer/preview 0
+mirror/data/active 1
+mirror/data/bypass 1
+mirror/offset 0.000000 0.000000
+mirror/origin 0.000000 0.000000
+play/file/path "SSD Macintosh:/Users/delpozo/Dropbox/Projects/Westaman_vest 2017/Video/"
+play/file/select "kratt-3-H.246 Automatic_hap.mov"
+play/file/play 1
+play/loop/points 0.000000 7968.000000
+play/loop/mode normal
+play/loop/report 0
+play/rate 1.000000
+play/framereport 0
+play/data/active 1
+seq/brcosa/audio/mute 0
+seq/brcosa/overdub 0
+seq/brcosa/play 0
+seq/brcosa/record 0
+seq/crop/audio/mute 0
+seq/crop/overdub 0
+seq/crop/play 0
+seq/crop/record 0
+seq/kaleido/audio/mute 0
+seq/kaleido/overdub 0
+seq/kaleido/play 0
+seq/kaleido/record 0
+seq/layer/audio/mute 0
+seq/layer/overdub 0
+seq/layer/play 0
+seq/layer/record 0
+seq/mirror/audio/mute 0
+seq/mirror/overdub 0
+seq/mirror/play 0
+seq/mirror/record 0
+seq/play/audio/mute 0
+seq/play/overdub 0
+seq/play/play 0
+seq/play/record 0
+seq/slide/audio/mute 0
+seq/slide/overdub 0
+seq/slide/play 0
+seq/slide/record 0
+seq/stripe/audio/mute 0
+seq/stripe/overdub 0
+seq/stripe/play 0
+seq/stripe/record 0
+slide/data/active 1
+slide/data/bypass 1
+slide/slide/down 0.000000
+slide/slide/up 0.000000
+stripes/amount 1
+stripes/angle 0.000000
+stripes/color 0.000000 0.000000 0.000000 1.000000
+stripes/data/active 1
+stripes/data/bypass 1
+stripes/mirror 0.000000
+stripes/origin 0.000000
+# 
+# ###########################################
