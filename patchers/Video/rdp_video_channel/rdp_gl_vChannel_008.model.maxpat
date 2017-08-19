@@ -38,34 +38,6 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"annotation" : "a model for playing back hap codec",
-					"id" : "obj-7",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 228.0, 92.0, 140.0, 22.0 ],
-					"style" : "",
-					"text" : "rdp_gl_play.model alpha"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"annotation" : "gluing two textures",
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 84.0, 145.0, 163.0, 22.0 ],
-					"style" : "",
-					"text" : "rdp_gl_glue.model glue"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-44",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -2819,7 +2791,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-98", 0 ],
 					"source" : [ "obj-38", 0 ]
 				}
 
@@ -2847,20 +2819,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-98", 0 ],
-					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 1 ],
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-100", 0 ],
 					"source" : [ "obj-91", 0 ]
 				}
@@ -2882,22 +2840,22 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-98::obj-19::obj-166" : [ "live.text[5]", "live.text", 0 ],
+			"obj-98::obj-19::obj-171" : [ "live.text[10]", "live.text", 0 ],
 			"obj-98::obj-19::obj-161" : [ "live.text", "live.text", 0 ],
+			"obj-98::obj-19::obj-166" : [ "live.text[5]", "live.text", 0 ],
 			"obj-98::obj-19::obj-172" : [ "live.text[11]", "live.text", 0 ],
 			"obj-98::obj-19::obj-163" : [ "live.text[2]", "live.text", 0 ],
-			"obj-98::obj-19::obj-162" : [ "live.text[1]", "live.text", 0 ],
 			"obj-98::obj-19::obj-167" : [ "live.text[6]", "live.text", 0 ],
+			"obj-98::obj-19::obj-162" : [ "live.text[1]", "live.text", 0 ],
 			"obj-98::obj-19::obj-173" : [ "live.text[12]", "live.text", 0 ],
-			"obj-98::obj-19::obj-164" : [ "live.text[3]", "live.text", 0 ],
 			"obj-98::obj-19::obj-168" : [ "live.text[7]", "live.text", 0 ],
+			"obj-98::obj-19::obj-164" : [ "live.text[3]", "live.text", 0 ],
 			"obj-98::obj-19::obj-174" : [ "live.text[13]", "live.text", 0 ],
 			"obj-98::obj-19::obj-169" : [ "live.text[8]", "live.text", 0 ],
+			"obj-98::obj-19::obj-165" : [ "live.text[4]", "live.text", 0 ],
 			"obj-98::obj-19::obj-175" : [ "live.text[14]", "live.text", 0 ],
 			"obj-98::obj-19::obj-170" : [ "live.text[9]", "live.text", 0 ],
-			"obj-98::obj-19::obj-165" : [ "live.text[4]", "live.text", 0 ],
-			"obj-98::obj-19::obj-176" : [ "live.text[15]", "live.text", 0 ],
-			"obj-98::obj-19::obj-171" : [ "live.text[10]", "live.text", 0 ]
+			"obj-98::obj-19::obj-176" : [ "live.text[15]", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -2988,20 +2946,6 @@
 				"bootpath" : "~/Documents/GitHub/rdp_Jamoma_06/patchers/Audio/rdp_seq",
 				"patcherrelativepath" : "../../Audio/rdp_seq",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rdp_gl_glue.model.maxpat",
-				"bootpath" : "~/Documents/GitHub/rdp_Jamoma_06/patchers/Video/rdp_gl_glue",
-				"patcherrelativepath" : "../rdp_gl_glue",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rdp_glue.genjit",
-				"bootpath" : "~/Documents/GitHub/rdp_Jamoma_06/patchers/Video/rdp_gl_glue",
-				"patcherrelativepath" : "../rdp_gl_glue",
-				"type" : "gJIT",
 				"implicit" : 1
 			}
 , 			{
@@ -3098,14 +3042,8 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
-					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
-					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
@@ -3115,7 +3053,13 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3174,8 +3118,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -3193,11 +3137,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"fontface" : [ 0 ],
-					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
