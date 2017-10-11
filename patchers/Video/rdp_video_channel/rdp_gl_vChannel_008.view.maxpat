@@ -1225,8 +1225,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1246,9 +1246,9 @@
 								"default" : 								{
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-									"fontface" : [ 0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+									"fontface" : [ 0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1494,24 +1494,24 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-11::obj-60" : [ "rate", "Rate", 0 ],
-			"obj-11::obj-15" : [ "play", "Play", 0 ],
-			"obj-11::obj-26" : [ "framereport", "Frame report", 0 ],
-			"obj-10::obj-15" : [ "Saturation", "Saturation", 0 ],
-			"obj-33::obj-37" : [ "amount", "Amount", 0 ],
-			"obj-24::obj-29" : [ "div[1]", "Div", 0 ],
-			"obj-12::obj-14" : [ "saturation", "Saturation", 0 ],
-			"obj-12::obj-2" : [ "Alpha", "Alpha", 0 ],
-			"obj-11::obj-19" : [ "loop_report", "Loop report", 0 ],
-			"obj-11::obj-18" : [ "loop_mode", "Loop mode", 0 ],
 			"obj-36::obj-2" : [ "slide_down", "Down", 0 ],
 			"obj-36::obj-32" : [ "slide_up", "Up", 0 ],
+			"obj-12::obj-2" : [ "Alpha", "Alpha", 0 ],
+			"obj-24::obj-29" : [ "div[1]", "Div", 0 ],
+			"obj-11::obj-26" : [ "framereport", "Frame report", 0 ],
+			"obj-11::obj-60" : [ "rate", "Rate", 0 ],
 			"obj-10::obj-32" : [ "contrast", "Contrast", 0 ],
-			"obj-12::obj-23" : [ "render_context", "Render context", 0 ],
-			"obj-12::obj-15" : [ "Layer", "Layer", 0 ],
-			"obj-10::obj-16" : [ "Alpha[1]", "Alpha", 0 ],
+			"obj-11::obj-15" : [ "play", "Play", 0 ],
+			"obj-33::obj-37" : [ "amount", "Amount", 0 ],
+			"obj-12::obj-14" : [ "saturation", "Saturation", 0 ],
 			"obj-11::obj-105" : [ "reset_loop", "Reset loop", 0 ],
 			"obj-11::obj-14" : [ "read_files", "Read files", 0 ],
+			"obj-12::obj-23" : [ "render_context", "Render context", 0 ],
+			"obj-10::obj-15" : [ "Saturation", "Saturation", 0 ],
+			"obj-11::obj-19" : [ "loop_report", "Loop report", 0 ],
+			"obj-11::obj-18" : [ "loop_mode", "Loop mode", 0 ],
+			"obj-10::obj-16" : [ "Alpha[1]", "Alpha", 0 ],
+			"obj-12::obj-15" : [ "Layer", "Layer", 0 ],
 			"obj-10::obj-14" : [ "Brightness", "Brightness", 0 ],
 			"obj-12::obj-16" : [ "blend_type", "blend_type", 0 ]
 		}
@@ -1646,7 +1646,6 @@
 				"name" : "jpink",
 				"default" : 				{
 					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
-					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
@@ -1657,11 +1656,12 @@
 						"autogradient" : 0
 					}
 ,
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
 				}
 ,
@@ -1721,8 +1721,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1742,9 +1742,9 @@
 				"default" : 				{
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"fontface" : [ 0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
+					"fontface" : [ 0 ]
 				}
 ,
 				"parentstyle" : "",
