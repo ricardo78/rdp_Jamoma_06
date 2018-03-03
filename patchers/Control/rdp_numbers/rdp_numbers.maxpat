@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 3,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -45,7 +45,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 426.0, 45.0, 79.0, 22.0 ],
+					"patching_rect" : [ 425.0, 45.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess #1"
 				}
@@ -60,7 +60,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 599.0, 45.0, 79.0, 22.0 ],
+					"patching_rect" : [ 612.0, 45.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess #3"
 				}
@@ -238,7 +238,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "clear" ],
 					"patching_rect" : [ 87.0, 424.0, 31.0, 22.0 ],
 					"style" : "",
 					"text" : "thru"
@@ -254,7 +254,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 512.0, 45.0, 79.0, 22.0 ],
+					"patching_rect" : [ 516.0, 45.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "loadmess #2"
 				}
@@ -457,8 +457,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 608.5, 80.5, 111.5, 80.5 ],
+					"destination" : [ "obj-6", 0 ],
+					"midpoints" : [ 621.5, 90.0, 345.5, 90.0 ],
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -563,26 +563,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"midpoints" : [ 525.5, 81.0, 111.5, 81.0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"midpoints" : [ 521.5, 80.0, 170.0, 80.0 ],
-					"order" : 1,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 521.5, 80.0, 345.5, 80.0 ],
-					"order" : 0,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 435.5, 75.0, 345.5, 75.0 ],
+					"midpoints" : [ 434.5, 74.0, 170.0, 74.0 ],
 					"source" : [ "obj-8", 0 ]
 				}
 
