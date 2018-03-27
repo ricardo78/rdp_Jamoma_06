@@ -44,7 +44,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 229.0, 613.0, 30.0, 30.0 ],
+					"patching_rect" : [ 225.0, 647.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -58,7 +58,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 229.0, 533.0, 30.0, 30.0 ],
+					"patching_rect" : [ 225.0, 567.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -659,7 +659,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 25.000011, 537.0, 69.0, 22.0 ],
+					"patching_rect" : [ 25.00001, 599.0, 69.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2525,7 +2525,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 229.0, 569.0, 268.0, 35.0 ],
+					"patching_rect" : [ 225.0, 603.0, 268.0, 35.0 ],
 					"style" : "",
 					"text" : "j.model @tags nodes @description \"a model for generating values\""
 				}
@@ -2586,9 +2586,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 571.5, 279.0, 421.5, 49.0 ],
+					"patching_rect" : [ 571.5, 279.0, 461.0, 49.0 ],
 					"style" : "",
-					"text" : "j.parameter node/amount @type integer @range 1 10 @clipmode both @ramp/drive None @ramp/function linear @dataspace none @default 10 @description \"Number of nodes\" @priority 1",
+					"text" : "j.parameter node/amount @type integer @range 1 10 @clipmode both @ramp/drive None @ramp/function linear @dataspace none @default 10 @description \"Number of nodes\" @priority 1 @repetitions/filter 1",
 					"varname" : "node/amount"
 				}
 
@@ -3123,7 +3123,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 609.0, 498.0, 75.0, 22.0 ],
+					"patching_rect" : [ 642.0, 498.0, 75.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3146,7 +3146,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 665.0, 450.5, 328.0, 35.0 ],
+					"patching_rect" : [ 698.0, 450.5, 328.0, 35.0 ],
 					"style" : "",
 					"text" : "j.parameter_array node/active.[10] @type boolean @format single @priority 3 @default 1"
 				}
@@ -3607,7 +3607,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 25.000011, 575.0, 185.0, 22.0 ],
+					"patching_rect" : [ 25.00001, 637.0, 185.0, 22.0 ],
 					"style" : "",
 					"text" : "j.return node/values @type array",
 					"varname" : "node/values"
@@ -3697,7 +3697,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"midpoints" : [ 581.0, 458.25, 34.500011, 458.25 ],
+					"midpoints" : [ 581.0, 458.25, 34.500008, 458.25 ],
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -3786,7 +3786,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"midpoints" : [ 598.5, 490.5, 34.500011, 490.5 ],
+					"midpoints" : [ 598.5, 490.5, 34.500008, 490.5 ],
 					"source" : [ "obj-60", 0 ]
 				}
 
@@ -3794,7 +3794,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-89", 0 ],
-					"midpoints" : [ 829.0, 492.5, 618.5, 492.5 ],
+					"midpoints" : [ 862.0, 492.5, 651.5, 492.5 ],
 					"source" : [ "obj-61", 1 ]
 				}
 
@@ -3816,7 +3816,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"midpoints" : [ 618.5, 523.0, 34.500011, 523.0 ],
+					"midpoints" : [ 651.5, 539.0, 34.500008, 539.0 ],
 					"source" : [ "obj-89", 0 ]
 				}
 
@@ -3829,10 +3829,6 @@
 
 			}
  ],
-		"parameters" : 		{
-
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "RDPJamomaLogo.png",
 				"bootpath" : "~/Documents/GitHub/rdp_Jamoma_06/misc",
@@ -3897,11 +3893,11 @@
 , 			{
 				"name" : "rdp-jamoma-style",
 				"default" : 				{
+					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"fontface" : [ 0 ],
 					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
-					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ]
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
