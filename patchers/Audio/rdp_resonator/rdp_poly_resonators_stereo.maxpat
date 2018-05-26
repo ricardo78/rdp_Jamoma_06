@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 3,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 104.0, 855.0, 352.0 ],
+		"rect" : [ 59.0, 104.0, 852.0, 485.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 433.0, 200.0, 82.0, 22.0 ],
-					"presentation_rect" : [ 433.0, 201.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "clip 5. 20000."
 				}
@@ -62,7 +61,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 379.0, 262.0, 74.0, 22.0 ],
-					"presentation_rect" : [ 379.0, 263.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "vs.dcblock~"
 				}
@@ -78,7 +76,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 658.0, 165.0, 32.5, 22.0 ],
-					"presentation_rect" : [ 658.0, 166.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "* 1."
 				}
@@ -94,7 +91,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 379.0, 229.0, 73.0, 22.0 ],
-					"presentation_rect" : [ 379.0, 230.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "vs.butterlp~"
 				}
@@ -110,7 +106,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 658.0, 138.0, 57.0, 22.0 ],
-					"presentation_rect" : [ 658.0, 139.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "pak 0. 0."
 				}
@@ -126,7 +121,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 442.0, 138.0, 51.0, 22.0 ],
-					"presentation_rect" : [ 442.0, 139.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "!/ 1000."
 				}
@@ -142,7 +136,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 442.0, 93.0, 34.0, 22.0 ],
-					"presentation_rect" : [ 442.0, 94.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "mtof"
 				}
@@ -158,7 +151,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 379.0, 165.0, 270.0, 22.0 ],
-					"presentation_rect" : [ 379.0, 166.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "vs.comb~ 1000"
 				}
@@ -175,10 +167,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 379.0, 37.0, 37.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in~ 2"
 				}
@@ -292,7 +280,11 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 379.0, 301.0, 44.0, 22.0 ],
+					"patching_rect" : [ 379.0, 365.0, 44.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "out~ 2"
 				}
@@ -306,7 +298,11 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 301.0, 44.0, 22.0 ],
+					"patching_rect" : [ 19.0, 359.0, 44.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "out~ 1"
 				}
@@ -398,10 +394,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 680.0, 37.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 6"
 				}
@@ -418,10 +410,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 647.0, 37.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 5"
 				}
@@ -438,10 +426,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 613.0, 37.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 4"
 				}
@@ -458,10 +442,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 576.0, 37.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 3"
 				}
@@ -477,6 +457,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 19.0, 37.0, 37.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in~ 1"
 				}
@@ -501,8 +485,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -510,8 +492,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -519,8 +499,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -528,8 +506,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 307.5, 192.0, 82.5, 192.0 ],
 					"source" : [ "obj-12", 0 ]
 				}
@@ -538,8 +514,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -547,8 +521,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
@@ -556,8 +528,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -565,8 +535,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -574,8 +542,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 667.5, 192.0, 442.5, 192.0 ],
 					"source" : [ "obj-17", 0 ]
 				}
@@ -584,8 +550,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -593,8 +557,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -602,8 +564,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-21", 0 ]
 				}
 
@@ -611,8 +571,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -620,9 +578,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 451.5, 126.0, 667.5, 126.0 ],
+					"order" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -630,8 +587,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -639,8 +595,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -648,9 +602,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 585.5, 75.5, 451.5, 75.5 ],
+					"order" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -658,9 +611,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 585.5, 75.5, 91.5, 75.5 ],
+					"order" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -668,8 +620,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -677,9 +627,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 622.5, 124.5, 154.0, 124.5 ],
+					"order" : 1,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -687,9 +636,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 2 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 622.5, 111.5, 514.0, 111.5 ],
+					"order" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -697,9 +645,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 656.5, 125.5, 279.5, 125.5 ],
+					"order" : 1,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -707,9 +654,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 4 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 656.5, 111.5, 639.5, 111.5 ],
+					"order" : 0,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -717,9 +663,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 689.5, 125.0, 345.5, 125.0 ],
+					"order" : 1,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -727,9 +672,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 689.5, 98.0, 705.5, 98.0 ],
+					"order" : 0,
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -737,9 +681,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"midpoints" : [ 91.5, 126.0, 307.5, 126.0 ],
+					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -747,8 +690,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -756,8 +698,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -765,62 +705,62 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "vs.comb~.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/filter macros",
+				"patcherrelativepath" : "../../../../../../Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/filter macros",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.sig~.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/audio utility",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/audio utility",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/audio utility",
+				"patcherrelativepath" : "../../../../../../Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/audio utility",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.butterlp~.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/filter macros",
+				"patcherrelativepath" : "../../../../../../Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/filter macros",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.butterlpc.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/filter macros",
+				"patcherrelativepath" : "../../../../../../Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/filter macros",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.pi.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/math and numbers",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/math and numbers",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/math and numbers",
+				"patcherrelativepath" : "../../../../../../Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/math and numbers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.defaulter.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/max utility",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/max utility",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/max utility",
+				"patcherrelativepath" : "../../../../../../Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/max utility",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.dcblock~.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/filter macros",
+				"patcherrelativepath" : "../../../../../../Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/filter macros",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vs.highpass1~.maxpat",
-				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
-				"patcherrelativepath" : "../../../../../Dropbox/Max MSP Jitter User Libraries/Vitual Sound Library/virtualsound macros/filter macros",
+				"bootpath" : "~/Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/filter macros",
+				"patcherrelativepath" : "../../../../../../Dropbox/Max MSP Jitter User Libraries/Theory and practice/Virtual Sound Macros/externals/filter macros",
 				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }

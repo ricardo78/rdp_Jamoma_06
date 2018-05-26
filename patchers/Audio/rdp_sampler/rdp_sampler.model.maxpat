@@ -500,8 +500,8 @@
 																"default" : 																{
 																	"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 																	"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 																	"fontface" : [ 0 ],
+																	"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 																	"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 																}
 ,
@@ -1229,8 +1229,8 @@
 												"default" : 												{
 													"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 													"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 													"fontface" : [ 0 ],
+													"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 													"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 												}
 ,
@@ -1452,8 +1452,8 @@
 								"default" : 								{
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"fontface" : [ 0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
@@ -1534,7 +1534,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 808.0, 327.0, 598.0, 377.0 ],
+						"rect" : [ 491.0, 262.0, 670.0, 347.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1563,6 +1563,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 8.0, 239.580811, 56.0, 22.0 ],
+									"style" : "",
+									"text" : "deferlow"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"color" : [ 0.831373, 0.54902, 0.839216, 1.0 ],
 									"id" : "obj-2",
 									"linecount" : 2,
@@ -1570,7 +1583,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 130.0, 205.080811, 434.0, 35.0 ],
+									"patching_rect" : [ 190.0, 191.080811, 434.0, 35.0 ],
 									"style" : "",
 									"text" : "j.parameter loop/play/from @type decimal @clipmode none @ramp/drive None @dataspace none @priority 2",
 									"varname" : "loop/play/from"
@@ -1587,23 +1600,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 130.0, 253.080811, 108.0, 22.0 ],
+									"patching_rect" : [ 190.0, 239.080811, 108.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend playFrom"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"format" : 6,
-									"id" : "obj-5",
-									"maxclass" : "flonum",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 27.0, 176.887207, 50.0, 22.0 ],
-									"style" : ""
 								}
 
 							}
@@ -1660,7 +1659,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 27.0, 205.080811, 99.0, 22.0 ],
+									"patching_rect" : [ 82.0, 191.080811, 99.0, 22.0 ],
 									"style" : "",
 									"text" : "prepend ducking"
 								}
@@ -1691,7 +1690,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 27.0, 124.080811, 557.0, 49.0 ],
+									"patching_rect" : [ 82.0, 134.080811, 557.0, 49.0 ],
 									"style" : "",
 									"text" : "j.parameter loop/interpolation @type decimal @range 0.001 50 @clipmode low @ramp/drive max @ramp/function linear @dataspace time @unit millisecond @default 0.001 @description \"interpolation between loop points\" @priority 3",
 									"varname" : "loop/interpolation"
@@ -1708,7 +1707,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
+									"destination" : [ "obj-63", 0 ],
 									"source" : [ "obj-153", 0 ]
 								}
 
@@ -1723,14 +1722,14 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"midpoints" : [ 139.5, 302.040405, 17.5, 302.040405 ],
+									"midpoints" : [ 199.5, 293.040405, 17.5, 293.040405 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
+									"destination" : [ "obj-4", 0 ],
 									"midpoints" : [ 17.5, 211.846802, 17.5, 211.846802 ],
 									"source" : [ "obj-39", 0 ]
 								}
@@ -1738,15 +1737,15 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-63", 0 ],
-									"source" : [ "obj-5", 0 ]
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-4", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
-									"midpoints" : [ 36.5, 284.846802, 17.5, 284.846802 ],
+									"midpoints" : [ 91.5, 284.846802, 17.5, 284.846802 ],
 									"source" : [ "obj-63", 0 ]
 								}
 
@@ -1775,8 +1774,8 @@
 								"default" : 								{
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"fontface" : [ 0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
@@ -2402,8 +2401,8 @@
 								"default" : 								{
 									"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 									"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"fontface" : [ 0 ],
+									"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 									"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 								}
 ,
@@ -3087,8 +3086,8 @@
 				"default" : 				{
 					"selectioncolor" : [ 0.849573, 1.0, 0.926902, 1.0 ],
 					"textcolor_inverse" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"fontface" : [ 0 ],
+					"bgcolor" : [ 1.0, 0.827451, 0.345098, 0.0 ],
 					"accentcolor" : [ 0.290196, 0.309804, 0.301961, 1.0 ]
 				}
 ,
